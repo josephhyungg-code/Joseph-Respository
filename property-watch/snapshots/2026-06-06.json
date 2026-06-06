@@ -1,0 +1,85 @@
+{
+  "date": "2026-06-06",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "price_sgd": [2000000, 2200000],
+    "min_size_sqft": 1000,
+    "districts": ["D15", "D19"],
+    "built_after": 2000,
+    "exclude_new_launch": true
+  },
+  "matches": [
+    {
+      "project": "The Line @ Tanjong Rhu",
+      "address": "6 Tanjong Rhu Road",
+      "district": "D15",
+      "neighbourhood": "Tanjong Rhu",
+      "price_sgd": 2167000,
+      "psf": 2054,
+      "size_sqft": 1055,
+      "tenure": "Freehold",
+      "year_built": 2017,
+      "bedrooms": "3BR / 2BA",
+      "penthouse": false,
+      "floor_level": "not disclosed in listing",
+      "agent": "Vincent Low Jian Yang, PropNex (#R043352J)",
+      "link": "https://www.propnex.com/listing-details/629540/the-line-tanjong-rhu",
+      "notes": "~230m / under 1 min walk to Katong Park MRT (TEL, now operational); all units south-facing with sea & city views; project 6-month avg PSF ~$2,359, so this asks below project average"
+    },
+    {
+      "project": "Bliss @ Kovan",
+      "address": "2A/2B Simon Lane",
+      "district": "D19",
+      "neighbourhood": "Kovan",
+      "price_sgd": 2200000,
+      "psf": 1246,
+      "size_sqft": 1765,
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "bedrooms": "2BR penthouse",
+      "penthouse": true,
+      "floor_level": "Penthouse, top of 5-storey block, private roof terrace",
+      "agent": "Jeremy Lee, PropertyGuru listing 25591974 (also appears under 'Jeremy Lee C W' - likely same listing cross-posted)",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-bliss-kovan-25591974",
+      "notes": "PSF well below project 12-month avg (~$1,549) and D19 norm (~$1,800-2,100); short walk to Kovan MRT (NEL); CRL Hougang interchange one stop away (targeted ~2030)"
+    },
+    {
+      "project": "Flamingo Valley",
+      "address": "460-480 Siglap Road",
+      "district": "D15",
+      "neighbourhood": "Siglap / Opera Estate",
+      "price_sgd": 2000000,
+      "psf": 1176,
+      "size_sqft": 1701,
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "bedrooms": "2BR / 2BA",
+      "penthouse": false,
+      "floor_level": "not disclosed in listing (5-storey block)",
+      "agent": "PropNex listing 360192",
+      "link": "https://propnex.com/listing-details/360192/flamingo-valley",
+      "flagged": true,
+      "notes": "PSF ~$1,176 is far below every other current Flamingo Valley listing found ($1,351-2,114 psf) and 6-month transacted avg (~$1,849 psf); low listing-ID number suggests this may be stale/unrefreshed - verify before acting"
+    }
+  ],
+  "near_misses": [
+    {
+      "project": "Coralis",
+      "district": "D15",
+      "fails": "size",
+      "detail": "$2,180,000 / 861 sqft / $2,210 psf - freehold, 2013, in budget but 139 sqft short of the 1,000 sqft floor",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-coralis-60188547"
+    },
+    {
+      "project": "Joo Chiat Lane penthouse (likely D'fresco)",
+      "district": "D15",
+      "fails": "price (below floor)",
+      "detail": "~$1,800,000 / 1,206 sqft penthouse, Marina Bay Sands view, freehold ~2010 - about 10% under the $2.0M floor"
+    }
+  ],
+  "duplicates_or_data_quality_notes": [
+    "Bliss @ Kovan penthouse ($2.2M / 1,765 sqft) appears twice under near-identical agent names ('Jeremy Lee' / 'Jeremy Lee C W') - treat as one listing cross-posted, not two units",
+    "Flamingo Valley $2,000,000 listing PSF is an outlier vs all other current listings at the same project - flagged for verification",
+    "Direct portal access (PropertyGuru/99.co/EdgeProp/SRX search & listing pages) returned HTTP 403 tonight; data triangulated via indexed snippets from PropNex, agent sites, and aggregator caches - re-verify live prices before any offer"
+  ]
+}
