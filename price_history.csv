@@ -1,0 +1,6 @@
+run_date,scope,project,district,metric,value,unit,prior_value,prior_date,pct_change,notes
+2026-06-15,D19_listings,Bliss @ Kovan,D19,asking_psf_confirmed,1246,SGD/sqft,,,, First run — no prior snapshot; single confirmed listing at S$2.2M / 1765 sqft
+2026-06-15,D19_listings,Bliss @ Kovan,D19,median_transacted_psf_12m,1549,SGD/sqft,,,, Avg of 12m transactions from EdgeProp; range $1141–$1906
+2026-06-15,D19_listings,Kovan Primera,D19,median_asking_psf,1309,SGD/sqft,,,, Homejourney median; 22-unit boutique; upper floor 3BR may price higher
+2026-06-15,D15_listings,Katong Regency,D15,median_transacted_psf_12m,1900,SGD/sqft,,,, EdgeProp current range $1762–$2461 — FAILS <$1700 psf hard rule
+2026-06-15,D15_listings,Siglap V,D15,median_transacted_psf_12m,1532,SGD/sqft,,,, PSF $1248–$1703; district classification borderline D15/D16; 2 units on market today
