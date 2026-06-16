@@ -1,0 +1,102 @@
+{
+  "date": "2026-06-16",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "price_sgd": [2000000, 2200000],
+    "psf_max": 1700,
+    "min_size_sqft": 1000,
+    "districts": ["D15", "D19"],
+    "built_after": 2000,
+    "exclude_new_launch": true
+  },
+  "matches": [
+    {
+      "project": "Bliss @ Kovan",
+      "address": "2A/2B Simon Lane",
+      "district": "D19",
+      "neighbourhood": "Kovan",
+      "price_sgd": 2200000,
+      "psf": 1246,
+      "size_sqft": 1765,
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "bedrooms": "2BR penthouse",
+      "penthouse": true,
+      "floor_level": "Penthouse, top of 5-storey block, private roof terrace",
+      "agent": "Jeremy Lee / Jeremy Lee C W — PropertyGuru listing #25591974 (cross-listed, same unit)",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-bliss-kovan-25591974",
+      "flagged": false,
+      "days_on_market": "10+",
+      "notes": "Project 6-month avg PSF now $1,649 (up from 12-mo avg $1,549 at June 6). This listing at $1,246 psf is running $400+ psf below the 6-month project average. Discount is widening. Kovan MRT (NEL) walkable; CRL Hougang interchange targeted ~2030."
+    },
+    {
+      "project": "Flamingo Valley",
+      "address": "460-480 Siglap Road",
+      "district": "D15",
+      "neighbourhood": "Siglap / Opera Estate",
+      "price_sgd": 2000000,
+      "psf": 1176,
+      "size_sqft": 1701,
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "bedrooms": "2BR / 2BA",
+      "penthouse": false,
+      "floor_level": "Not disclosed in listing (5-storey block)",
+      "agent": "Frank Wong #R012064F, PropNex listing #360192",
+      "link": "https://propnex.com/listing-details/360192/flamingo-valley",
+      "flagged": true,
+      "days_on_market": "10+",
+      "notes": "PSF $1,176 remains far below all other current Flamingo Valley listings ($1,351-$2,114 psf) and 6-month transacted avg (~$1,849 psf). PropNex listing ID 360192 is anomalously low, suggesting listing may be years old and unrefreshed. Verify currency and current status before engaging."
+    }
+  ],
+  "near_misses": [
+    {
+      "project": "The Line @ Tanjong Rhu",
+      "address": "6 Tanjong Rhu Road",
+      "district": "D15",
+      "neighbourhood": "Tanjong Rhu",
+      "fails": "PSF ($2,054 psf > $1,700 hard cap)",
+      "price_sgd": 2167000,
+      "psf": 2054,
+      "size_sqft": 1055,
+      "tenure": "Freehold",
+      "year_built": 2017,
+      "note": "CORRECTION: This unit was incorrectly listed as a qualifier in the June 6 briefing. At $2,054 psf it has always failed the <$1,700 psf criterion. Reclassified tonight. Still active at same price. Would need ~$1,794K ask to clear PSF filter. ~230m from Katong Park MRT (TEL).",
+      "link": "https://www.propnex.com/listing-details/629540/the-line-tanjong-rhu"
+    },
+    {
+      "project": "Rosalia Park",
+      "address": "38-42 Lorong Ong Lye",
+      "district": "D19",
+      "neighbourhood": "Serangoon / Upper Paya Lebar",
+      "fails": "Built year (1995, pre-2000)",
+      "price_sgd": 1999999,
+      "psf": 1356,
+      "size_sqft": 1475,
+      "tenure": "Freehold",
+      "year_built": 1995,
+      "bedrooms": "3BR",
+      "note": "Newly identified tonight. Passes price, PSF, size, D19 district filters. Fails only on built year (1995). If Joseph flexes the built-year filter, worth adding to viewing list. Factor renovation costs on a 31-year-old project."
+    },
+    {
+      "project": "Bliss @ Kovan (larger penthouse)",
+      "address": "2A/2B Simon Lane",
+      "district": "D19",
+      "neighbourhood": "Kovan",
+      "fails": "Price ($2,799,999 > $2,200,000 ceiling)",
+      "price_sgd": 2799999,
+      "psf": 1263,
+      "size_sqft": 2217,
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "note": "Same development as the qualifying penthouse. At $1,263 psf the value math is attractive but the $2.8M ask is $600K over ceiling.",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-bliss-kovan-24752830"
+    }
+  ],
+  "data_quality_notes": [
+    "PropertyGuru, 99.co, EdgeProp and SRX all returned HTTP 403 on direct page fetches again tonight. Data triangulated from indexed search snippets, cached agent/PropNex pages, and project-level transaction data.",
+    "The Line @ Tanjong Rhu was incorrectly included as a qualifier in the June 6 baseline snapshot. That JSON file should be read with this correction in mind.",
+    "Bliss @ Kovan $2.2M listing appears twice under near-identical agent names — same unit, counted once.",
+    "Flamingo Valley PropNex #360192 has a very low listing-ID number inconsistent with current listings, suggesting it may be an old listing republished without repricing."
+  ]
+}
