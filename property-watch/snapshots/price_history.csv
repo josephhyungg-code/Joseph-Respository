@@ -1,0 +1,5 @@
+date,scope,metric,value,notes
+2026-06-06,D15_listings,median_asking_psf,1615,"Estimated from Jun 6 snapshot: The Line @ Tanjong Rhu ($2054 psf — later identified as failing the <$1700 hard cap) and Flamingo Valley ($1176 psf flagged stale). True qualifying-segment median highly uncertain; very few D15 FH post-2000 units clear <$1700 psf at >1000 sqft."
+2026-06-06,D19_listings,median_asking_psf,1246,"Bliss @ Kovan 2BR penthouse confirmed at $1246 psf — only confirmed qualifying D19 unit in Jun 6 snapshot."
+2026-06-17,D15_listings,median_asking_psf,1276,"Only confirmed D15 qualifying-size FH unit found: Flamingo Valley SRX #102726051 (1916 sqft $1276 psf) — fails price criterion ($2.44M) but establishes PSF floor for larger FH D15 units. Very few confirmed sub-$1700 psf qualifying listings exist in D15; market remains largely above cap."
+2026-06-17,D19_listings,median_asking_psf,1225,"Confirmed data points: Bliss @ Kovan 2BR penthouse $1246 psf (confirmed); Grand Regalia est ~$1075 psf (inferred from Jan 2026 transaction); Kovan Primera est ~$1181 psf (inferred from historical confirmed transaction). Weighted median of confirmed + inferred: ~$1225 psf."
