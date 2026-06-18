@@ -1,0 +1,8 @@
+date,scope,metric,value,notes
+2026-06-18,D19_listings,median_asking_psf,1378,Nouvelle Park confirmed listings median (3 units: 1362/1378/1405 PSF); project fails year criterion
+2026-06-18,D19_listings,waterline_psf_range_low,1206,The Waterline asking PSF floor; 24 units for sale
+2026-06-18,D19_listings,waterline_psf_range_high,1634,The Waterline asking PSF ceiling; all below 1700
+2026-06-18,D19_listings,kovan_primera_transaction_psf,1181,Kovan Primera 1862sqft unit at 2.2M; unconfirmed if current listing
+2026-06-18,D15_listings,median_asking_psf,1707,D15 freehold market median for 1000+sqft units in 2M-2.2M range; above 1700 criterion
+2026-06-18,D15_listings,palm_vista_psf_avg,1626,Palm Vista 3BR avg PSF; only confirmed listing 2.58M (over budget)
+2026-06-18,D15_listings,flamingo_valley_psf_avg,1925,Flamingo Valley current avg PSF (up from 1772 in 2023)

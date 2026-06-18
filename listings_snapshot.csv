@@ -1,0 +1,14 @@
+snapshot_date,project,district,price_sgd,psf,sqft,tenure,year_built,floor_level,bedrooms,listing_url,passes_all_criteria,fail_reasons
+2026-06-18,The Waterline,D19,1700000,1052,1615,Freehold,2013,unconfirmed,3,https://www.99.co/singapore/sale/condos-apartments/the-waterline,N,price_below_2M
+2026-06-18,The Waterline,D19,1768888,1508,1173,Freehold,2013,unconfirmed,3,https://www.99.co/singapore/sale/condos-apartments/the-waterline,N,price_below_2M
+2026-06-18,The Waterline,D19,2799000,1369,2045,Freehold,2013,unconfirmed,4,https://www.propertyguru.com.sg/listing/for-sale-the-waterline-25361039,N,price_over_2.2M
+2026-06-18,Nouvelle Park,D19,2200000,1362,1615,Freehold,1994,unconfirmed,3,https://www.propnex.com/listing-details/511127/nouvelle-park,N,year_pre2000_1994
+2026-06-18,Nouvelle Park,D19,2180000,1378,1582,Freehold,1994,unconfirmed,3,https://www.99.co/singapore/sale/condos-apartments/nouvelle-park,N,year_pre2000_1994
+2026-06-18,Nouvelle Park,D19,2100000,1405,1495,Freehold,1994,unconfirmed,3,https://www.propnex.com/listing-details/606641/nouvelle-park,N,year_pre2000_1994
+2026-06-18,Nouvelle Park,D19,2420000,1118,2164,Freehold,1994,unconfirmed,3,https://www.propnex.com/listing-details/236103/nouvelle-park,N,price_over_2.2M;year_pre2000_1994
+2026-06-18,Kovan Primera,D19,2200000,1181,1862,Freehold,2005,unconfirmed,3+penthouse,https://www.99.co/singapore/condos-apartments/kovan-primera,UNVERIFIED,unconfirmed_listing_vs_transaction
+2026-06-18,Palm Vista,D15,2580000,1577,1636,Freehold,2010,unconfirmed,3,https://www.propnex.com/listing-details/804551/palm-vista,N,price_over_2.2M
+2026-06-18,Flamingo Valley,D15,1880000,1838,1023,Freehold,2015,low,2,https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-60193100,N,price_below_2M;psf_above_1700
+2026-06-18,Flamingo Valley,D15,1700000,1974,861,Freehold,2015,low,2,https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-21270204,N,price_below_2M;psf_above_1700;size_below_1000
+2026-06-18,127 Koon Seng Road,D15,2290000,1731,1323,Freehold,2002,unconfirmed,3,https://www.propertyguru.com.sg/property-for-sale/p/condos-on-haig-road,N,price_over_2.2M;psf_above_1700
+2026-06-18,264 Joo Chiat Place,D15,1800000,1405,1281,Freehold,2013,unconfirmed,2,https://www.propertyguru.com.sg/property-for-sale/in-east-coast-marine-parade-d15/freehold,N,price_below_2M
