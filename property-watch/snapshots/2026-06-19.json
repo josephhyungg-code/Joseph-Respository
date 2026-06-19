@@ -1,0 +1,115 @@
+{
+  "date": "2026-06-19",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "price_sgd": [2000000, 2200000],
+    "min_size_sqft": 1001,
+    "districts": ["D15", "D19"],
+    "built_from": 2000,
+    "listing_type": "resale",
+    "max_psf": 1700
+  },
+  "access_note": "PropertyGuru, 99.co, EdgeProp, SRX, PropNex returned HTTP 403 on all direct fetch attempts. Data triangulated via indexed search-result snippets and project-level pages. Re-verify prices live before acting.",
+  "matches": [
+    {
+      "project": "Bliss @ Kovan",
+      "address": "2A Simon Lane",
+      "district": "D19",
+      "neighbourhood": "Kovan",
+      "price_sgd": 2200000,
+      "psf": 1246,
+      "size_sqft": 1765,
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "bedrooms": "2BR duplex penthouse",
+      "penthouse": true,
+      "floor_level": "Penthouse, top of 5-storey block, private roof terrace",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-bliss-kovan-25591974",
+      "status_vs_prior": "unchanged",
+      "price_change_sgd": 0,
+      "first_seen": "2026-06-06",
+      "days_on_market_approx": 13,
+      "criteria_check": {
+        "tenure": true,
+        "district": true,
+        "size_gt_1000": true,
+        "price_in_range": true,
+        "psf_below_1700": true,
+        "built_from_2000": true
+      }
+    }
+  ],
+  "delisted_since_prior": [
+    {
+      "project": "Flamingo Valley",
+      "address": "460-480 Siglap Road",
+      "district": "D15",
+      "prior_price_sgd": 2000000,
+      "prior_psf": 1176,
+      "size_sqft": 1701,
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "prior_link": "https://propnex.com/listing-details/360192/flamingo-valley",
+      "note": "Not found in any search tonight. Was flagged as possibly stale on 06-Jun (PSF ~$1,176 was an outlier vs project average ~$1,849 psf). Presumed delisted or expired; remove from active tracking."
+    }
+  ],
+  "excluded_psf_fails": [
+    {
+      "project": "The Line @ Tanjong Rhu",
+      "address": "6 Tanjong Rhu Road",
+      "district": "D15",
+      "price_sgd": 2167000,
+      "psf": 2054,
+      "size_sqft": 1055,
+      "tenure": "Freehold",
+      "year_built": 2017,
+      "link": "https://www.propnex.com/listing-details/629540/the-line-tanjong-rhu",
+      "status": "still listed, price unchanged from 06-Jun",
+      "correction": "Was incorrectly included as a 'match' in the 2026-06-06 snapshot. PSF $2,054 exceeds the $1,700 hard ceiling. Moved to near-miss category permanently."
+    }
+  ],
+  "near_misses": [
+    {
+      "project": "The Line @ Tanjong Rhu",
+      "district": "D15",
+      "fails": "psf",
+      "detail": "$2,167,000 / 1,055 sqft / $2,054 psf — freehold, 2017, in-budget, correct size, but PSF exceeds $1,700 ceiling by $354",
+      "link": "https://www.propnex.com/listing-details/629540/the-line-tanjong-rhu"
+    },
+    {
+      "project": "The Line @ Tanjong Rhu (unit 2)",
+      "district": "D15",
+      "fails": "psf + price",
+      "detail": "$2,436,000 / 1,152 sqft / $2,115 psf — freehold, over budget and PSF ceiling",
+      "link": "https://www.propnex.com/listing-details/629531/the-line-tanjong-rhu"
+    },
+    {
+      "project": "Meyer Blue",
+      "district": "D15",
+      "fails": "psf + new_launch",
+      "detail": "Freehold D15 new launch; PSF $3,004–$3,345; entry ~$2.01M but PSF far above $1,700 ceiling",
+      "link": "https://www.propertyguru.com.sg/project/meyer-blue-25744"
+    },
+    {
+      "project": "Straits at Joo Chiat",
+      "district": "D15",
+      "fails": "psf + new_launch",
+      "detail": "Freehold D15 new launch, 16 units; $2M entry but PSF ~$2,000–$2,100; also not resale",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-straits-at-joo-chiat-60208575"
+    },
+    {
+      "project": "SPACE @ KOVAN",
+      "district": "D19",
+      "fails": "psf",
+      "detail": "Freehold D19 apartment; PSF $1,644–$1,763 (avg $1,694); units in $2M+ budget likely clear $1,700 ceiling",
+      "link": "https://www.edgeprop.sg/condo-apartment/space-kovan"
+    },
+    {
+      "project": "Flamingo Valley (other unit)",
+      "district": "D15",
+      "fails": "price_floor + psf",
+      "detail": "$1,880,000 / 1,023 sqft / ~$1,838 psf — under $2.0M floor and PSF over ceiling",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-60193100"
+    }
+  ]
+}
