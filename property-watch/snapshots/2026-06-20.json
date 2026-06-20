@@ -1,0 +1,28 @@
+{
+  "date": "2026-06-20",
+  "run_type": "daily",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_strictly_above": 1000,
+    "price_sgd": [2000000, 2200000],
+    "max_psf_below": 1700,
+    "built_after_or_equal": 2000,
+    "min_bedrooms_strictly_above": 3,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp"],
+  "matches": [],
+  "near_misses": [],
+  "price_changes": [],
+  "access_log": [
+    "PropertyGuru search & individual listing pages: HTTP 403 Forbidden on live fetch this run.",
+    "99.co search & listing pages: HTTP 403 Forbidden on live fetch this run.",
+    "EdgeProp search & project/listing pages: HTTP 403 Forbidden on live fetch this run.",
+    "SRX condo pages: HTTP 403 Forbidden on live fetch this run.",
+    "WebSearch returned only project/search landing pages and generic project descriptions — no individual listing whose price, size, PSF and bedroom count could be verified live against a canonical URL.",
+    "Bliss @ Kovan (D19, freehold) confirmed to offer only 1- to 3-bedroom units, so it fails the new 'more than 3 bedrooms' filter regardless of price."
+  ],
+  "result": "ZERO verified listings. No listing could be opened and verified live from an actual source this run, so per the 'real link only / meet ALL criteria' rules nothing is reported. No fabricated or triangulated entries included.",
+  "baseline_note": "Prior saved snapshot (2026-06-06) used looser criteria. Under the current v2 hard filters (PSF below 1,700 AND more than 3 bedrooms) none of the three previously-saved matches (The Line @ Tanjong Rhu: PSF 2,054 & 3BR; Bliss @ Kovan: 2BR; Flamingo Valley: 2BR) would qualify. No price-change diff could be computed because no current listing was verified this run."
+}
