@@ -1,0 +1,64 @@
+{
+  "date": "2026-06-21",
+  "run_type": "daily",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_exclusive": 1000,
+    "price_sgd": [2000000, 2200000],
+    "max_psf_exclusive": 1700,
+    "built_after_inclusive": 2000,
+    "min_bedrooms_exclusive": 3,
+    "preferences_non_rejecting": ["high floor", "penthouse"]
+  },
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp", "SRX", "iProperty", "PropertyGiant"],
+  "matches": [],
+  "match_count": 0,
+  "rejected_candidates": [
+    {
+      "project": "Bliss @ Kovan",
+      "district": "D19",
+      "price_sgd": 2200000,
+      "size_sqft": 1765,
+      "psf": 1246,
+      "bedrooms": "2BR penthouse",
+      "fails": ["bedrooms (more than 3 required; this is 2BR)"],
+      "url_seen_in_search": "https://www.propertyguru.com.sg/listing/for-sale-bliss-kovan-25591974",
+      "url_verified_live": false,
+      "note": "Was a top pick on 2026-06-06 under the old criteria, but the v2 brief now requires more than 3 bedrooms. Could not be opened live (HTTP 403) regardless."
+    },
+    {
+      "project": "Bliss @ Kovan",
+      "district": "D19",
+      "price_sgd": 2799999,
+      "size_sqft": 2217,
+      "psf": 1263,
+      "bedrooms": "3BR penthouse",
+      "fails": ["price (above 2.2M ceiling)", "bedrooms (3BR, not more than 3)"],
+      "url_seen_in_search": "https://www.propertyguru.com.sg/listing/for-sale-bliss-kovan-24752830",
+      "url_verified_live": false
+    },
+    {
+      "project": "Straits at Joo Chiat",
+      "district": "D15",
+      "size_sqft": 1227,
+      "psf": "~2080",
+      "bedrooms": "4BR",
+      "fails": ["psf (above 1700 ceiling)", "price (likely above 2.2M at ~2080 psf)"],
+      "url_seen_in_search": "https://www.propertyguru.com.sg/condo-for-sale/at-straits-at-joo-chiat-25753/freehold",
+      "url_verified_live": false,
+      "note": "Only freehold 4BR in budget-ish band surfaced in D15, but PSF ~2080 (project 12-mo range 1996-2128 psf) blows the 1700 ceiling."
+    }
+  ],
+  "access_notes": [
+    "All Singapore property portals returned HTTP 403 Forbidden on live fetch this run: PropertyGuru, 99.co, EdgeProp, SRX, iProperty, PropertyGiant — both search-index pages and individual listing detail pages.",
+    "Per the non-negotiable real-link rule, no listing URL could be opened/verified live, so no listing is recorded as a match. Search-engine snippets were used only to identify and REJECT candidates, never to confirm a passing unit.",
+    "This matches the access pattern documented in the 2026-06-06 baseline run (portals 403 on automated access)."
+  ],
+  "diff_vs_previous": {
+    "previous_snapshot": "2026-06-06",
+    "new_listings": [],
+    "price_changes": [],
+    "note": "No live-verified listings this run, so no NEW / PRICE-CHANGE diff could be computed against the 2026-06-06 baseline."
+  }
+}

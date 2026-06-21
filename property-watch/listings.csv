@@ -1,0 +1,2 @@
+date,run_status,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,floor_features,status,link,source,notes
+2026-06-21,NO_VERIFIED_MATCHES,,,,,,,,,,,,,,"All sources (PropertyGuru, 99.co, EdgeProp, SRX, iProperty) returned HTTP 403 on live fetch this run; no listing URL could be opened/verified, so no listing recorded per the real-link rule. Zero candidates also met the v2 hard filters (>3 bedrooms + PSF<1700 + price 2.0-2.2M)."
