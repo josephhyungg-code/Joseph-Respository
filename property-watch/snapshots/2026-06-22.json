@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-22",
+  "run_type": "daily",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_strict_gt": 1000,
+    "price_sgd": [2000000, 2200000],
+    "max_psf_strict_lt": 1700,
+    "built_after": 2000,
+    "min_bedrooms_strict_gt": 3,
+    "preferences_not_filters": ["high floor", "penthouse"]
+  },
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp"],
+  "matches": [],
+  "result": "NO_VERIFIED_LISTINGS",
+  "reason": "Every search-results page and individual listing page on PropertyGuru, 99.co and EdgeProp returned HTTP 403 Forbidden on direct automated access this run. No listing URL could be opened or verified live. Per the non-negotiable 'real link only' rule, no candidate is shown because none could be verified against the actual source this run.",
+  "unverified_leads_not_shown": [
+    {
+      "project": "Kovan Jewel",
+      "district": "D19",
+      "note": "4-bedroom stacks are ~1206-1216 sqft (clears the >1,000 sqft floor) and project ask range spans the $2.0-2.2M band, but no specific qualifying unit URL/price could be opened or verified this run, and PSF at this size in this band would sit near/above the $1,700 ceiling. Not shown - unverified.",
+      "tenure": "Freehold",
+      "year_built": 2024
+    }
+  ],
+  "data_quality_notes": [
+    "PropertyGuru, 99.co and EdgeProp all returned HTTP 403 on direct fetch (search pages and listing pages). Same access block as the 2026-06-06 baseline run.",
+    "v2 hard filters are stricter than the 2026-06-06 baseline: added PSF < S$1,700 ceiling and a >3-bedroom (4+ BR) requirement. All three 2026-06-06 matches (The Line @ Tanjong Rhu, Bliss @ Kovan, Flamingo Valley) would FAIL v2 - the first on PSF ($2,054) and bedrooms (3BR), the latter two on bedrooms (2BR). So even setting aside the access block, the prior carry-over set does not satisfy v2.",
+    "Price-change diff vs 2026-06-06 not possible: no live prices could be verified this run."
+  ]
+}
