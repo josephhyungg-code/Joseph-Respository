@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-23",
+  "run": "daily-nightly-digest",
+  "criteria_v2": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_exclusive": 1000,
+    "price_sgd": [2000000, 2200000],
+    "max_psf_exclusive": 1700,
+    "built_after": 2000,
+    "min_bedrooms_exclusive": 3,
+    "preferences_non_rejecting": ["high floor", "penthouse"]
+  },
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp"],
+  "matches": [],
+  "verified_listings_count": 0,
+  "access_log": [
+    "WebFetch PropertyGuru search page (D19 freehold 2m-3m): HTTP 403 Forbidden",
+    "WebFetch PropertyGuru listing page (Sunglade 500067810): HTTP 403 Forbidden",
+    "WebFetch PropertyGuru project page (Kovan Residences 1338): HTTP 403 Forbidden",
+    "WebFetch 99.co listing page (11 Joo Chiat Place): HTTP 403 Forbidden",
+    "WebFetch 99.co listing page (Joo Chiat Apartments): HTTP 403 Forbidden",
+    "WebFetch EdgeProp search/listing pages: HTTP 403 Forbidden",
+    "curl with browser UA to all three portals: connection returned 000 (blocked)"
+  ],
+  "candidates_seen_in_search_but_dropped": [
+    {
+      "candidate": "11 Joo Chiat Place (99.co)",
+      "reason_dropped": "Listing URL could not be opened/verified live this run (HTTP 403). Also flagged for likely tenure/build-year and psf verification; not shown per real-link rule."
+    },
+    {
+      "candidate": "Joo Chiat Apartments 4BR 1,140 sqft ~$1.28M (99.co)",
+      "reason_dropped": "Price ~$1.28M is below the $2.0M floor (fails price filter); URL also unverifiable (403)."
+    },
+    {
+      "candidate": "Kovan Residences 4BR from ~$1.83M (PropertyGuru project page)",
+      "reason_dropped": "Project page returned 403; no individual unit URL could be opened/verified at 2.0-2.2M with psf < 1700. Dropped per real-link rule."
+    }
+  ],
+  "notes": [
+    "Zero listings could be retrieved and verified live this run; per the non-negotiable real-link rule every candidate was dropped rather than shown from cached search snippets.",
+    "No price-change comparison against prior snapshot (2026-06-06) is possible without verified live prices.",
+    "Separately, all three prior (2026-06-06) matches would fail the new v2 criteria regardless of access: The Line @ Tanjong Rhu (psf $2,054 > 1,700 and 3BR not > 3), Bliss @ Kovan (2BR), Flamingo Valley (2BR)."
+  ]
+}

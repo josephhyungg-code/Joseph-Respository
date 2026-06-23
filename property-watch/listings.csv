@@ -1,0 +1,2 @@
+date,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,floor,status,source,link,notes
+2026-06-23,,,,,,,,,,,NO_VERIFIED_LISTINGS,PropertyGuru;99.co;EdgeProp,,"All three portals returned HTTP 403 to automated access this run; zero listings could be opened/verified live, so none shown per real-link rule (v2 criteria: FH/999-yr, D15/D19, >1000 sqft, 2.0-2.2M, psf<1700, built>=2000, 4BR+)"
