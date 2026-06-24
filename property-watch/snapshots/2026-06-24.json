@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-24",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_strict_above": 1000,
+    "price_sgd": [2000000, 2200000],
+    "max_psf_strict_below": 1700,
+    "built_after_or_in": 2000,
+    "min_bedrooms_strict_above": 3,
+    "preferences_non_rejecting": ["high floor", "penthouse"]
+  },
+  "matches": [],
+  "price_changes": [],
+  "new_listings": [],
+  "sources_attempted": [
+    {
+      "source": "PropertyGuru",
+      "pages_tried": ["district 15 freehold search", "Kovan Jewel freehold listings"],
+      "result": "HTTP 403 Forbidden on direct fetch"
+    },
+    {
+      "source": "99.co",
+      "pages_tried": ["Kovan MRT freehold condo search"],
+      "result": "HTTP 403 Forbidden on direct fetch"
+    },
+    {
+      "source": "EdgeProp",
+      "pages_tried": ["district 15 freehold search", "Kovan Residences project page"],
+      "result": "HTTP 403 Forbidden on direct fetch"
+    }
+  ],
+  "result_summary": "Zero listings passed every hard filter with a verifiable live URL. All three portals returned HTTP 403 on every page type (search, project, listing) this run, so no canonical listing URL could be opened or verified. Per non-negotiable rule #1 (real, live-verified link required), every candidate surfaced via web search was dropped rather than shown with an unverified link. No fabricated or padded entries.",
+  "baseline_diff_note": "The prior snapshot (2026-06-06) holds 3 matches scored under the v1 criteria. Under v2 hard filters (>3 bedrooms AND PSF strictly below 1700), all three v1 matches would themselves fail (each is 2BR or 3BR; The Line @ Tanjong Rhu also fails PSF at 2054). There is therefore no v2-qualifying baseline to diff NEW / PRICE-CHANGED against this run."
+}

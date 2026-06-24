@@ -1,0 +1,2 @@
+run_date,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,floor_features,status,criteria_pass,link,notes
+2026-06-24,NONE,,,,,,,,,,no-pass,false,,"Zero listings passed all hard filters with a verifiable live URL. PropertyGuru, 99.co and EdgeProp (search, project and listing pages) all returned HTTP 403 this run, so no canonical listing URL could be opened/verified. Per non-negotiable rule #1, all candidates dropped rather than shown with an unverified link."
