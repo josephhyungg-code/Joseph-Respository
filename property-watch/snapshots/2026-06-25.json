@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-25",
+  "prompt_version": "v2",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_strictly_above": 1000,
+    "price_sgd": [2000000, 2200000],
+    "psf_below": 1700,
+    "built_after_or_equal": 2000,
+    "bedrooms_strictly_above": 3
+  },
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp"],
+  "matches": [],
+  "near_misses": [],
+  "retrieval_status": "FAILED",
+  "retrieval_notes": [
+    "Every direct fetch of PropertyGuru, 99.co and EdgeProp search/listing pages returned HTTP 403 Forbidden this run (multiple URL patterns and districts attempted).",
+    "Under the v2 non-negotiable rules, no listing may be shown without a working URL retrieved and verified live this run. Zero such URLs were obtained, so zero listings are reported.",
+    "No fabricated, cached, or carried-over entries were added. The 6 June 2026 baseline listings were NOT reproduced: they were retrieved under v1 criteria, are not re-verifiable this run, and in any case fail v2's new hard filters (PSF < 1,700 and more-than-3-bedroom).",
+    "WebSearch surfaced portal landing/search pages (e.g. EdgeProp D15 4-bedroom, 99.co Kovan/Serangoon freehold) but none could be opened to extract per-listing price/size/PSF data for live verification."
+  ]
+}
