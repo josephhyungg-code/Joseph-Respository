@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-26",
+  "run_type": "daily",
+  "criteria_version": "v2",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_exclusive": 1000,
+    "price_sgd": [2000000, 2200000],
+    "max_psf_exclusive": 1700,
+    "built_after_or_in": 2000,
+    "min_bedrooms_exclusive": 3,
+    "preferences_non_rejecting": ["high floor", "penthouse"]
+  },
+  "matches": [],
+  "near_misses": [],
+  "price_changes": [],
+  "data_quality_notes": [
+    "ACCESS BLOCKED: PropertyGuru, 99.co and EdgeProp all returned HTTP 403 Forbidden on every direct automated request this run (listing/search pages). Aggregator fallbacks (singaporeexpats classifieds, Trovit) also returned HTTP 403.",
+    "Under the two non-negotiable rules (real verified link only; meet ALL criteria), no listing could be presented because no canonical listing URL could be opened/verified live this run. Per policy, unverifiable listings are dropped rather than shown. Zero listings presented this run.",
+    "v2 criteria are materially stricter than the 2026-06-06 baseline: added hard ceiling PSF < S$1,700 and a hard floor of MORE THAN 3 bedrooms (i.e. 4+ BR). Under v2, all three baseline matches would now FAIL: The Line @ Tanjong Rhu (psf 2054 > 1700; 3BR not > 3), Bliss @ Kovan (2BR penthouse), Flamingo Valley (2BR). No carry-forward 'unchanged' units claimed, and prior links were not re-verified live this run.",
+    "No price-change comparison could be performed because no live, verified listings were retrieved to diff against the saved baseline."
+  ]
+}

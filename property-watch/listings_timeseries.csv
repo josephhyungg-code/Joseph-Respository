@@ -1,0 +1,2 @@
+date,run_type,criteria_version,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,status,link,notes
+2026-06-26,daily,v2,,,,,,,,,,,NO_VERIFIED_LISTINGS,,"All sources (PropertyGuru/99.co/EdgeProp + Trovit/SingaporeExpats) returned HTTP 403 this run; no canonical URL verifiable live. Per rules, unverifiable listings dropped. v2 added PSF<1700 and >3BR filters; all 3 baseline matches now fail v2. Reason code: PORTAL_403"
