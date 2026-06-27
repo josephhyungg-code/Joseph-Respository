@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-27",
+  "run_type": "daily",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_exclusive": 1000,
+    "price_sgd": [2000000, 2200000],
+    "psf_ceiling_exclusive": 1700,
+    "built_after_or_in": 2000,
+    "bedrooms": "more than 3 (4BR+)",
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "criteria_change_note": "Since the 2026-06-06 baseline, two new hard filters were added: PSF must be BELOW S$1,700 (hard ceiling) and the unit must have MORE THAN 3 bedrooms (4BR+). All three baseline matches (The Line @ Tanjong Rhu 3BR, Bliss @ Kovan 2BR penthouse, Flamingo Valley 2BR) fail the new >3-bedroom filter; The Line also fails the new PSF ceiling ($2,054 psf).",
+  "matches": [],
+  "near_misses": [],
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp", "Carousell"],
+  "verified_listings_retrieved": 0,
+  "access_status": "BLOCKED",
+  "data_quality_notes": [
+    "Every property portal (PropertyGuru, 99.co, EdgeProp, Carousell) returned HTTP 403 Forbidden on direct automated retrieval of search-result and listing pages this run. The agent proxy itself is healthy (no relay failures) — the 403s are portal-side bot blocks, identical to the 2026-06-06 run.",
+    "Web-search snippets surfaced PROJECT-level data only (e.g. Space @ Kovan 4BR ~1,625 sqft, 12-mo avg ~$1,694 psf; Kovan Jewel freehold 4BR luxury), but NO individual listing URL could be opened/verified live this run.",
+    "Per the non-negotiable rules, a listing whose URL cannot be opened/verified live must be DROPPED, and zero-result days must be reported plainly without padding or fabrication. Therefore no listings are reported tonight.",
+    "Spot-check on project-level economics confirms the bar is genuinely tight: a 4BR+ that is >1,000 sqft, priced $2.0-2.2M, AND below $1,700 psf implies roughly 1,180-1,294 sqft at the top of budget. Most freehold 4BR stock in D15/D19 is either larger (pushing well past $2.2M) or prices above the $1,700 psf ceiling."
+  ],
+  "comparison_to_prior_snapshot": {
+    "prior_snapshot": "2026-06-06.json",
+    "prior_matches": 3,
+    "price_changes_detected": [],
+    "note": "No live-verified listings could be retrieved this run, so no NEW / PRICE-CHANGED diffing was possible against the prior snapshot. Prior matches were also not re-verifiable live (portal 403)."
+  }
+}

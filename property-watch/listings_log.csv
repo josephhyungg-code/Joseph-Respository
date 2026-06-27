@@ -1,0 +1,2 @@
+run_date,project,unit,district,tenure,price_sgd,size_sqft,psf,year_built,bedrooms,floor,status,link,notes
+2026-06-27,,,,,,,,,,,NO_VERIFIED_LISTINGS,,"All portals (PropertyGuru/99.co/EdgeProp/Carousell) returned HTTP 403 on automated access; no individual listing URL could be opened/verified live. Zero listings passed all hard filters with a verified link. Note: hard filters tightened since 2026-06-06 baseline to add PSF<1700 ceiling and >3-bedroom (4BR+) requirement."
