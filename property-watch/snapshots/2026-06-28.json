@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-28",
+  "run_type": "daily",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_strict_above": 1000,
+    "price_sgd": [2000000, 2200000],
+    "psf_below": 1700,
+    "built_after_or_in": 2000,
+    "min_bedrooms_strict_above": 3,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "matches": [],
+  "near_misses": [],
+  "result": "NO_VERIFIED_LISTINGS",
+  "access_log": {
+    "websearch": "OK (returns index snippets only, not openable/verifiable listing pages)",
+    "webfetch_attempts": [
+      {"url": "https://www.edgeprop.sg/condo-apartment-for-sale/district-15/freehold", "result": "HTTP 403"},
+      {"url": "https://www.99.co/singapore/sale/condos-apartments/d19/freehold", "result": "HTTP 403"},
+      {"url": "https://www.propertyguru.com.sg/property-for-sale/in-east-coast-marine-parade-d15/freehold", "result": "HTTP 403"},
+      {"url": "https://property.trovit.com.sg/freehold-condo-district-kovan", "result": "HTTP 403"},
+      {"url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-katong-mrt-condo-25460471", "result": "HTTP 403"},
+      {"url": "https://www.srx.com.sg/condo/suites-kovan-9222", "result": "HTTP 403"},
+      {"url": "https://www.edgeprop.sg/condo-apartment/kovan-apartments", "result": "HTTP 403"}
+    ],
+    "proxy_status": "recentRelayFailures empty -> 403s originate from the destination portals' anti-bot protection, not from org egress policy",
+    "conclusion": "No listing URL from PropertyGuru / 99.co / EdgeProp could be opened and verified live this run. Per the non-negotiable 'real verified link only' rule, all candidates surfaced via search snippets were dropped rather than shown."
+  },
+  "comparison_to_prior_snapshot": {
+    "prior_snapshot_date": "2026-06-06",
+    "note": "No new verified listings to diff. Prior baseline (The Line @ Tanjong Rhu, Bliss @ Kovan, Flamingo Valley) was triangulated from snippets and could not be re-verified live tonight. Additionally, under the v2 bedroom filter (must be > 3 bedrooms), all three prior baseline units (3BR / 2BR / 2BR) would now fail the hard filter regardless of verification.",
+    "new": [],
+    "price_changed": []
+  }
+}

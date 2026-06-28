@@ -1,0 +1,2 @@
+date,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,floor,status,source,link,notes
+2026-06-28,NO_VERIFIED_LISTINGS,,,,,,,,,,no_results,,,"All sources (PropertyGuru/99.co/EdgeProp/SRX/Trovit) returned HTTP 403 on direct fetch; no listing URL could be opened/verified live this run, so all candidates dropped per verified-link rule"
