@@ -1,0 +1,27 @@
+{
+  "date": "2026-06-29",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_strict_above": 1000,
+    "price_sgd": [2000000, 2200000],
+    "psf_below": 1700,
+    "built_after": 2000,
+    "bedrooms_more_than": 3,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp"],
+  "matches": [],
+  "near_misses": [],
+  "run_status": {
+    "result": "NO_VERIFIED_LISTINGS",
+    "reason": "All three required sources returned HTTP 403 Forbidden to automated retrieval this run, on both filtered search pages and project/listing pages. Web-search snippets surfaced project names and stray addresses but no individual listing URL could be opened and verified live. Per the real-link-only rule, no listing is output without a verified live URL, and per the no-padding rule, no near-misses or fabricated entries were added.",
+    "portal_http_status": 403
+  },
+  "comparison_to_prior_snapshot": {
+    "prior_snapshot": "2026-06-06",
+    "note": "v2 hard filters now require >3 bedrooms (4+) and PSF below 1700. None of the 2026-06-06 baseline matches (The Line @ Tanjong Rhu 3BR/2054psf, Bliss @ Kovan 2BR, Flamingo Valley 2BR) satisfy the v2 bedroom/PSF filters, and none could be re-verified live this run (403). Nothing carried forward.",
+    "new": [],
+    "price_changes": []
+  }
+}

@@ -1,0 +1,2 @@
+date,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,floor,status,link,notes
+2026-06-29,,,,,,,,,,,NO_VERIFIED_LISTINGS,,"All required sources (PropertyGuru/99.co/EdgeProp) returned HTTP 403 to automated retrieval this run; no listing URL could be opened/verified live, so no listings output per real-link-only rule. Note: v2 criteria now require 4+ bedrooms and PSF<1700, which none of the 2026-06-06 baseline matches satisfied."
