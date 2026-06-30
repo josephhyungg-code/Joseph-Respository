@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-30",
+  "criteria_version": "v2",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_strict_above": 1000,
+    "price_sgd": [2000000, 2200000],
+    "psf_ceiling_below": 1700,
+    "built_after_or_in": 2000,
+    "min_bedrooms_more_than": 3,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "matches": [],
+  "result": "NO_VERIFIED_LISTINGS",
+  "near_misses": [],
+  "data_quality_notes": [
+    "Sources searched live this run: PropertyGuru, 99.co, EdgeProp (plus SRX, iProperty, PropertyGiant as cross-checks).",
+    "Every portal returned HTTP 403 Forbidden on direct automated retrieval of search and listing pages this run, so no canonical listing URL could be opened and verified live.",
+    "Per the two non-negotiable rules (real, live-verified link only; meet ALL hard filters), zero listings could be confirmed. No entries are fabricated or padded.",
+    "v2 criteria added two hard filters absent from the 2026-06-06 baseline: PSF strictly below S$1,700, and strictly more than 3 bedrooms. Under v2 all three prior baseline matches (The Line @ Tanjong Rhu, Bliss @ Kovan, Flamingo Valley) would now be rejected: The Line fails PSF ($2,054) and bedrooms (3BR); Bliss @ Kovan fails bedrooms (2BR penthouse); Flamingo Valley fails bedrooms (2BR). This is a criteria change, not observed market movement.",
+    "No price-change comparison could be computed this run because no live unit prices were retrievable."
+  ]
+}

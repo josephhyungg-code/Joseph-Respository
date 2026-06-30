@@ -1,0 +1,2 @@
+date,run_status,project,unit,district,tenure,price_sgd,size_sqft,psf,year_built,bedrooms,floor,status,link,source,notes
+2026-06-30,NO_VERIFIED_LISTINGS,,,,,,,,,,,,,,"All sources (PropertyGuru/99.co/EdgeProp/SRX/iProperty/PropertyGiant) returned HTTP 403 on live retrieval; zero listings passed all v2 hard filters with a verifiable live link; nothing fabricated or padded"
