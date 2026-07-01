@@ -1,0 +1,30 @@
+{
+  "date": "2026-07-01",
+  "run_type": "daily",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_strict_above": 1000,
+    "price_sgd": [2000000, 2200000],
+    "max_psf_below": 1700,
+    "built_after_or_equal": 2000,
+    "min_bedrooms_more_than": 3,
+    "preferences_non_rejecting": ["high floor", "penthouse"]
+  },
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp", "SRX", "Trovit", "PropertyGiant"],
+  "matches": [],
+  "matches_count": 0,
+  "data_quality_notes": [
+    "WebFetch was egress-blocked for the entirety of this run: every URL returned HTTP 403, including neutral control hosts example.com and en.wikipedia.org. This is an environment network-policy block, not a portal-specific bot wall.",
+    "PropertyGuru, 99.co, EdgeProp, SRX, Trovit and PropertyGiant search and listing pages could not be opened/verified live this run.",
+    "WebSearch (a separate channel) returned index snippets only. Per the non-negotiable 'real link only' rule, a snippet without a live-verified canonical URL is not sufficient to publish a listing, so no listing is shown.",
+    "No listing has been fabricated, guessed, or carried over from the 2026-06-06 baseline.",
+    "NOTE ON CRITERIA v2: this run's hard filters are stricter than the 2026-06-06 baseline (added PSF < S$1,700 hard ceiling and >3 bedrooms). None of the three 2026-06-06 baseline matches would pass v2 (all were 2-3BR and/or PSF >= 1,700), so even a fallback to prior data would yield zero passing units."
+  ],
+  "comparison_to_prior_snapshot": {
+    "prior_snapshot": "2026-06-06",
+    "new_units": [],
+    "price_changed_units": [],
+    "note": "No live-verified units this run, so no NEW / PRICE-CHANGED diff could be computed."
+  }
+}

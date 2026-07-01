@@ -1,0 +1,2 @@
+date,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,floor,status,link,criteria_pass,notes
+2026-07-01,NO_LISTINGS,,,,,,,,,NO_VERIFIED_LISTINGS,,fail,"Run executed; 0 listings could be verified. WebFetch egress-blocked (HTTP 403 on all hosts incl. example.com/Wikipedia); PropertyGuru/99.co/EdgeProp/SRX/Trovit unreachable this run. Per real-link-only rule, no listing shown without a live-verified URL. No fabrication."
