@@ -1,0 +1,2 @@
+run_date,source,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,status,link,notes
+2026-07-02,,,,,,,,,,,NO_VERIFIED_MATCH,,"Zero listings passed live verification. PropertyGuru / 99.co / EdgeProp returned HTTP 403 on every search and individual-listing fetch this run; no listing URL could be opened/verified live. Per non-negotiable rules, no unverified or fabricated entries recorded. v2 criteria: FH/999yr, D15/D19, size >1000sqft, SGD 2.0-2.2M, PSF <1700, built >=2000, >3 bedrooms."
