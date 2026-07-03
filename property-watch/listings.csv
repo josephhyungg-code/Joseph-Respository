@@ -1,0 +1,2 @@
+date,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,floor,status,link,criteria_pass,notes
+2026-07-03,NO_VERIFIED_MATCH,,,,,,,,,,none,,no,"All source portals (PropertyGuru, 99.co, EdgeProp, SRX) returned HTTP 403 on live fetch this run; no listing URL could be opened/verified, so no listing output under the real-link-only rule. See briefings/2026-07-03.md."

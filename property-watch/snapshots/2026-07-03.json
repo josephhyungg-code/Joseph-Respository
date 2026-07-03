@@ -1,0 +1,30 @@
+{
+  "date": "2026-07-03",
+  "routine": "daily",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_strictly_above": 1000,
+    "price_sgd": [2000000, 2200000],
+    "psf_ceiling_below": 1700,
+    "built_after_or_equal": 2000,
+    "min_bedrooms": 3,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp", "SRX (secondary cross-check)", "PropNex (secondary cross-check)"],
+  "matches": [],
+  "verified_matches_count": 0,
+  "access_status": "BLOCKED",
+  "access_detail": "Every direct live fetch of the actual sources returned HTTP 403 Forbidden this run — PropertyGuru (search + individual listing detail pages), 99.co (search pages), EdgeProp (search pages), and SRX/PropNex secondary pages. Web search returns only third-party index snippets, which are not a live-opened URL from the actual source. Under the real-link-only rule, no listing could be verified, so none is output. No fabricated or padded entries.",
+  "candidates_seen_but_rejected": [
+    {
+      "project": "38 Lorong Ong Lye (unnamed FH walk-up/condo)",
+      "district": "D19",
+      "surfaced_via": "web search index snippet only (URL not live-verifiable this run)",
+      "detail": "3BR/3BA freehold, 1475 sqft, S$1,999,999 (~S$1,356 psf), built 1995",
+      "fails": ["price (S$1,999,999 is below the S$2.0M floor)", "build year (1995 < 2000)", "link (could not be opened/verified live)"]
+    }
+  ],
+  "prior_snapshot_diff": "Prior saved snapshot is 2026-06-06. Its 3 recorded matches (The Line @ Tanjong Rhu, Bliss @ Kovan, Flamingo Valley) were captured under the earlier v1 criteria and would not clear the v2 hard filters added since (PSF < S$1,700 and >= 3 bedrooms): The Line @ ~S$2,054 psf fails the PSF ceiling; Bliss @ Kovan and Flamingo Valley are 2-bedroom and fail the min-bedroom filter. With zero live-verified listings tonight, there is nothing to diff for NEW / PRICE-CHANGED flags.",
+  "next_run_note": "Portal 403s recurred (same as the 2026-06-06 run). If persistent, an authenticated/session-based fetch path or a data feed is needed to satisfy the live-verified-URL requirement; index snippets alone cannot."
+}
