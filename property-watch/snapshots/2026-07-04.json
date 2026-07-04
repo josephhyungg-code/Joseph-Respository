@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-04",
+  "run": "daily-digest",
+  "criteria_version": "v2",
+  "criteria": {
+    "tenure": ["Freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_exclusive": 1000,
+    "price_sgd": [2000000, 2200000],
+    "max_psf_exclusive": 1700,
+    "built_from_year": 2000,
+    "min_bedrooms": 3,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp", "SRX"],
+  "matches": [],
+  "price_changes": [],
+  "unverifiable_candidates_surfaced_by_search": [
+    {
+      "project": "Kovan Residences",
+      "district": "D19",
+      "figure": "S$2,700,000 / 2,406 sqft / ~S$1,122 psf / 3BR / Freehold",
+      "fails": "price (> S$2.2M ceiling)",
+      "source_url": "https://www.99.co/singapore/sale/property/kovan-residences-condo-QwGRsoe3xKaE6HgngjotxZ",
+      "note": "URL returned HTTP 403 at egress on live fetch this run - could not verify"
+    },
+    {
+      "project": "Kovan Apartments",
+      "district": "D19",
+      "figure": "S$1,520,000 / 1,485 sqft / ~S$1,024 psf / 3BR / Freehold / built 1994",
+      "fails": "price (< S$2.0M floor) AND build year (1994 < 2000)",
+      "source_url": "https://www.99.co/singapore/sale/property/kovan-apartments-condo-Eb4VwN3LnFivSp7md44aXP",
+      "note": "URL returned HTTP 403 at egress on live fetch this run - could not verify"
+    },
+    {
+      "project": "Joo Chiat Mansions",
+      "district": "D15",
+      "figure": "S$2,050,000 / 990 sqft / 3BR / Freehold",
+      "fails": "size (990 sqft is at/under the 1,000 sqft floor)",
+      "source_url": "https://www.99.co/singapore/sale/property/joo-chiat-mansions-condo-5MTbwV9J4gRzSTskAEmztu",
+      "note": "URL returned HTTP 403 at egress on live fetch this run - could not verify"
+    }
+  ],
+  "data_quality_notes": [
+    "This session's organization egress policy blocks PropertyGuru, 99.co, EdgeProp and SRX at the proxy (CONNECT tunnel 403). Confirmed via /root/.ccr/README.md: these are organization policy denials, not to be routed around.",
+    "No individual listing URL could be opened or verified live this run. Per the non-negotiable 'real link only' rule, every candidate is dropped rather than shown with an unverified link.",
+    "Independently, none of the candidates that WebSearch surfaced passed all hard filters even on their cached figures - so tonight's result is a genuine zero on two grounds: unverifiable sources AND no passing candidate.",
+    "Note criteria tightened vs the 2026-06-06 baseline: PSF now has a hard ceiling of < S$1,700 and a hard minimum of 3 bedrooms was added. All three 2026-06-06 'matches' (The Line @ Tanjong Rhu psf $2,054; Bliss @ Kovan 2BR; Flamingo Valley 2BR) would fail the v2 criteria."
+  ]
+}
