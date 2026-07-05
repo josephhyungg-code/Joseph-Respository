@@ -1,0 +1,2 @@
+date,source,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,floor,status,link,verified,notes
+2026-07-05,,,,,,,,,,,,NO_VERIFIED_LISTINGS,,no,"Zero listings recorded. URL verification unavailable this run: WebFetch returned HTTP 403 for all hosts (incl. control sites) and curl egress blocked (HTTP 000) for all non-allowlisted hosts. Per non-negotiable 'real verified link' rule, no candidate could be opened/verified from PropertyGuru/99.co/EdgeProp, so none shown."

@@ -1,0 +1,25 @@
+{
+  "date": "2026-07-05",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_exclusive": 1000,
+    "price_sgd": [2000000, 2200000],
+    "psf_ceiling_exclusive": 1700,
+    "built_after": 2000,
+    "min_bedrooms": 3,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "matches": [],
+  "near_misses": [],
+  "run_status": "NO_VERIFIED_LISTINGS",
+  "access_notes": [
+    "URL verification was fully unavailable this run. WebFetch returned HTTP 403 Forbidden for every URL attempted, including property portals (PropertyGuru, 99.co, EdgeProp), aggregators, and a neutral control page (en.wikipedia.org). curl egress returned HTTP 000 for all non-allowlisted hosts including example.com, so no listing page could be opened or verified.",
+    "WebSearch was functional and returned indexed snippets, but the non-negotiable rule requires a working URL that is opened/verified live this run from the actual source. No candidate URL could be opened/verified, so per rule every candidate was dropped rather than shown.",
+    "Agent proxy status reported healthy with no relay failures; the blocks are org egress policy (curl 403/407 -> report blocked host, do not route around) plus portal anti-bot 403 (WebFetch). Not a fabrication-safe channel for listings this run."
+  ],
+  "diff_vs_prior": {
+    "prior_snapshot": "2026-06-06",
+    "note": "No listings could be verified this run, so no NEW / PRICE-CHANGED / unchanged diff could be computed against the prior snapshot. Prior-run links could not be re-opened to check price changes (same 403 block). Note: under the stricter v2 criteria (PSF < 1700, bedrooms >= 3), none of the three prior-run units would qualify anyway: The Line @ Tanjong Rhu (2054 psf, 3BR) fails PSF; Bliss @ Kovan (2BR) fails bedrooms; Flamingo Valley (2BR) fails bedrooms."
+  }
+}
