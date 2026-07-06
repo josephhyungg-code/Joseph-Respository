@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-06",
+  "criteria_version": "v2",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_exclusive": 1000,
+    "price_sgd": [2000000, 2200000],
+    "max_psf_exclusive": 1700,
+    "built_after_or_in": 2000,
+    "min_bedrooms": 3
+  },
+  "matches": [],
+  "near_misses": [],
+  "access": {
+    "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp", "SRX"],
+    "result": "HTTP 403 on every live fetch",
+    "urls_tested_this_run": [
+      "https://www.propertyguru.com.sg/condo-for-sale/in-east-coast-marine-parade-d15/with-3-bedrooms/freehold",
+      "https://www.99.co/singapore/sale/condos-apartments/kovan-mrt/freehold",
+      "https://www.edgeprop.sg/condo-apartment-for-sale/district-15/freehold",
+      "https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-60003920",
+      "https://www.99.co/singapore/condos-apartments/flamingo-valley",
+      "https://www.srx.com.sg/condo/flamingo-valley-9942"
+    ],
+    "proxy_status": "healthy (no relay failures) — 403 originates from the portals' anti-bot, not the network path",
+    "conclusion": "No listing URL could be opened or verified live this run. Per the non-negotiable real-link rule, no listing is recorded. Search-engine snippets surfaced candidate projects (e.g. Flamingo Valley, Kovan freehold stock) but snippets are not a verified live source and were NOT used to populate matches."
+  },
+  "diff_vs_prior": {
+    "prior_snapshot": "2026-06-06",
+    "note": "No verified listings this run, so nothing to diff. Separately note: under the stricter v2 filters (PSF < 1,700 AND >=3 bedrooms), the three 2026-06-06 matches would each now fail — The Line @ Tanjong Rhu on PSF ($2,054), Bliss @ Kovan and Flamingo Valley on bedrooms (both 2BR). They are not carried forward."
+  }
+}
