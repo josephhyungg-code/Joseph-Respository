@@ -1,0 +1,28 @@
+{
+  "date": "2026-07-07",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_strictly_above": 1000,
+    "price_sgd": [2000000, 2200000],
+    "psf_below": 1700,
+    "built_after_or_in": 2000,
+    "min_bedrooms": 3,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "criteria_change_since_last_run": [
+    "PSF ceiling tightened: now must be BELOW S$1,700 (2026-06-06 run had no explicit psf ceiling and accepted units up to $2,054 psf).",
+    "Bedroom minimum added: now must be 3 bedrooms or more (2026-06-06 run accepted 2BR units)."
+  ],
+  "matches": [],
+  "near_misses": [],
+  "price_changes": [],
+  "data_access": {
+    "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp", "SRX", "PropNex"],
+    "result": "HTTP 403 Forbidden on every direct fetch this run - search pages AND individual listing pages, including the previously-saved 2026-06-06 listing URLs.",
+    "proxy_state": "Agent proxy healthy (recentRelayFailures empty); the 403s originate from the destination portals' bot protection, not from an egress-policy denial.",
+    "verified_live_urls_retrieved": 0
+  },
+  "outcome": "ZERO listings could be verified with a live, openable URL this run. Under the non-negotiable real-link rule, no unit is listed. This is a data-access failure, not a statement that no qualifying units exist on the market.",
+  "comparison_to_prior_snapshot": "The three 2026-06-06 matches (The Line @ Tanjong Rhu, Bliss @ Kovan, Flamingo Valley) could not be re-verified this run (403). Independently, all three now fail the tightened filters: The Line at $2,054 psf breaches the new sub-$1,700 psf ceiling; Bliss @ Kovan and Flamingo Valley are 2BR and fail the new 3BR minimum. No price-change diff is possible without live re-verification."
+}
