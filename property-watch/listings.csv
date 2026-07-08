@@ -1,0 +1,2 @@
+date,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,floor,status,link,notes
+2026-07-08,NO_MATCH,,,,,,,,,,access_blocked,,"All sources (PropertyGuru/99.co/EdgeProp/SRX) returned HTTP 403 to automated access this run; zero listings could be live-verified against a real URL. No fabricated or unverified entries recorded per digest rules."

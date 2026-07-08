@@ -1,0 +1,31 @@
+{
+  "date": "2026-07-08",
+  "run_type": "daily",
+  "criteria_version": "v2",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_exclusive": 1000,
+    "price_sgd": [2000000, 2200000],
+    "max_psf_exclusive": 1700,
+    "built_after_inclusive": 2000,
+    "min_bedrooms_inclusive": 3,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "sources_attempted": ["PropertyGuru", "99.co", "EdgeProp", "SRX (cross-check)", "Trovit (aggregator cross-check)"],
+  "matches": [],
+  "price_changes": [],
+  "result": "zero_verified_matches",
+  "reason": "All property portals and the aggregator returned HTTP 403 Forbidden to automated retrieval this run. No individual listing detail page could be opened and verified live. Under the digest's non-negotiable rules (real live-verified link only; never output a listing without a verified link; do not fabricate or reuse old links), no listing could be shown. Web search returned only category/index pages, not verifiable individual listings.",
+  "access_notes": [
+    "PropertyGuru filtered search page: HTTP 403",
+    "99.co D19 freehold search page: HTTP 403",
+    "EdgeProp D19 freehold search page: HTTP 403",
+    "SRX D19 freehold search page: HTTP 403",
+    "Trovit Kovan freehold aggregator page: HTTP 403",
+    "WebFetch reaches the portals but they 403 the automated user agent (portal bot protection)",
+    "Headless-browser (Chromium/Playwright) fetch attempted as a bypass: network policy denies direct browser/curl egress (CONNECT tunnel 403 even for example.com), so only WebFetch/WebSearch have egress and those are the channels the portals block",
+    "Organization policy denials (403) are reported, not retried, per the agent-proxy README"
+  ],
+  "notes_on_prior_snapshot": "Under v2 criteria, none of the three matches from the 2026-06-06 baseline would still qualify: The Line @ Tanjong Rhu (PSF $2,054 exceeds the new <$1,700 ceiling), Bliss @ Kovan (2BR, fails the new >=3-bedroom rule), Flamingo Valley (2BR, fails the new >=3-bedroom rule). Their current live prices could not be re-verified this run to compute a price-change table."
+}
