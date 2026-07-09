@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-09",
+  "run_type": "daily",
+  "criteria": {
+    "tenure": ["Freehold", "999-year"],
+    "districts": ["D15", "D19"],
+    "min_size_sqft_exclusive": 1000,
+    "price_sgd": [2000000, 2200000],
+    "psf_ceiling_exclusive": 1700,
+    "built_after_inclusive": 2000,
+    "min_bedrooms_inclusive": 3,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "criteria_change_note": "v2 hard filters are stricter than the 2026-06-06 baseline: added PSF < S$1,700 ceiling and >=3-bedroom requirement. Under v2, all three baseline matches would now fail (The Line @ Tanjong Rhu psf 2054 > 1700; Bliss @ Kovan and Flamingo Valley are 2BR).",
+  "matches": [],
+  "price_changes": [],
+  "near_misses": [],
+  "access": {
+    "portals_attempted": ["PropertyGuru", "99.co", "EdgeProp", "PropNex", "Trovit", "buycondo.sg", "PropertyGiant"],
+    "result": "HTTP 403 Forbidden on every direct listing/search/aggregator fetch",
+    "search_engine": "WebSearch returned only category, project-overview, and new-launch pages plus a few snippet figures; no individual resale listing URL could be opened/verified live",
+    "conclusion": "No listing could be verified against the real-link rule this run, so zero listings are reported. No fabrication and no reuse of old links per the two non-negotiable rules."
+  },
+  "candidate_snippets_rejected": [
+    {
+      "descriptor": "38 Lorong Ong Lye, 3BR freehold",
+      "snippet_price_sgd": 1999999,
+      "snippet_size_sqft": 1475,
+      "snippet_psf": 1356,
+      "snippet_year_built": 1995,
+      "reject_reason": "Build year 1995 fails 'built 2000 or later'; also price below 2.0M floor; and no openable listing URL to verify."
+    },
+    {
+      "descriptor": "109 Tampines Road, 3BR freehold",
+      "snippet_price_sgd": 1950000,
+      "snippet_size_sqft": 1292,
+      "snippet_psf": 1509,
+      "snippet_year_built": 1996,
+      "reject_reason": "Build year 1996 fails 'built 2000 or later'; price 1.95M below 2.0M floor; no verifiable URL."
+    }
+  ]
+}

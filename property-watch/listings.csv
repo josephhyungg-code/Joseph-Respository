@@ -1,0 +1,2 @@
+date,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,year_built,status,link,notes
+2026-07-09,(none),,,,,,,,,NO_VERIFIED_MATCH,,"All portals (PropertyGuru/99.co/EdgeProp) and aggregators/agent sites returned HTTP 403 on live fetch; no canonical listing URL could be opened/verified this run. Zero listings recorded per real-link rule (no fabrication, no reused links)."
