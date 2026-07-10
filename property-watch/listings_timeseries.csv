@@ -1,0 +1,2 @@
+run_date,project,unit,district,tenure,price_sgd,size_sqft,psf,bedrooms,floor_features,status,link,verified_live,notes
+2026-07-10,,,,,,,,,,NO_VERIFIED_MATCHES,,no,"All source portals (PropertyGuru, 99.co, EdgeProp) and agent sites returned HTTP 403 this run; no listing URL could be opened/verified live. Per hard rules, zero listings output rather than show unverified links. Note: 3-bedroom minimum filter now in effect."

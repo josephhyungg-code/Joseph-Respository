@@ -1,0 +1,34 @@
+{
+  "date": "2026-07-10",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "price_sgd": [2000000, 2200000],
+    "min_size_sqft": 1000,
+    "size_rule": "strictly above 1000 sqft",
+    "psf_ceiling": 1700,
+    "districts": ["D15", "D19"],
+    "built_after": 2000,
+    "min_bedrooms": 3,
+    "exclude_new_launch": true,
+    "preferences_rank_only": ["high floor", "penthouse"]
+  },
+  "matches": [],
+  "near_misses": [
+    {
+      "project": "Straits at Joo Chiat",
+      "district": "D15",
+      "fails": "size + build-year/new-launch",
+      "detail": "3BR at S$2,000,000 but 990 sqft (fails >1,000 sqft floor) and TOP Nov 2027 (uncompleted new project, fails built-2000+ and exclude-new-launch)",
+      "surfaced_url": "https://www.propertyguru.com.sg/listing/for-sale-straits-at-joo-chiat-60208575",
+      "url_verified_live": false
+    }
+  ],
+  "run_status": "ZERO_VERIFIED_MATCHES",
+  "data_quality_notes": [
+    "All portal search + listing pages (PropertyGuru, 99.co, EdgeProp), iproperty, and PropNex returned HTTP 403 Forbidden on live fetch this run.",
+    "No individual listing URL could be opened/verified live, so no listing is output (hard rule: never output a listing without a verified link).",
+    "Candidate details visible only via search-engine indexed snippets, which are NOT a live retrieval from the source and cannot substitute for a verified URL.",
+    "New hard filter this run vs 2026-06-06 baseline: minimum 3 bedrooms. The baseline's Bliss @ Kovan (2BR penthouse) and Flamingo Valley (2BR) would now fail the bedroom filter regardless of price/size.",
+    "No PSF below 1,700 ceiling could be confirmed for any in-district freehold 3BR unit this run."
+  ]
+}
