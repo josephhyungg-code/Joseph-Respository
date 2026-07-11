@@ -1,0 +1,191 @@
+{
+  "date": "2026-07-11",
+  "type": "weekly-summary",
+  "compared_against": "2026-06-06",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "price_sgd": [2000000, 2200000],
+    "min_size_sqft": 1000,
+    "districts": ["D14 (Eunos/Paya Lebar only)", "D15", "D19 (incl. Bartley/Woodleigh/MacPherson)"],
+    "built_after": 2000,
+    "exclude_new_launch": true,
+    "implied_psf_cap_note": "No explicit psf cap in brief. Effective ceiling = quantum/size: $2,200 psf at 1,000 sqft, falling to ~$1,809 psf at 1,216 sqft and ~$1,731 psf at 1,271 sqft. Larger 3BR units force a LOWER effective psf cap."
+  },
+  "district_scope_change": "Expanded from D15/D19 (baseline 6 Jun) to add D14 Eunos/Paya Lebar (only) and to explicitly include the Bartley/Woodleigh/MacPherson sub-zones of D19.",
+  "tracked_projects": [
+    {
+      "project": "Oasis Garden",
+      "district": "D19",
+      "neighbourhood": "Jalan Bunga Rampai (MacPherson/Bartley fringe)",
+      "tenure": "Freehold",
+      "year_built": 2012,
+      "total_units": 134,
+      "hard_filter": "PASS",
+      "three_br_stack_sqft": [1216, 1647],
+      "three_br_unit_count": 62,
+      "psf_6mo_avg": 1673,
+      "psf_12mo_avg": 1674,
+      "active_listing_range_sgd": [1580000, 2650000],
+      "price_change_vs_baseline": "New to tracking this week (not in 6 Jun baseline). PSF flat over 12 months (~$1,673).",
+      "note": "★ HIDDEN QUALIFYING STACK. Large development, 62 three-BR units at 1,216-1,647 sqft. A 1,216 sqft 3BR at ~$1,673 psf ≈ $2.03M — lands inside the $2.0-2.2M band, >1,000 sqft, freehold, resale. This is the cleanest freehold-clears-everything match found in D19."
+    },
+    {
+      "project": "Carpmael Thirty-Eight",
+      "district": "D15",
+      "neighbourhood": "Carpmael Rd / Joo Chiat",
+      "tenure": "Freehold",
+      "year_built": 2020,
+      "total_units": 16,
+      "hard_filter": "PASS",
+      "three_br_stack_sqft": [1076, 1271],
+      "psf_3br_avg": 1874,
+      "active_listing_range_sgd": [1700000, 2220000],
+      "price_change_vs_baseline": "New to tracking this week. A $2,200,000 3BR listing sits right at the budget ceiling (~$1,731-2,044 psf depending on stack).",
+      "note": "★ CLEAN PASS. Boutique freehold, TOP 2020 (seasoned resale, not a launch), 3BR comfortably over 1,000 sqft, in budget, in D15. Direct D15 counterpart to Oasis Garden."
+    },
+    {
+      "project": "Jansen House",
+      "district": "D19",
+      "neighbourhood": "Jansen Rd (Serangoon/Kovan enclave)",
+      "tenure": "999-year",
+      "year_built": 2026,
+      "total_units": 21,
+      "hard_filter": "FAIL (new launch)",
+      "three_br_sqft": 1012,
+      "psf_12mo_range": [2003, 2151],
+      "active_listing_range_sgd": [1978000, 2740000],
+      "price_change_vs_baseline": "New to tracking. 3BR 1,012 sqft ~$2,041,000 ($2,151 psf, highest txn May 2026).",
+      "note": "Clears tenure (999-yr) + size (1,012 sqft) + price + district, but FAILS the exclude_new_launch filter (TOP ~2026). The only tracked project that fails ONLY on the new-launch rule — flag if Joseph would relax that one criterion."
+    },
+    {
+      "project": "Bliss @ Kovan",
+      "district": "D19",
+      "neighbourhood": "Simon Lane / Kovan",
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "hard_filter": "FAIL (priced out of band for in-size units)",
+      "three_br_sqft": [1163, 2357],
+      "psf_6mo_avg": 1649,
+      "psf_12mo_avg": 1557,
+      "active_listing_range_sgd": [900000, 3190000],
+      "cheapest_3br_listing": "1,163 sqft at $2,800,000 (~$2,408 psf)",
+      "price_change_vs_baseline": "PSF UP: 6-mo avg $1,649 vs baseline 12-mo $1,557 (+5.9%). The baseline standout — 1,765 sqft FH penthouse at $2.2M / $1,246 psf — is no longer visible; cheapest 3BR (>1,000 sqft) now asks $2.8M. Effectively priced OUT of the $2.0-2.2M band.",
+      "note": "Baseline day-one standout has closed or repriced. In-band, in-size freehold stock here has evaporated as project PSF rose ~6% in five weeks. Still worth watching sub-$2.2M small units, but none currently clear the 1,000 sqft floor."
+    },
+    {
+      "project": "Kovan Regency",
+      "district": "D19",
+      "neighbourhood": "Kovan Rise",
+      "tenure": "99-year leasehold",
+      "hard_filter": "FAIL (tenure)",
+      "three_br_sqft": [1055, 1130],
+      "psf_3br_avg": 1885,
+      "psf_12mo_range": [1668, 2150],
+      "active_listing_range_sgd": [1580000, 2430000],
+      "active_listings": 8,
+      "price_change_vs_baseline": "New to tracking. 3BR appreciation +16.1% 2023->2026 ($1,696->$1,969). A 1,055 sqft 3BR at $1,580,000 ($1,498 psf) is the lowest-quantum in-size 3BR across all tracked projects.",
+      "note": "Attractive size-for-quantum but LEASEHOLD, so it fails the freehold/999 hard filter. Illustrates the tenure-vs-quantum trade-off: buys ~1,055 sqft 3BR for $1.58M vs $2.0M+ freehold equivalents."
+    },
+    {
+      "project": "Kovan Residences",
+      "district": "D19",
+      "neighbourhood": "Kovan / NE13",
+      "tenure": "99-year leasehold",
+      "hard_filter": "FAIL (tenure)",
+      "three_br_sqft": [1259, 1442],
+      "psf_median": 1458,
+      "active_listing_range_sgd": [1830000, 5300000],
+      "price_change_vs_baseline": "New to tracking. Median unit rate ~$1,458 psf; 6-mo avg sale ~$2.41M (mixed unit types).",
+      "note": "Largest 3BR footprints in the Kovan cluster (up to 1,442 sqft) at the lowest psf (~$1,458), but LEASEHOLD -> fails tenure. Same trade-off as Kovan Regency."
+    },
+    {
+      "project": "Midtown Residences",
+      "district": "D19",
+      "neighbourhood": "Upper Serangoon Rd / Hougang",
+      "tenure": "99-year leasehold (from 2016)",
+      "hard_filter": "FAIL (tenure)",
+      "psf_12mo_avg": 1595,
+      "psf_range": [1529, 2009],
+      "price_change_vs_baseline": "New to tracking. Confirmed 99-yr leasehold, not freehold — remove from freehold shortlist or re-tag as leasehold-only comparator.",
+      "note": "Tracked under a freehold assumption that is incorrect. Fails the tenure filter outright."
+    },
+    {
+      "project": "Fiorenza",
+      "district": "D19",
+      "neighbourhood": "Florence Rd / Hougang-Kovan",
+      "tenure": "Freehold",
+      "year_built": 2012,
+      "total_units": 28,
+      "hard_filter": "FAIL (size)",
+      "typical_unit_sqft": 840,
+      "psf_12mo_avg": 1504,
+      "active_listing_range_sgd": [1028000, 2030000],
+      "price_change_vs_baseline": "New to tracking. Freehold and cheapest psf in the D19 set (~$1,504) but dominant stock is ~840 sqft — under the 1,000 sqft floor. A larger unit could reach ~$2.03M but the in-size stack is thin (28-unit project).",
+      "note": "Freehold + low psf but boutique and small-format. Most listings fail the 1,000 sqft floor. Watch for the occasional larger stack surfacing."
+    },
+    {
+      "project": "Straits at Joo Chiat",
+      "district": "D15",
+      "neighbourhood": "Joo Chiat Place",
+      "tenure": "Freehold",
+      "year_built": 2027,
+      "total_units": 16,
+      "hard_filter": "FAIL (new launch; mostly over budget)",
+      "three_br_sqft": [990, 1044],
+      "psf_12mo_range": [1996, 2128],
+      "active_listing_range_sgd": [2000000, 3188000],
+      "price_change_vs_baseline": "New to tracking. One 990 sqft 3BR at $2.0M ($2,020 psf) but that stack is under 1,000 sqft; larger 3BR runs $2.5M+.",
+      "note": "Freehold D15 but a NEW LAUNCH (TOP Nov 2027) -> fails exclude_new_launch; the in-band unit is also just under the size floor, and 1,000 sqft+ stacks exceed $2.2M. Fails on two counts."
+    }
+  ],
+  "newly_discovered": [
+    {
+      "project": "Kovan Jewel",
+      "district": "D19",
+      "tenure": "Freehold",
+      "status": "new launch / boutique, TOP 2026, from $1.383M (1BR-4BR)",
+      "verdict": "Freehold and in-district but a new launch -> excluded by the hard filter. Worth watching for future resale.",
+      "note": "Same architect lineage as Stars of Kovan; short walk to Kovan MRT."
+    },
+    {
+      "project": "Bartley Vue",
+      "district": "D19",
+      "tenure": "99-year leasehold",
+      "status": "TOP Jul 2026, fully sold; sub-sale only",
+      "verdict": "Leasehold -> fails tenure. Sits on Jalan Bunga Rampai next to Oasis Garden, useful as a Bartley-fringe price comparator only."
+    }
+  ],
+  "hidden_stack_findings": [
+    "Oasis Garden (D19 freehold, 134 units): 62 three-BR units at 1,216-1,647 sqft, 6-mo avg ~$1,673 psf. The entry 3BR stack (1,216 sqft) prices at ~$2.03M — inside band, over 1,000 sqft, freehold, resale. This is the single best 'hidden qualifying 3BR in a large development' this week.",
+    "Bliss @ Kovan (D19 freehold): 3BR footprints run 1,163-2,357 sqft but current in-size listings all price above band ($2.8M+). Large development, but no hidden in-band stack right now.",
+    "Kovan Residences / Kovan Regency (D19): genuine large 3BR stacks (up to 1,442 / 1,130 sqft) at low psf, but leasehold -> excluded by tenure."
+  ],
+  "psf_cap_vs_market_gap": {
+    "effective_cap_at_1000sqft": 2200,
+    "effective_cap_at_1216sqft": 1809,
+    "d15_freehold_market_psf": [1874, 2128],
+    "d19_freehold_market_psf": [1504, 1673],
+    "d19_leasehold_kovan_psf": [1458, 1908],
+    "read": "D15 freehold (Carpmael ~$1,874, Straits ~$2,000-2,128 psf) trades AT or ABOVE the effective cap once you demand 1,000+ sqft, so D15 only clears in boutique resale at the smaller end. D19 freehold (Oasis Garden ~$1,673, Fiorenza ~$1,504) sits well UNDER the cap, so the budget stretches to genuine 3BR size only in D19. The gap between the ~$1,809 effective cap (at 1,216 sqft) and D19 freehold's ~$1,673 is the ~$135 psf (~8%) of negotiating/appreciation headroom; in D15 that gap is negative."
+  },
+  "filter_tradeoff_insight": "The freehold + $2.0-2.2M + >=1,000 sqft + resale intersection is now concentrated in exactly two shapes: (1) large older D19 freehold projects where a 3BR stack happens to land in-band (Oasis Garden), and (2) boutique D15 freehold resale at the smaller 3BR end (Carpmael Thirty-Eight). Everything else in the tracking list fails on a single, predictable axis: the three Kovan leasehold projects (Kovan Regency/Residences, Midtown) fail TENURE while offering the best size-for-quantum; the 999-yr/new-launch stock (Jansen House, Straits, Kovan Jewel) fails only the NEW-LAUNCH rule while clearing tenure+size. The live trade-off is therefore no longer 'PSF vs region' but 'which single filter to relax': relax tenure -> Kovan leasehold opens ~1,055-1,442 sqft 3BR from $1.58M; relax new-launch -> Jansen House 999-yr 1,012 sqft at ~$2.04M opens; keep both hard -> the pool is essentially Oasis Garden + Carpmael Thirty-Eight.",
+  "hard_filter_pass_rate": {
+    "tracked_projects_evaluated": 9,
+    "clean_pass": 2,
+    "pass_projects": ["Oasis Garden", "Carpmael Thirty-Eight"],
+    "fail_single_axis": {
+      "new_launch_only": ["Jansen House"],
+      "tenure": ["Kovan Regency", "Kovan Residences", "Midtown Residences"],
+      "size": ["Fiorenza"],
+      "price_priced_out": ["Bliss @ Kovan"],
+      "new_launch_and_price": ["Straits at Joo Chiat"]
+    },
+    "pass_rate_pct": 22
+  },
+  "data_hygiene": [
+    "Portal access caveat unchanged from 6 Jun: PropertyGuru/99.co/EdgeProp/SRX throttle automated access. Figures triangulated from indexed snippets, project pages and agent sites — treat psf and active-listing counts as approximate and re-verify live before acting.",
+    "No daily snapshots exist between 6 Jun and 11 Jul, so 'new listings' is measured as CURRENT active inventory per project vs the 6 Jun baseline (which only carried 3 named matches), not as a strict week-over-week delta.",
+    "Midtown Residences was on the tracking list under a freehold assumption; it is 99-yr leasehold. Corrected here.",
+    "Oasis Garden completion year appears as 2009 on some pages and 2012 on others; both clear the built-after-2000 filter."
+  ]
+}
