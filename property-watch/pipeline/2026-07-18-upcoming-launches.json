@@ -1,0 +1,98 @@
+{
+  "date": "2026-07-18",
+  "type": "upcoming_launch_pipeline",
+  "trigger": "User flagged OCHO (freehold, TOP Q1 2028) and asked whether there are more upcoming/uncompleted projects like it.",
+  "scope": "Uncompleted or TOP 2026-2029 condos in D19 (Bartley/Woodleigh/MacPherson/Kovan/Serangoon), D15 (Joo Chiat/Katong/Siglap/Meyer/Amber/Tanjong Rhu), D14 (Eunos/Paya Lebar + Geylang/Aljunied/Kembangan fringe).",
+  "buyer_brief": "freehold or 999-yr; S$2.0-2.2M; >=1,000 sqft; ideally 3BR",
+  "the_project_asked_about": {
+    "project": "Ocho",
+    "address": "27 Lorong 32 Geylang",
+    "district": "D14",
+    "sub_area": "Geylang (Dakota/Aljunied) — OUTSIDE strict Eunos/Paya Lebar scope",
+    "tenure": "Freehold",
+    "developer": "Primest Land V1",
+    "expected_top": "Q1 2028",
+    "site": "6,835 sqft, 1 block / 8 storeys",
+    "total_units": 20,
+    "unit_mix": "2BR, 3BR, 4BR incl. 3BR+Study, dual-key, and 4BR with PES",
+    "nearest_mrt": "Dakota (CCL), Aljunied (EWL)",
+    "pricing_note": "Launch price not confirmed in search snippets; recent Geylang FH boutiques launched ~S$1,900-2,400 psf — a ~1,000 sqft 3BR could land ~S$2.0-2.4M. Verify with developer price list.",
+    "link": "https://prop.sg/new-launch/ocho/"
+  },
+  "category_insight": "OCHO is one of a CLUSTER: small (14-50 unit) freehold en-bloc redevelopments concentrated in Geylang / Joo Chiat / Telok Kurau / Amber. These ARE the freehold new-launch supply on the east side. Two structural issues for the brief: (1) the budget-fitting ones (Geylang: MORI, Gems Ville, likely OCHO at ~S$1,680-2,000 psf) sit in Geylang/Aljunied, NOT Eunos/Paya Lebar, and sell out fast due to tiny unit counts; (2) the prime-location ones (Joo Chiat/Katong/Amber/Meyer/Tanjong Rhu at ~S$2,400-3,300 psf) price a >=1,000 sqft 3BR ABOVE S$2.2M. The large upcoming D19 projects (Chuan Park, Chuan Grove, Hougang Central) are all 99-year and above band.",
+  "tier_A_fits_brief_freehold_or_999_and_3br_plausibly_in_band": [
+    {
+      "project": "Jansen House",
+      "district": "D19", "sub_area": "Kovan", "tenure": "999-year",
+      "developer": "Macly Group", "top": "2026-2027", "units": 21,
+      "three_br": "3BR ~1,012 sqft, ~S$2.0-2.17M (~S$2,003-2,151 psf)",
+      "band_fit": "YES — best direct match; already on the watchlist. As of early-2026 only 3BR reported left.",
+      "status": "developer sale (near-complete)",
+      "link": "https://www.99.co/singapore/condos-apartments/jansen-house"
+    },
+    {
+      "project": "Straits at Joo Chiat",
+      "district": "D15", "sub_area": "Joo Chiat", "tenure": "Freehold",
+      "developer": "RH Katong (Roxy-Pacific)", "top": "Nov 2027", "units": 16,
+      "three_br": "3BR+Guest 1,044 sqft from ~S$2,171,520 (from ~S$2,080 psf)",
+      "band_fit": "YES (borderline, at ceiling) — already on the watchlist. NOTE: the '303 Joo Chiat Place' lead is THIS project, not a separate one.",
+      "status": "launched / selling",
+      "link": "https://www.srx.com.sg/condo/straits-at-joo-chiat-126901"
+    },
+    {
+      "project": "MORI",
+      "district": "D14", "sub_area": "Geylang/Aljunied fringe (out of strict Eunos/Paya Lebar)", "tenure": "Freehold",
+      "developer": "Roxy-Pacific", "top": "Dec 2026", "units": 137,
+      "three_br": "plain 3BR 958-990 sqft (<1,000, fails size); 3BR+Guest 1,023-1,184 sqft (meets size), launched from ~S$1.68M",
+      "band_fit": "CONCEPTUAL YES but SOLD OUT of developer units — resale/sub-sale only, likely repriced higher.",
+      "status": "sold out (developer); resale only",
+      "link": "https://www.99.co/singapore/condos-apartments/mori"
+    },
+    {
+      "project": "Ocho",
+      "district": "D14", "sub_area": "Geylang (out of strict Eunos/Paya Lebar)", "tenure": "Freehold",
+      "developer": "Primest Land V1", "top": "Q1 2028", "units": 20,
+      "three_br": "3BR / 3BR+Study present; sizes & price not confirmed",
+      "band_fit": "PLAUSIBLE pending price list — the project you flagged.",
+      "status": "new launch",
+      "link": "https://prop.sg/new-launch/ocho/"
+    }
+  ],
+  "tier_B_freehold_but_tight_or_just_above_band": [
+    {"project": "Ardor Residence", "district": "D15", "sub_area": "Haig Rd/Tanjong Katong", "tenure": "Freehold", "top": "Oct 2026", "units": 35, "note": "3BR ~S$2,420 psf → ~1,000 sqft 3BR ≈ S$2.42M, just above ceiling; smaller 3BR could approach ~S$2.2-2.4M."},
+    {"project": "Deluxe Residences", "district": "D14", "sub_area": "Kembangan (closest to east-side)", "tenure": "Freehold", "top": "2027", "units": 41, "note": "~S$2,300 psf → a genuine 1,000 sqft 3BR ≈ S$2.3M, above band; a ~900-950 sqft 3BR fits price but fails size."},
+    {"project": "Atlassia", "district": "D15", "sub_area": "Joo Chiat Place", "tenure": "Freehold", "top": "Nov 2025 (essentially completed)", "units": 31, "note": "3BR ~1,145 sqft sold out; 3BR+Study transacted ~S$2.8M — above band."},
+    {"project": "Kovan Jewel", "district": "D19", "sub_area": "Kovan", "tenure": "Freehold", "top": "~2024-2026 (completed)", "units": 34, "note": "Freehold + Kovan but 3BR/3BR+Study SOLD OUT as of Feb 2026 — resale only."}
+  ],
+  "tier_C_freehold_clearly_above_band_prime_D15_luxury": [
+    {"project": "Meyer Blue (81 Meyer Rd)", "district": "D15", "tenure": "Freehold", "top": "2027-2028", "units": 226, "psf": "avg ~S$3,260", "note": "3BR ~S$3M+"},
+    {"project": "The Continuum", "district": "D15", "sub_area": "Thiam Siew Ave", "tenure": "Freehold", "top": "Nov 2027", "units": 816, "psf": "~S$2,700+", "note": "3BR ~S$2.8M+; large genuinely-upcoming project"},
+    {"project": "Amber Sea", "district": "D15", "tenure": "Freehold", "top": "~2026-2027", "units": 132, "psf": "avg ~S$2,455", "note": "3BR 1,109-1,216 sqft from ~S$2.8M"},
+    {"project": "Amber House", "district": "D15", "tenure": "Freehold", "top": "Q2 2029", "units": 105, "psf": "~S$2,900-3,240", "note": "3BR ~S$2.9M+"},
+    {"project": "Arina East Residences", "district": "D15", "sub_area": "Tanjong Rhu", "tenure": "Freehold", "top": "Dec 2028", "units": 107, "psf": "launch avg ~S$3,008", "note": "3BR well above band"}
+  ],
+  "tier_D_99yr_upcoming_fails_tenure_preference": [
+    {"project": "The Chuan Park", "district": "D19", "sub_area": "Lorong Chuan", "tenure": "99-year", "top": "~Dec 2028", "units": 916, "psf": "~S$2,218-2,618", "note": "3BR ≈ S$2.3-2.8M; Lorong Chuan MRT at door"},
+    {"project": "Chuan Grove Residences", "district": "D19", "sub_area": "Lorong Chuan", "tenure": "99-year", "top": "~Dec 2029", "units": "~1,055", "psf": "~S$2,100-3,200 (est)", "note": "launch ~Q3 2026; 3BR likely > band"},
+    {"project": "Hougang Central GLS", "district": "D19", "sub_area": "Hougang", "tenure": "99-year", "top": "unknown (launch late-2026/2027)", "units": "~835", "psf": "~S$2,500-2,800 (est)", "note": "3BR ≈ S$2.4M+; future CRL interchange at Hougang MRT"},
+    {"project": "Emerald of Katong", "district": "D15", "sub_area": "Tanjong Katong", "tenure": "99-year", "top": "Jun 2029", "units": 846, "psf": "avg ~S$2,621", "note": "3BR from ~S$2.167M BUT mostly <1,000 sqft; 99-yr"},
+    {"project": "Tanjong Rhu Residences (GLS)", "district": "D15", "sub_area": "Tanjong Rhu", "tenure": "99-year", "top": "~2029-2031", "units": "3x 26-storey towers", "psf": "~S$2,900-3,100 (est)", "note": "waterfront; 99-yr, above band"}
+  ],
+  "tier_E_pipeline_not_yet_launched": [
+    {"item": "Upper Serangoon Road freehold land parcel", "district": "D19", "note": "~S$36M FH residential parcel reported for sale — could yield a future freehold D19 boutique; nothing biddable yet. Monitor for tenure fit."},
+    {"item": "Baode Building (8 Lorong 35 Geylang)", "district": "D14", "note": "14-unit FH site, collective sale ~S$27M; redevelopment TBA."},
+    {"item": "Vicenta Lodge (Lorong Marzuki)", "district": "D14", "note": "old 1993 FH block; no confirmed redevelopment."}
+  ],
+  "completed_freehold_boutiques_as_resale_comps": [
+    {"project": "K Suites", "district": "D15", "sub_area": "Telok Kurau", "tenure": "Freehold", "top": "2025", "note": "3BR listings from ~S$2.2M — just outside the 2026-2029 window but budget-relevant resale."},
+    {"project": "Baywind Residences", "district": "D15", "sub_area": "Telok Kurau", "tenure": "Freehold", "top": "Dec 2025", "note": "3+1BR 969-1,066 sqft."},
+    {"project": "Gems Ville", "district": "D14", "sub_area": "Geylang", "tenure": "Freehold", "top": "2025", "note": "3BR & 3BR dual-key from ~S$1.018M / ~S$1,671 psf — Geylang FH budget benchmark."}
+  ],
+  "data_quality_notes": [
+    "All portal listing pages (99.co, PropertyGuru, EdgeProp, SRX, StackedHomes, aggregators) returned HTTP 403 to automated fetch. Figures are from search-index snippets and developer microsites — verify TOP dates, sizes, prices and 'sold out' status against live developer price lists before acting.",
+    "OCHO launch pricing was NOT confirmed in snippets — the S$2.0-2.4M 3BR estimate is inferred from comparable Geylang FH boutique launch PSF, not a published price list.",
+    "'303 Joo Chiat Place' = Straits at Joo Chiat (same project). '81 Meyer Road' = Meyer Blue. Do not double-count.",
+    "TOP years reported inconsistently for several projects (Jansen House 2026 vs 2027; Meyer Blue 2027 vs 2028; Amber Sea 2026 vs 2027). Treated as ranges.",
+    "Strict Eunos/Paya Lebar sub-area has essentially NO on-target uncompleted freehold launch right now — the live D14 freehold pipeline is all Geylang/Aljunied/Kembangan fringe."
+  ]
+}
