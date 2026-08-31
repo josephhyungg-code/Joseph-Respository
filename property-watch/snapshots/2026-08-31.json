@@ -1,0 +1,63 @@
+{
+  "date": "2026-08-31",
+  "criteria": {
+    "districts": ["D19 (all sub-areas: Kovan, Serangoon, Hougang, Bartley, Woodleigh, MacPherson)", "D15 (Marine Parade/Joo Chiat/Siglap, backup)", "D14 (Eunos/Paya Lebar, excl. Geylang)"],
+    "min_size_sqft": 1110,
+    "min_size_operator": "strictly_greater_than",
+    "max_price_sgd": 2300000,
+    "max_price_operator": "strictly_less_than",
+    "min_bedrooms": 3,
+    "built_after": 2000,
+    "built_1996_2000_small_freehold": "flag as needs-verification, do not auto-exclude",
+    "tenure_pref": ["Freehold", "999-year"],
+    "tenure_99yr_rule": "(a) TOP within 10yr and <100 units, OR (b) up to 500 units where some 3BR units exceed 1110 sqft (e.g. Kovan Residences)",
+    "tenure_99yr_age_check": "buyer_age + remaining_lease >= 95",
+    "psf_cap": 1700,
+    "psf_cap_rule": "do not auto-exclude over-cap; flag as 'cap exceeded'"
+  },
+  "data_access_caveat": "All four portals (PropertyGuru, 99.co, EdgeProp, SRX) egress-blocked for direct WebFetch (EGRESS_BLOCKED, org policy, not retryable). Figures sourced from WebSearch index snippets of portal pages, not page-verified as live today. Floor/level mostly unavailable. Re-verify price and live status before acting.",
+  "passes_all_filters": [
+    {"project": "Palm Grove Condominium", "address": "Palm Grove Avenue, Hougang", "district": "D19", "tenure": "999-year (from 1878, ~851yr remaining)", "units": 111, "top_year": 2002, "size_sqft": 1378, "price_sgd": 1688000, "psf": 1225, "bedrooms": 3, "floor_level": "not disclosed", "link": "https://www.99.co/singapore/sale/property/palm-grove-condominium-condo-kb3Lr6hLn52eerJKS8wcNd", "notes": "Lowest PSF in tonight's scan; 999yr ~= freehold"},
+    {"project": "Palm Grove Condominium", "address": "Palm Grove Avenue, Hougang", "district": "D19", "tenure": "999-year (~851yr remaining)", "units": 111, "top_year": 2002, "size_sqft": 1302, "price_sgd": 1960000, "psf": 1505, "bedrooms": 3, "floor_level": "not disclosed", "link": "https://www.srx.com.sg/listings/102036231/for-sale-palm-grove-condominium-3-bedroom-condo-for-sale-at-palm-grove-condominium", "notes": "partially furnished"},
+    {"project": "Palm Grove Condominium", "address": "Palm Grove Avenue, Hougang", "district": "D19", "tenure": "999-year (~851yr remaining)", "units": 111, "top_year": 2002, "size_sqft": 1399, "price_sgd": 2180000, "psf": 1558, "bedrooms": 3, "floor_level": "not disclosed", "link": "https://www.99.co/singapore/sale/property/palm-grove-condominium-condo-bEzefJQ2pE2fhfUkkyUoKd"},
+    {"project": "The Waterline", "address": "161-167 Poh Huat Road West, Hougang", "district": "D19", "tenure": "Freehold", "units": 103, "top_year": 2013, "size_sqft": 1238, "price_sgd": 2000000, "psf": 1616, "bedrooms": 3, "floor_level": "not disclosed (max 5 storeys)", "link": "https://www.propertyguru.com.sg/listing/for-sale-the-waterline-500022124", "notes": "3BR/3BA partially furnished; project 12mo PSF ~1310-1649"},
+    {"project": "Vacanza @ East", "address": "36/46 Lengkong Tujoh", "district": "D14", "tenure": "Freehold", "units": 473, "top_year": 2014, "size_sqft": 1410, "price_sgd": 1999999, "psf": 1418, "bedrooms": 3, "floor_level": "not disclosed", "link": "https://www.propertyguru.com.sg/apartment-condo-for-sale/at-vacanza-east-2672/above-1300-sqft", "notes": "1,410 sqft 3BR type; individual listing URL not isolated in index"},
+    {"project": "Vacanza @ East", "address": "36/46 Lengkong Tujoh", "district": "D14", "tenure": "Freehold", "units": 473, "top_year": 2014, "size_sqft": 1410, "price_sgd": 2100000, "psf": 1489, "bedrooms": 3, "floor_level": "not disclosed", "link": "https://www.propertyguru.com.sg/apartment-condo-for-sale/at-vacanza-east-2672/above-1300-sqft"}
+  ],
+  "passes_size_price_psf_cap_exceeded": [
+    {"project": "Affinity at Serangoon", "address": "42 Serangoon North Ave 1", "district": "D19", "tenure": "99-year", "top_year": 2024, "remaining_lease_yr": 97, "age_lease_check": "97yr remaining -> buyer_age + 97 >= 95 satisfied for any adult", "units": 1052, "size_sqft": 1152, "price_sgd": 2000000, "psf": 1736, "bedrooms": 3, "floor_level": "high floor", "unit_type": "3BR Deluxe (largest 3BR)", "link": "https://www.propertyguru.com.sg/listing/for-sale-affinity-at-serangoon-25431800", "notes": "PSF just over $1700 cap; new (2yr) so structurally priced"},
+    {"project": "Flamingo Valley", "address": "460-480 Siglap Road", "district": "D15", "tenure": "Freehold", "units": 393, "top_year": 2014, "size_sqft": 1152, "price_sgd": 2200000, "psf": 1908, "bedrooms": 3, "floor_level": "not disclosed", "link": "https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-500138510", "notes": "PSF cap exceeded; smallest 3BR stack ~1152 so all 3BR >1110; replaces the 6/6 baseline outlier listing (1701sqft @ $1176psf) which is now gone from index"}
+  ],
+  "needs_verification": [
+    {"project": "Siglap V", "address": "2 First Street", "district": "D15", "tenure": "Freehold", "units": 114, "top_year": "2012-2014", "size_sqft": 1452, "price_sgd": 1400000, "psf": 960, "bedrooms": 3, "reason": "size/price/PSF pairing inconsistent in search index (a stated $1,341 psf does not reconcile with $1.4M at 1,452 sqft); could not open page. If real, clears all filters.", "link": "https://www.99.co/singapore/sale/condos-apartments/siglap-v/3-bedrooms"},
+    {"project": "The Bentley Residences @ Kovan", "district": "D19", "tenure": "Freehold", "size_sqft": 1238, "size_note": "~1238 inferred from price/psf", "price_sgd": 1950000, "psf": 1575, "bedrooms": 3, "reason": "Search-summary lead only; no live listing URL isolated. If confirmed, best all-round fit (FH, >1110, <2.3M, PSF in cap).", "link": null},
+    {"project": "The Garden Residences", "address": "Serangoon North View", "district": "D19", "tenure": "99-year", "top_year": 2020, "remaining_lease_yr": 91, "units": 613, "size_sqft_band": "up to 1163", "reason": "3BR 1044-1163 sqft traded S$1.375M-2.23M; need to confirm a specific >1110 & <2.3M live unit. Project avg PSF ~1879 (cap exceeded).", "link": "https://www.propertyguru.com.sg/property-for-sale/at-the-garden-residences-23440"},
+    {"project": "Jade Residences", "address": "Lew Lian Vale", "district": "D19", "tenure": "Freehold", "units": 171, "top_year": 2017, "size_sqft": 1324, "price_sgd": 2300000, "psf": 1737, "bedrooms": 3, "reason": "Price at boundary (=2.3M, not strictly under) and PSF over cap; 3-room loft/penthouse types (12 units, 1291-1700sqft) exceed 1110.", "link": "https://www.propertyguru.com.sg/listing/for-sale-jade-residences-25179585"},
+    {"project": "The Scala @ Lorong Chuan", "district": "D19", "tenure": "99-year", "top_year": 2013, "units": 468, "reason": "Listed unit 1044 sqft (under size); larger 3BR stacks ~1281 sqft may qualify <2.3M - verify.", "link": "https://www.propertyguru.com.sg/project/the-scala-lorong-chuan-2662"},
+    {"project": "Riverfront Residences", "address": "Hougang Ave 7", "district": "D19", "tenure": "99-year", "top_year": 2022, "units": 1472, "reason": "Most 3BR ~1000-1100 sqft (just under floor); 3BR-Premium stacks may cross 1110; price ~S$1.95M well under cap.", "link": "https://www.propertyguru.com.sg/property-for-sale/at-riverfront-residences-23460"}
+  ],
+  "near_miss_excluded": [
+    {"project": "Kovan Residences", "address": "3/5/5A Kovan Road", "district": "D19", "tenure": "99-year (lease from 31-Dec-2007, ~80yr remaining)", "units": 521, "top_year": 2011, "bedrooms": "3BR 1259-1701 sqft (~188 units) + 3BR+Study 1442-2013 sqft (~20 units)", "all_3br_over_1110": true, "cheapest_3br_price_sgd": 2650000, "psf": 2105, "reason": "Confirms large-stack thesis (all 3BR >1110) but cheapest 3BR ~S$2.65M exceeds price cap.", "age_lease_check": "80yr remaining -> buyer_age >= 15 satisfies >=95", "link": "https://www.propertyguru.com.sg/property-for-sale/at-kovan-residences-1338"},
+    {"project": "Oasis Garden", "address": "55 Jalan Bunga Rampai", "district": "D19", "district_note": "brief said D14 Eunos - actually D19", "tenure": "Freehold", "units": 134, "top_year": 2009, "reason": "3BR 1216-1475 all >1110 but live asks S$2.38M/2.68M over price cap; PSF ~1739-1957."},
+    {"project": "Tangerine Grove", "address": "1-3 Paya Lebar Crescent", "district": "D19", "district_note": "brief said D14 Eunos - actually D19", "tenure": "Freehold", "units": 125, "top_year": 2007, "reason": "1184 sqft ~S$2.13M is a Mar-2026 transaction (no confirmed live listing); PSF ~1799 cap exceeded."},
+    {"project": "The Quinn", "address": "11 Bartley Road", "district": "D19", "tenure": "Freehold", "units": 139, "top_year": 2016, "reason": "Only 1163 sqft 3BR passes size but PSF ~1939; live listing is 1066 sqft (under size)."},
+    {"project": "Botanique at Bartley", "district": "D19", "tenure": "99-year", "top_year": 2019, "units": 797, "reason": "1130 sqft @ S$2.6M over price cap ($2301 psf)."},
+    {"project": "Elliot At The East Coast", "address": "21-37 Elliot Road", "district": "D15", "district_note": "brief said D16 border - actually D15", "tenure": "Freehold", "units": 119, "top_year": 2013, "reason": "All 3BR 1313-1733 >1110 but cheapest 1313 sqft @ S$2,350,000 (over cap +$50k, PSF ~1790); rest $3.99M+."},
+    {"project": "Paya Lebar Residences", "address": "27 Paya Lebar Road", "district": "D14", "tenure": "Freehold", "units": 117, "top_year": 2003, "reason": "1281 sqft @ ~S$2,438,000 (PSF ~1903) over both price and PSF; transactions ~$2.31M."},
+    {"project": "Parc Elegance", "address": "13-17 Telok Kurau Road", "district": "D15", "district_note": "brief said D19/Jansen - actually D15 Telok Kurau (different project)", "tenure": "Freehold", "units": 161, "top_year": 2013, "reason": "3BR 1173-1593 all >1110; txn avg PSF ~1673 (within cap!) but D15 (outside D19/D14 target) and no confirmed live 3BR listing. Could promote if verified."},
+    {"project": "Vibes @ East Coast", "address": "308 Telok Kurau Road", "district": "D15", "tenure": "Freehold", "units": 117, "top_year": 2015, "reason": "Structural exclusion - largest 3BR ~850 sqft; no unit exceeds 1110."}
+  ],
+  "source_list_location_corrections": {
+    "Parc Elegance": "D15 Telok Kurau (brief: D19/Jansen Road) - likely different project",
+    "Oasis Garden": "D19 Jalan Bunga Rampai (brief: D14 Jalan Eunos)",
+    "Tangerine Grove": "D19 Paya Lebar Crescent (brief: D14 Eunos)",
+    "Palm Grove Condo": "D19 Hougang (brief: D15 East Coast)",
+    "The Waterline": "D19 Hougang (brief: D15 East Coast)",
+    "Jade Residences": "D19 Lew Lian Vale/Serangoon (brief nuance: East Coast)",
+    "Elliot At The East Coast": "D15 (brief: D16 border)"
+  },
+  "diff_vs_baseline_2026-06-06": {
+    "Flamingo Valley": "6/6 showed 1701 sqft @ S$2.0M ($1176 psf, flagged stale/mispriced). That outlier gone from index; today shows 1152 sqft @ S$2.2M ($1908, cap exceeded) - different unit.",
+    "not_rescanned": "Baseline picks The Line @ Tanjong Rhu (D15) and Bliss @ Kovan (D19 FH penthouse) were outside today's specific priority-candidate list; not re-scanned. Both would still warrant a look under current criteria."
+  }
+}
