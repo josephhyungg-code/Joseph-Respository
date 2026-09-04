@@ -1,0 +1,210 @@
+{
+  "date": "2026-09-04",
+  "run_note": "First run under widened brief; does not diff cleanly against 2026-06-06 baseline (that run allowed 2BR, >=1000 sqft, 2.0-2.2M, D15/D19 only).",
+  "criteria": {
+    "zones": {
+      "primary": "D19 full (Kovan, Serangoon, Hougang, Bartley, Woodleigh, MacPherson)",
+      "backup": "D15 (Marine Parade / Joo Chiat / Siglap)",
+      "d14": "Eunos / Paya Lebar only (Geylang EXCLUDED)"
+    },
+    "min_size_sqft": 1110,
+    "min_size_operator": ">",
+    "max_price_sgd": 2300000,
+    "max_price_operator": "<",
+    "min_bedrooms": 3,
+    "built_after": 2000,
+    "built_1996_2000_small_freehold": "flag as needs-check, do not auto-exclude",
+    "tenure": {
+      "preferred": ["freehold", "999-year"],
+      "99yr_allowed_if": [
+        "(a) TOP <= 10 years AND < 100 units",
+        "(b) larger project (up to ~500 units) where some 3BR stacks exceed 1,110 sqft"
+      ],
+      "99yr_lease_check": "show remaining lease AND (buyer_age + remaining_lease >= 95)"
+    },
+    "psf_cap_sgd": 1700,
+    "psf_cap_is_exclusion": false
+  },
+  "data_source_caveat": "All major portals (PropertyGuru/99.co/EdgeProp/SRX) egress-blocked or 403 on automated access; figures triangulated from indexed search snippets. Verify live before acting.",
+  "pass": [
+    {
+      "project": "Oasis Garden",
+      "address": "51-55 Jalan Bunga Rampai",
+      "zone": "D19 (Bartley)",
+      "tenure": "Freehold",
+      "units": 134,
+      "bedrooms": 3,
+      "size_3br_sqft": "1216-1475",
+      "price_sgd_note": "sub-2.3M 3BR present; project for-sale band 1.58M-2.65M",
+      "psf_note": "~1560-1730; CAP-exceeded only at top end",
+      "psf_cap_exceeded": "partial",
+      "floor": "mixed",
+      "nearest_mrt": "Bartley (CC12)",
+      "link": "https://www.propertyguru.com.sg/project/oasis-garden-1240",
+      "notes": "Best in-budget freehold + big-enough fit this run. Concrete listing found ($2.68M) is above budget; sub-2.3M inferred from project floor - confirm a specific live in-budget 3BR."
+    },
+    {
+      "project": "Flamingo Valley",
+      "address": "460-480 Siglap Road",
+      "zone": "D15 (Siglap)",
+      "tenure": "Freehold",
+      "units": 393,
+      "bedrooms": 3,
+      "size_sqft": 1152,
+      "size_3br_range_sqft": "1173-2228",
+      "price_sgd": 2200000,
+      "psf": 1910,
+      "psf_cap_exceeded": true,
+      "floor": "5-storey blocks",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-500138510",
+      "notes": "Live $2.2M listing quoted at 1,152 sqft - below project 3BR floor (1,173); verify true 3BR vs large 2BR before treating as PASS."
+    }
+  ],
+  "watch": [
+    {
+      "project": "Elliot at the East Coast",
+      "zone": "D15 (Bedok/East Coast)",
+      "tenure": "Freehold",
+      "units": 119,
+      "bedrooms": 3,
+      "size_sqft": 1313,
+      "price_sgd": 2350000,
+      "psf": 1790,
+      "psf_cap_exceeded": true,
+      "reason": "price $50k over 2.3M ceiling",
+      "floor": "mid-floor corner, N-S facing",
+      "catalyst": "walk to future Siglap TE28 MRT",
+      "link": "https://www.propertyguru.com.sg/project/elliot-at-the-east-coast-2601",
+      "notes": "Confirmed live 3BR ask. Only the price line fails; strong on size/tenure/location."
+    },
+    {
+      "project": "Tangerine Grove",
+      "address": "1-3 Paya Lebar Crescent",
+      "zone": "D19 (Paya Lebar/Hougang)",
+      "tenure": "Freehold",
+      "units": 125,
+      "bedrooms": 3,
+      "size_3br_sqft": "1173-1615",
+      "price_sgd_note": "2.3M (1,184 sqft) to 2.5M (1,389 sqft)",
+      "psf_note": "~1800-1940",
+      "psf_cap_exceeded": true,
+      "reason": "current 3BR asks at/over 2.3M ceiling",
+      "link": "https://www.propertyguru.com.sg/project/tangerine-grove-375"
+    },
+    {
+      "project": "Paya Lebar Residences",
+      "address": "Paya Lebar Road",
+      "zone": "D14 (Paya Lebar, non-Geylang)",
+      "tenure": "Freehold",
+      "units": 117,
+      "year_built": 2003,
+      "bedrooms": 3,
+      "size_3br_sqft": "1259-1302",
+      "price_sgd_note": "~2.30-2.47M on asking-psf basis (~1831-1960 psf)",
+      "psf_cap_exceeded": true,
+      "reason": "sits right at/over 2.3M ceiling",
+      "nearest_mrt": "Paya Lebar (0.19km)",
+      "link": "https://www.propertyguru.com.sg/project/paya-lebar-residences-1195",
+      "notes": "A lower-floor unit could dip just under 2.3M - worth a direct agent call."
+    },
+    {
+      "project": "Kovan Residences",
+      "address": "5 Kovan Road",
+      "zone": "D19 (Kovan)",
+      "tenure": "99-year",
+      "lease_commenced": "2007-12-31",
+      "remaining_lease_years_2026": 81,
+      "lease_check_min_buyer_age": "passes for buyer age >= 14 (14+81=95); effectively always passes for adult buyer",
+      "units": 521,
+      "qualifies_under": "rule (b) - large project with 3BR stacks > 1,110 sqft",
+      "bedrooms": 3,
+      "size_sqft": 1259,
+      "price_sgd_note": "~2.5M (1,259 sqft @ ~2,021 psf, Apr 2026 txn)",
+      "psf": 2021,
+      "psf_cap_exceeded": true,
+      "reason": "3BR now trading ~2.5M, above 2.3M ceiling",
+      "link": "https://www.propertyguru.com.sg/project/kovan-residences-1338",
+      "notes": "Listing 500251624 ($1.95M) is an 883 sqft 2BR - NOT a qualifying 3BR."
+    },
+    {
+      "project": "Vacanza @ East",
+      "address": "Lengkong Tujoh",
+      "zone": "D14 (Eunos/Kembangan)",
+      "tenure": "Freehold",
+      "units": 473,
+      "year_built": 2014,
+      "bedrooms": 3,
+      "size_3br_sqft": "1012-1141 compact + up to 1927 large stacks",
+      "price_sgd_note": "large-stack 3BR ~2.0-2.4M",
+      "psf_range": "1418-2063",
+      "psf_cap_exceeded": "partial",
+      "reason": "only confirmed live 3BR (1,023 sqft, $1.738M) fails 1,110 size floor",
+      "link": "https://www.propertyguru.com.sg/project/vacanza-east-2672",
+      "notes": "Watch for a large-stack (>1,110) 3BR listing to appear."
+    }
+  ],
+  "needs_check": [
+    {
+      "project": "Palm Grove Condo",
+      "zone": "D19",
+      "tenure": "999-year (from 2002)",
+      "units": 111,
+      "reason": "999-yr preferred tenure and post-2000, but 3BR size and a live sub-2.3M listing not confirmed this run",
+      "link": "https://www.propertyguru.com.sg/project/palm-grove-condo-480"
+    },
+    {
+      "project": "The Waterline",
+      "reason": "No project by this exact name verified at Tanjong Rhu or in D14/D15/D19. Closest: Water Place (99-yr, 2004) and The Line @ Tanjong Rhu (freehold). Confirm intended project.",
+      "status": "unverified"
+    }
+  ],
+  "fail": [
+    {
+      "project": "The Quinn",
+      "zone": "D19 (Bartley)",
+      "tenure": "Freehold",
+      "fails": "size",
+      "detail": "3BR = 1,066 sqft, 44 sqft under 1,110 floor. Live ask $2,068,000 / ~$1,940 psf. Closest near-miss.",
+      "link": "https://www.propertyguru.com.sg/project/the-quinn-21669"
+    },
+    {
+      "project": "Jade Residences",
+      "zone": "D19 (Serangoon)",
+      "tenure": "Freehold",
+      "fails": "size",
+      "detail": "3BR only 732-915 sqft (incl dual-key); $2.3M listing at ceiling and small-format.",
+      "link": "https://www.propertyguru.com.sg/project/jade-residences-21583"
+    },
+    {
+      "project": "Vibes @ East Coast",
+      "zone": "D15",
+      "tenure": "Freehold",
+      "fails": "size",
+      "detail": "3BR only as ~75 sqm (~807 sqft) penthouses.",
+      "link": "https://www.propertyguru.com.sg/project/vibes-east-coast-20664"
+    },
+    {
+      "project": "Siglap V",
+      "zone": "D15",
+      "tenure": "Freehold",
+      "fails": "no qualifying live listing",
+      "detail": "3BR spans 990-1,442 sqft but current for-sale stock only $0.88M-1.6M (smaller units); no large 3BR on market now.",
+      "link": "https://www.propertyguru.com.sg/project/siglap-v-2589"
+    },
+    {
+      "project": "Parc Elegance",
+      "zone": "D15 (Telok Kurau)",
+      "tenure": "Freehold",
+      "fails": "over budget / unconfirmed size",
+      "detail": "Only live listing found $2,550,000 (over 2.3M); 3BR size unconfirmed.",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-parc-elegance-500180201"
+    }
+  ],
+  "data_quality_notes": [
+    "All major portals egress-blocked/403 on automated access tonight; data triangulated from indexed snippets. Re-verify live before acting.",
+    "Flamingo Valley 1,152 sqft is below stated 3BR floor (1,173) - confirm bedroom count.",
+    "Kovan Residences $1.95M listing (500251624) is an 883 sqft 2BR, not a qualifying 3BR.",
+    "Oasis Garden sub-2.3M 3BR inferred from project price floor; concrete found listing ($2.68M) is over budget - confirm a specific in-budget 3BR is live.",
+    "The Waterline could not be verified as a distinct project - needs user clarification."
+  ]
+}
