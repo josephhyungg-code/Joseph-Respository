@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-09",
+  "baseline_note": "Criteria expanded vs 2026-06-06 (min_size 1000->1110, price_ceiling 2.2M->2.3M, districts +D14 Eunos/Paya Lebar & full D19, 99yr conditional inclusion, PSF soft cap 1700). Effectively a fresh baseline; not a like-for-like diff against 2026-06-06.",
+  "data_quality": "All SG portals (PropertyGuru/99.co/EdgeProp/SRX/PropNex) returned HTTP 403 / egress-blocked. All figures triangulated from Google search-result snippets. Re-verify live before acting.",
+  "criteria": {
+    "tenure_preferred": ["freehold", "999-year"],
+    "tenure_99yr_conditional": "include if (a) TOP within 10yrs AND <100 units, OR (b) up to ~500 units but some 3BR units exceed 1110 sqft (e.g. Kovan Residences)",
+    "price_sgd_max": 2300000,
+    "min_size_sqft": 1110,
+    "min_bedrooms": 3,
+    "built_after": 2000,
+    "built_1996_2000_small_fh": "flag as needs-check, do not auto-exclude",
+    "psf_soft_cap": 1700,
+    "psf_over_cap": "flag 'over-cap', do not auto-exclude",
+    "districts": {
+      "D19_full": ["Kovan", "Serangoon", "Hougang", "Bartley", "Woodleigh", "MacPherson"],
+      "D15_backup": ["Marine Parade", "Joo Chiat", "Siglap"],
+      "D14_partial": ["Eunos", "Paya Lebar"],
+      "D14_excluded": ["Geylang"]
+    },
+    "lease_age_rule": "buyer_age + remaining_lease >= 95"
+  },
+  "pass": [
+    {"project": "One Rosyth", "address": "1 Rosyth Road", "district": "D19", "area": "Kovan", "tenure": "999-year", "remaining_lease_yrs": null, "top": 2011, "units": 17, "size_sqft": 1389, "bedrooms": "3BR+study", "price_sgd": 1990000, "psf": 1432, "floor": "undisclosed", "link": "https://www.propertyguru.com.sg/listing/for-sale-one-rosyth-500225590", "notes": "Strongest single match; boutique 17-unit block; also a 1076sqft 3BR at 1.65M just under size floor"},
+    {"project": "Palm Grove Condo", "address": "Palm Grove Ave", "district": "D19", "area": "Kovan", "tenure": "999-year", "top": 2002, "units": 111, "size_sqft": 1292, "bedrooms": "3BR", "price_sgd": 2000000, "psf": 1548, "floor": "undisclosed", "link": "https://www.propertyguru.com.sg/listing/for-sale-palm-grove-condo-60018643", "notes": "District mislabel corrected: actually D19 (user wrote D15/16); ~14min walk Kovan MRT; all 3BR stacks 1281-1701sqft"},
+    {"project": "Palm Grove Condo", "address": "Palm Grove Ave", "district": "D19", "area": "Kovan", "tenure": "999-year", "top": 2002, "units": 111, "size_sqft": 1282, "bedrooms": "3BR", "price_sgd": 2100000, "psf": 1638, "floor": "undisclosed", "link": "https://www.propertyguru.com.sg/project/palm-grove-condominium"},
+    {"project": "Palm Grove Condo", "address": "Palm Grove Ave", "district": "D19", "area": "Kovan", "tenure": "999-year", "top": 2002, "units": 111, "size_sqft": 1302, "bedrooms": "3BR+utility", "price_sgd": 2180000, "psf": 1674, "floor": "undisclosed", "link": "https://www.srx.com.sg/listings/106668241"},
+    {"project": "The Waterline", "address": "167 Poh Huat Road West", "district": "D19", "area": "near future Serangoon North MRT", "tenure": "Freehold", "top": 2013, "units": 103, "size_sqft": 1173, "bedrooms": "3BR", "price_sgd": 1768888, "psf": 1508, "floor": "undisclosed", "link": "https://www.homejourney.sg/properties/252ed416-b119-4d40-9701-ff32c5a14924", "notes": "Only 1173+ sqft stacks qualify; 1012-1100sqft small 3BR stacks fall below 1110 floor"},
+    {"project": "The Waterline", "address": "167 Poh Huat Road West", "district": "D19", "tenure": "Freehold", "top": 2013, "units": 103, "size_sqft": 1173, "bedrooms": "3BR", "price_sgd": 1880000, "psf": 1603, "floor": "undisclosed", "link": "https://www.propnex.com/listing-details/593922/the-waterline"},
+    {"project": "Le Crescendo", "address": "233 Paya Lebar Road", "district": "D14", "area": "Paya Lebar", "tenure": "Freehold", "top": 2006, "units": 228, "size_sqft": 1173, "bedrooms": "3BR", "price_sgd": 1880000, "psf": 1603, "floor": "undisclosed", "link": "https://www.propnex.com/listing-details/272561/le-crescendo", "notes": "Best D14 core-area fit; recent txn band 1633-1722psf; a 1.58M/1173sqft listing exists but PSF anomaly - verify"},
+    {"project": "Vacanza @ East", "address": "36 Lengkong Tujoh", "district": "D14", "area": "Kembangan", "tenure": "Freehold", "top": 2014, "units": 473, "size_sqft": 1410, "bedrooms": "3BR? (verify)", "price_sgd": 2221888, "psf": 1576, "floor": "undisclosed", "link": "https://www.propertyguru.com.sg/apartment-condo-for-sale/at-vacanza-east-2672", "notes": "District mislabel corrected: D14 not D16; 1410sqft exceeds standard 3BR-PES max 1152 -> likely large/penthouse stack, VERIFY bedroom count and live status; standard 3BR stacks are 1012-1033sqft (below floor)"}
+  ],
+  "needs_check": [
+    {"project": "Rosyth Lodge", "address": "5 Rosyth Road", "district": "D19", "area": "Kovan", "tenure": "999-year (from 1886, ~859yr left)", "top": 1998, "units": 16, "size_sqft_range": "1109-2368", "bedrooms": "3BR", "price_sgd_range": "1500000-1900000", "psf_range": "1300-1450", "reason": "TOP 1998 falls in 1996-2000 needs-check window; all other filters pass", "link": "https://www.srx.com.sg/condo/rosyth-lodge-2593"},
+    {"project": "Rosyth Ville", "address": "3 Rosyth Road", "district": "D19", "area": "Kovan", "tenure": "999-year (from 2007, ~980yr left)", "top": 2007, "units": 16, "size_sqft": 1087, "bedrooms": "3BR", "price_sgd": 1500000, "psf": 1380, "reason": "listed unit 1087sqft is 23sqft under 1110 floor; larger 3BR stacks may exist", "link": "https://www.srx.com.sg/listings/103855191"},
+    {"project": "Urban Residences", "address": "Lorong Ah Soo", "district": "D19", "area": "Hougang", "tenure": "Freehold", "top": 2014, "units": 47, "size_sqft_range": "1000-1400", "bedrooms": "3BR", "price_sgd_range": "1600000-1900000 (est)", "psf_range": "1300-1431", "reason": "no specific >1110sqft 3BR listing isolated in snippets; recent sales skew small - live check", "link": "https://www.propertyguru.com.sg/project/urban-residences-20715"},
+    {"project": "Parc Elegance", "address": "11 Telok Kurau Road", "district": "D15", "tenure": "Freehold", "top": 2013, "units": 161, "size_sqft_range": "1173-1593", "bedrooms": "3BR", "psf_transacted": "1615-1673", "reason": "transacted PSF under cap but no confirmed in-budget 3BR listing (only 2.55M penthouse surfaced) - live check", "link": "https://www.propertyguru.com.sg/project/parc-elegance-20640"},
+    {"project": "Siglap V", "address": "East Coast Road", "district": "D15", "area": "Siglap", "tenure": "Freehold", "top": 2014, "units": 114, "size_sqft_range": "990-1442", "bedrooms": "3BR", "psf_transacted": "1464-1523", "reason": "1442sqft 3BR would pass all filters but only small units listed now - live check", "link": "https://www.propertyguru.com.sg/project/siglap-v-2589"}
+  ],
+  "over_cap_or_over_budget": [
+    {"project": "Flamingo Valley", "address": "460 Siglap Road", "district": "D15", "tenure": "Freehold", "top": 2015, "units": 393, "size_sqft": 1206, "bedrooms": "3BR", "price_sgd": 2280000, "psf": 1890, "flag": "over-cap", "link": "https://www.99.co/singapore/condos-apartments/flamingo-valley"},
+    {"project": "Tangerine Grove", "address": "1 Paya Lebar Crescent", "district": "D19", "area": "Hougang", "tenure": "Freehold", "top": 2007, "units": 125, "size_sqft": 1184, "bedrooms": "3BR", "price_sgd": 2300000, "psf": 1943, "flag": "price at ceiling + over-cap", "note": "district mislabel: D19 not D14; 3BR sizes 1173-1615 all >1110", "link": "https://www.propnex.com/listing-details/679769/tangerine-grove"},
+    {"project": "Oasis Garden", "address": "51 Jalan Bunga Rampai", "district": "D19", "area": "Bartley/Bidadari", "tenure": "Freehold", "top": 2012, "units": 134, "size_sqft": 1216, "bedrooms": "3BR", "price_sgd_range": "2320000-2380000", "psf": 1957, "flag": "over-budget + over-cap", "note": "district mislabel: D19 Bartley not D15 Marine Parade; 3BR 1216-1475 all >1110", "link": "https://www.propnex.com/listing-details/594276/oasis-garden"},
+    {"project": "Paya Lebar Residences", "address": "Paya Lebar Road", "district": "D14", "tenure": "Freehold", "top": 2003, "units": 117, "size_sqft_range": "1259-1302", "bedrooms": "3BR", "price_sgd": 2300000, "psf_range": "1804-1858", "flag": "over-cap + price at/above ceiling", "note": "only a 2BR 883sqft/1.65M listing confirmed live; 3BR record 2.35M Nov2025", "link": "https://www.edgeprop.sg/condo-apartment/paya-lebar-residences"},
+    {"project": "The Quinn", "address": "11 Bartley Road", "district": "D19", "area": "Woodleigh", "tenure": "Freehold", "top": 2016, "units": 139, "size_sqft": 1066, "bedrooms": "3BR", "price_sgd": 2068000, "psf": 1940, "flag": "size under floor + over-cap", "note": "district mislabel: D19 not D14; 3BR-PES stacks up to 1141sqft exist - hunt a PES listing", "link": "https://www.99.co/singapore/sale/property/the-quinn-condo-fi4B5TdxLa8UZ2EKHXhSgh"},
+    {"project": "Elliot At The East Coast", "address": "Elliot Road", "district": "D15/D16 border", "tenure": "Freehold", "top": 2013, "units": 119, "size_sqft": 1313, "bedrooms": "3BR", "price_sgd": 2350000, "psf": 1790, "flag": "over-budget + over-cap", "note": "cheapest 3BR in market ~2.35M", "link": "https://www.propertyguru.com.sg/project/elliot-at-the-east-coast-2601"}
+  ],
+  "leasehold_99yr_analysis": [
+    {"project": "Kovan Residences", "address": "5 Kovan Road", "district": "D19", "area": "Kovan", "tenure": "99-year", "top": 2011, "lease_start": 2007, "remaining_lease_yrs": 80, "units": 521, "bedrooms_3br_distribution": "3BR 1259-1701sqft (188 units) + 3BR+study 1442-2013sqft (20 units) = all 208 three-bedroom units exceed 1110sqft; smallest 3BR stack 1259sqft", "inclusion_rule": "exception (b) met - large project with 3BR stacks >1110sqft (user's named example); units 521 slightly above ~500 guide but explicitly the named exception", "current_3br_asking_sgd": "2650000-2680000", "current_3br_psf": 2105, "lease_age_check": "remaining 80yr -> buyer age>=15 satisfies age+lease>=95; passes for any adult buyer", "verdict": "structurally qualifies but current asking over budget & over PSF cap -> OUT ON PRICE now; watch for price drop", "link": "https://www.99.co/singapore/condos-apartments/kovan-residences"},
+    {"project": "Sennett Residence", "address": "37 Pheng Geck Avenue", "district": "D13 (Potong Pasir)", "tenure": "99-year", "top": 2016, "lease_start": 2011, "remaining_lease_yrs": 84, "units": 332, "bedrooms_3br_distribution": "3BR 948-1777sqft (29 units) + 3BR+study 1195-2358sqft (33 units); many stacks >1110", "inclusion_rule": "exception (b) met - <500 units, TOP within 10yrs", "current_3br_asking_sgd": "2000000-2300000", "recent_txn_psf": "1701-2176", "lease_age_check": "remaining 84yr -> buyer age>=11 satisfies age+lease>=95; passes for any adult buyer", "verdict": "PSF now over cap on recent deals + address is D13 (outside scope) -> reference only", "link": "https://www.propertyguru.com.sg/project/sennett-residence-21367"}
+  ],
+  "disqualified": [
+    {"project": "Vibes @ East Coast", "district": "D15", "reason": "only 3BR units are ~807sqft penthouses (2) - below size floor"},
+    {"project": "Jade Residences", "district": "D19 (Lew Lian Vale)", "reason": "3BR max 914sqft - below floor; not the Lorong Melayu project user may have meant"},
+    {"project": "The Gazania", "district": "D19", "reason": "3BR max 1066sqft below floor + PSF 2117+ over cap"},
+    {"project": "Nouvelle Park", "district": "D19", "reason": "TOP 1994 - fails age (outside needs-check window); otherwise 3BR ~1130sqft ~1.9-2.0M ~1405psf would fit - revisit if age tolerance flexes"},
+    {"project": "Bliss @ Kovan", "district": "D19", "reason": "current 3BR 2.75-2.8M, even 1163sqft ~1900-2000psf - over budget & cap"},
+    {"project": "The Lilium", "district": "D19", "reason": "3BR 2.68-2.8M, PSF 2190-2280 - over"},
+    {"project": "Kovan Jewel", "district": "D19", "reason": "3BR 1238sqft 2.718M ~2195psf - over"},
+    {"project": "Bartley Ridge", "district": "D19", "reason": "99yr 868 units >>500 fails rule + PSF avg ~2007 over cap"},
+    {"project": "Botanique at Bartley", "district": "D19", "reason": "99yr ~797 units >>500 fails rule + PSF avg ~2035 over cap"},
+    {"project": "Affinity at Serangoon", "district": "D19", "reason": "99yr 1052 units fails rule; 3BR 1152sqft 2.49M over"},
+    {"project": "The Garden Residences", "district": "D19", "reason": "99yr 613 units fails rule; 3BR 786-797sqft below floor"},
+    {"project": "Forest Woods", "district": "D19", "reason": "99yr ~519 units; 3BR ~915sqft below floor + PSF ~2080"},
+    {"project": "The Poiz Residences", "district": "D13", "reason": "99yr 731 units; 3BR ~840sqft below floor + PSF ~2300"},
+    {"project": "Kingsford Waterbay", "district": "D19", "reason": "99yr 1165 units fails rule; 3BR 893sqft below floor"},
+    {"project": "Parc Esta", "district": "D14 Eunos", "reason": "99yr ~1400 units fails rule; 3BR 904-1119sqft mostly below floor"},
+    {"project": "Sims Urban Oasis", "district": "D14", "reason": "99yr ~1024 units fails rule; 3BR 1023sqft below floor + Geylang side"},
+    {"project": "Eunos Park", "district": "D14 Eunos", "reason": "built 1995 - before 2000 and before needs-check window"},
+    {"project": "Casa Aerata", "district": "D14", "reason": "Geylang sub-area - excluded per scope"},
+    {"project": "The Sunny Spring", "district": "D14", "reason": "Geylang sub-area - excluded per scope (TOP 1998)"}
+  ],
+  "corrections_and_flags": [
+    "District mislabels vs user brief: Tangerine Grove & Palm Grove Condo are D19 (not D14/D15/D16); Oasis Garden is D19 Bartley/Bidadari (not D15 Marine Parade); Vacanza @ East is D14 Kembangan (not D16); The Quinn is D19 Woodleigh (not D14); Jade Residences is D19 Lew Lian Vale; Elliot is D15/D16 border.",
+    "Sennett Residence is D13 Potong Pasir (address-based), outside stated scope - kept as reference.",
+    "Le Crescendo 1.58M/1173sqft listing PSF anomaly ($1347 vs project band $1633-1722) - verify before trusting.",
+    "Vacanza @ East 1410sqft listing bedroom count unconfirmed - verify it is genuinely 3BR.",
+    "Buyer age not provided; 99yr age+lease>=95 check shown as threshold - both Kovan Residences (~80yr) and Sennett (~84yr) pass for any adult buyer.",
+    "All portal pages HTTP 403 tonight; every figure triangulated from search snippets - re-verify live availability, floor level, and current price before acting."
+  ]
+}
