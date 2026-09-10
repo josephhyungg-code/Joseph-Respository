@@ -1,0 +1,171 @@
+{
+  "date": "2026-09-10",
+  "data_access": "ALL Singapore property portals (PropertyGuru, 99.co, EdgeProp, SRX, URA) and agent/aggregator sites were hard-blocked at the network egress proxy this session (403 on CONNECT - environment/org policy, not portal-side). No listing page opened directly; all figures triangulated from search-engine snippets and cached summaries. Treat as reported, not page-verified.",
+  "criteria": {
+    "tenure_preferred": ["freehold", "999-year"],
+    "tenure_99yr_allowed_if": "(a) TOP within 10 years AND under 100 units, OR (b) larger (up to ~500 units) with some 3BR stacks > 1110 sqft",
+    "price_sgd_max": 2300000,
+    "min_size_sqft": 1110,
+    "min_bedrooms": 3,
+    "built_after": 2000,
+    "built_1996_2000_small_freehold": "verify-needed, do not auto-exclude",
+    "psf_reference_cap": 1700,
+    "psf_over_cap": "label as PSF CAP EXCEEDED, do not exclude",
+    "districts": {
+      "D19_all": ["Kovan", "Serangoon", "Hougang", "Bartley", "Woodleigh", "MacPherson"],
+      "D15_backup": ["Marine Parade", "Joo Chiat", "Siglap"],
+      "D14": ["Eunos", "Paya Lebar"],
+      "D14_excluded": ["Geylang"]
+    }
+  },
+  "passes": [
+    {
+      "project": "Palm Grove Condo",
+      "address": "21 Palm Grove Avenue, S547320",
+      "district": "D19",
+      "neighbourhood": "Hougang",
+      "tenure": "999-year (from 2002, ~975 yrs remaining)",
+      "units": 111,
+      "year_built": 2002,
+      "size_sqft": 1378,
+      "bedrooms": "3BR / 3BA",
+      "price_sgd": 1688000,
+      "psf": 1225,
+      "floor_level": "not disclosed in snippet",
+      "psf_cap_exceeded": false,
+      "link": "https://www.99.co/singapore/sale/property/palm-grove-condominium-condo-kb3Lr6hLn52eerJKS8wcNd",
+      "notes": "Best value on the board. 3BR stacks project-wide run 1281-1701 sqft (all >1110). 12-mo transacted avg ~$1,479 psf. VERIFY low PSF is live/not mis-tagged."
+    },
+    {
+      "project": "Palm Grove Condo",
+      "address": "21 Palm Grove Avenue, S547320",
+      "district": "D19",
+      "neighbourhood": "Hougang",
+      "tenure": "999-year (from 2002)",
+      "units": 111,
+      "year_built": 2002,
+      "size_sqft": 1927,
+      "bedrooms": "4BR / 3BA",
+      "price_sgd": 1820000,
+      "psf": 944,
+      "floor_level": "not disclosed in snippet",
+      "psf_cap_exceeded": false,
+      "link": "https://www.99.co/singapore/sale/property/palm-grove-condominium-condo-Pe3eXGyWCtbteMgW7pTA5b",
+      "notes": "Largest unit, lowest PSF; bedrooms >=3 satisfied. VERIFY live status."
+    },
+    {
+      "project": "Palm Grove Condo",
+      "address": "21 Palm Grove Avenue, S547320",
+      "district": "D19",
+      "neighbourhood": "Hougang",
+      "tenure": "999-year (from 2002)",
+      "units": 111,
+      "year_built": 2002,
+      "size_sqft": 1399,
+      "bedrooms": "3BR / 3BA",
+      "price_sgd": 2180000,
+      "psf": 1558,
+      "floor_level": "not disclosed in snippet",
+      "psf_cap_exceeded": false,
+      "link": "https://www.99.co/singapore/sale/property/palm-grove-condominium-condo-bEzefJQ2pE2fhfUkkyUoKd",
+      "notes": "Clears all filters and PSF cap."
+    },
+    {
+      "project": "Starville",
+      "address": "66/68 Lengkong Tiga",
+      "district": "D14",
+      "neighbourhood": "Eunos / Bedok border (sub-area needs confirming)",
+      "tenure": "Freehold",
+      "units": 250,
+      "year_built": 2006,
+      "size_sqft": 1217,
+      "bedrooms": "3BR",
+      "price_sgd": 1850000,
+      "psf": 1520,
+      "floor_level": "lift level (per snippet)",
+      "psf_cap_exceeded": false,
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-starville-500097584",
+      "flagged": true,
+      "notes": "Appears under two IDs (500097584 / 60222097) same price/size - likely relist. One snippet dated ~5 Jun 2026, so possibly ~3 months stale, not a fresh Sept listing."
+    },
+    {
+      "project": "One Eighties Residences",
+      "address": "189 Joo Chiat Terrace",
+      "district": "D15",
+      "neighbourhood": "Joo Chiat",
+      "tenure": "Freehold",
+      "units": 52,
+      "year_built": 2015,
+      "size_sqft": 1281,
+      "bedrooms": "3BR penthouse",
+      "price_sgd": 1829268,
+      "psf": 1428,
+      "floor_level": "penthouse",
+      "psf_cap_exceeded": false,
+      "link": "https://www.99.co/singapore/sale/property/189-joo-chiat-terrace-condo-qkWr7RkYiVWL4jsutHCAim",
+      "notes": "Largest of the project's 12 3BR penthouse units (1023-1281 sqft). Small freehold project, TOP 2015."
+    },
+    {
+      "project": "Flamingo Valley",
+      "address": "460 Siglap Road",
+      "district": "D15",
+      "neighbourhood": "Siglap",
+      "tenure": "Freehold",
+      "units": 393,
+      "year_built": 2015,
+      "size_sqft": 1937,
+      "bedrooms": "3BR penthouse + roof terrace",
+      "price_sgd": 2270000,
+      "psf": 1172,
+      "floor_level": "penthouse",
+      "psf_cap_exceeded": false,
+      "link": "https://www.99.co/singapore/condos-apartments/flamingo-valley",
+      "notes": "Penthouse - low PSF is size-driven, not the outlier that June's 1701 sqft listing was. $30k under cap. Project 3BR range 1173-2228 sqft, most stacks clear 1110."
+    }
+  ],
+  "psf_cap_exceeded": [
+    {
+      "project": "Flamingo Valley",
+      "address": "460 Siglap Road",
+      "district": "D15",
+      "tenure": "Freehold",
+      "units": 393,
+      "size_sqft": 1206,
+      "bedrooms": "3BR",
+      "price_sgd": 2280000,
+      "psf": 1891,
+      "link": "https://www.propnex.com/listing-details/360192/flamingo-valley",
+      "notes": "Passes size/price/beds; PSF $1891 over $1700 cap - shown not excluded."
+    }
+  ],
+  "verify_needed": [
+    {"project": "Vacanza @ East", "district": "D14", "tenure": "Freehold", "units": 473, "year_built": 2014, "reason": "candidate 1410 sqft/$2.1M but bedroom-count disputed (may be 2BR penthouse); standard 3BR 1012-1152 sqft mostly <=1110"},
+    {"project": "Urban Residences", "district": "D19", "neighbourhood": "Serangoon/Lor Ah Soo", "tenure": "Freehold", "units": 47, "year_built": 2014, "reason": "3BR mix 1000-1400 sqft, PSF $1208-1421 fits, but no live >=1110 sqft listing confirmed"},
+    {"project": "18 Woodsville", "district": "D19/D13", "neighbourhood": "Woodleigh", "tenure": "Freehold", "units": 101, "year_built": 2015, "reason": "1572 sqft 3BR floor plan exists; 3 listed units look like 1-2BR - confirm 3BR on-market"},
+    {"project": "E Maisons", "district": "D13/D19", "neighbourhood": "MacPherson border (Braddell Rd)", "tenure": "Freehold", "units": 130, "year_built": 2016, "reason": "3BR 1119-1636 sqft; traced listing was 2BR/1227 sqft - no confirmed 3BR"},
+    {"project": "Siglap V", "district": "D15", "tenure": "Freehold", "units": 114, "year_built": 2014, "reason": "confirmed listing 1044 sqft (too small); 1938 sqft 3BR in one snippet only, unconfirmed, likely >$2.3M"}
+  ],
+  "near_miss_price": [
+    {"project": "Tangerine Grove", "district": "D19", "neighbourhood": "Paya Lebar Cres", "tenure": "Freehold", "units": 125, "year_built": 2007, "size_sqft": 1184, "price_sgd": 2300000, "psf": 1943, "detail": "exactly at $2.3M cap (fails strict <), PSF over cap", "link": "https://www.propnex.com/listing-details/679769/tangerine-grove"},
+    {"project": "Oasis Garden", "district": "D19", "neighbourhood": "MacPherson corridor (Jln Bunga Rampai)", "tenure": "Freehold", "units": 134, "size_sqft": 1227, "price_sgd": 2320000, "psf": 1891, "detail": "misses price cap by ~$20k; project identity vs Eunos to confirm", "link": "https://www.propertyguru.com.sg/listing/for-sale-oasis-garden-500161724"},
+    {"project": "Elliot At The East Coast", "district": "D15", "tenure": "Freehold", "units": 119, "year_built": 2012, "size_sqft": 1313, "price_sgd": 2350000, "psf": 1790, "detail": "$50k over cap; note actually D15 not D16", "link": "https://www.propnex.com/listing-details/685742/elliot-at-the-east-coast"},
+    {"project": "Paya Lebar Residences", "district": "D14", "tenure": "Freehold", "units": 117, "year_built": 2002, "size_sqft": 1302, "price_sgd": 2450000, "psf": 1881, "detail": "only 3BR found; whole 3BR stack above cap currently", "link": "https://www.propertyguru.com.sg/project/paya-lebar-residences-1195"},
+    {"project": "Kovan Residences", "district": "D19", "neighbourhood": "Kovan", "tenure": "99-year (from 2011, ~84 yrs remaining)", "units": 521, "year_built": 2011, "detail": "tenure rule (b) satisfied - entire 3BR stack 1259-2013 sqft >1110; fails on PRICE only, every current 3BR $2.65M-$3.59M", "link": "https://www.propertyguru.com.sg/property-for-sale/at-kovan-residences-1338"},
+    {"project": "Bliss @ Kovan", "district": "D19", "neighbourhood": "Kovan", "tenure": "Freehold", "units": 140, "year_built": 2015, "detail": "June 2026 top pick ($2.2M/1765 sqft penthouse) delisted/sold; current 3BR all $2.7M-$3.08M", "link": "https://www.propertyguru.com.sg/project/bliss-kovan-20756"}
+  ],
+  "ninety_nine_year_and_lease_check": {
+    "note": "Buyer age not supplied; (buyer_age + remaining_lease >= 95) applied as screening formula only. No qualifying 99yr listing found under all filters today.",
+    "reference_projects": [
+      {"project": "Kovan Residences", "remaining_lease_yrs": 84, "age_plus_lease_95_needs_buyer_age_below": 11, "tenure_rule": "(b) satisfied"},
+      {"project": "Water Place (Tanjong Rhu)", "remaining_lease_yrs": 71, "note": "all 3BR listings $2.4M+ (over cap)"},
+      {"project": "Affinity at Serangoon", "remaining_lease_yrs": 97, "units": 1052, "tenure_rule": "FAILS as written - 1052 units exceeds ~500 ceiling and not <100; flagged not excluded"}
+    ]
+  },
+  "name_mismatches_and_notes": [
+    "Jade Residences -> only match is 1 Lew Lian Vale, D19 Hougang (freehold, 171u, TOP 2017); in-scope for D19 but not East-Coast; listings not swept this run - check next run",
+    "The Waterline -> brief said Tanjong Rhu/99yr, but the real The Waterline is freehold D19 Poh Huat Rd (Kovan), 103u, TOP 2013; Tanjong Rhu 99yr GLS site does not open sales until Q1 2027 - confirm intent",
+    "Oasis Garden is D19 (Jln Bunga Rampai / MacPherson), not Guillemard/Eunos - confirm intended project",
+    "Vibes @ East Coast structurally impossible: only 2 3BR units, both <=850 sqft - suggest removing from priority list",
+    "Excluded correctly: Eunos Park Condo (TOP 1995, before 1996 floor); all Geylang addresses per D14-minus-Geylang rule"
+  ]
+}
