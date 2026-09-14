@@ -1,0 +1,214 @@
+{
+  "date": "2026-09-14",
+  "criteria": {
+    "areas": {
+      "primary": "D19 all (incl. Kovan, Serangoon, Hougang, Bartley, Woodleigh, MacPherson sub-zones)",
+      "backup_lower_priority": "D15 (Marine Parade / Joo Chiat / Siglap)",
+      "d14": "Eunos / Paya Lebar only (Geylang excluded)"
+    },
+    "min_size_sqft": 1110,
+    "size_operator": ">",
+    "max_price_sgd": 2300000,
+    "price_operator": "<",
+    "min_bedrooms": 3,
+    "built_after": 2000,
+    "built_1996_2000_small_freehold": "flag as needs-check, do NOT auto-exclude",
+    "tenure_rule": "Freehold/999yr preferred; 99yr OK if (a) TOP within 10yr AND <100 units, OR (b) larger (up to ~500 units) but some 3BR stacks exceed 1,110sqft (e.g. Kovan Residences). For 99yr show remaining lease + (buyer_age + remaining_lease >= 95) check.",
+    "psf_cap_sgd": 1700,
+    "psf_rule": "soft cap; over-cap listings shown flagged, not auto-excluded (new builds structurally pricier)"
+  },
+  "data_access": {
+    "portals_directfetch_blocked": ["propertyguru.com.sg", "99.co", "edgeprop.sg", "srx.com.sg", "ura.gov.sg"],
+    "method": "WebSearch index snippets only (WebFetch egress-blocked by env policy)",
+    "listing_dates_available": false,
+    "new_vs_pricechange_determinable": false,
+    "note": "Effectively a re-baseline; prior snapshot 2026-06-06 used different criteria, only Flamingo Valley overlaps."
+  },
+  "buyer_age": null,
+  "buyer_age_note": "Not provided; (buyer_age + remaining_lease >= 95) shown as threshold per 99yr listing.",
+  "pass": [
+    {
+      "project": "The Quinn",
+      "address": "Bartley Road, Serangoon",
+      "district": "D19",
+      "tenure": "Freehold",
+      "remaining_lease": null,
+      "units": 139,
+      "year_built": 2016,
+      "size_sqft": 1302,
+      "bedrooms": 3,
+      "price_sgd": 2118000,
+      "psf": 1627,
+      "psf_over_cap": false,
+      "floor_level": "not disclosed",
+      "link": "https://www.99.co/singapore/sale/condos-apartments/the-quinn/3-bedrooms",
+      "notes": "Cleanest pass; PSF within cap. 1,066sqft line ($2,068,000) fails size. Units count varies by source (~139)."
+    },
+    {
+      "project": "Palm Grove Condominium",
+      "address": "21 Palm Grove Avenue, Hougang",
+      "district": "D19",
+      "tenure": "Freehold",
+      "remaining_lease": null,
+      "units": 111,
+      "year_built": 2002,
+      "size_sqft": 1302,
+      "bedrooms": 3,
+      "price_sgd": 1960000,
+      "psf": 1506,
+      "psf_over_cap": false,
+      "floor_level": "not disclosed",
+      "link": "https://www.srx.com.sg/listings/102036231/for-sale-palm-grove-condominium-3-bedroom-condo-for-sale-at-palm-grove-condominium",
+      "notes": "Only sub-$2M pass. TOP 2002 (>2000 ok). Price ~$1.96M is snippet-based approx; lowest project listing ~$2,038,000. 1,927sqft/$2.88M unit over budget."
+    },
+    {
+      "project": "Flamingo Valley",
+      "address": "460-480 Siglap Road",
+      "district": "D15",
+      "tenure": "Freehold",
+      "remaining_lease": null,
+      "units": 393,
+      "year_built": 2015,
+      "size_sqft": 1152,
+      "bedrooms": 3,
+      "price_sgd": 2200000,
+      "psf": 1910,
+      "psf_over_cap": true,
+      "floor_level": "not disclosed",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-500138510",
+      "notes": "Meets size/price/rooms; PSF $1,910 OVER cap (flagged, not excluded). D15 backup zone. 990sqft/$1.88M fails size; 1,851sqft/$2.5M & PH over budget."
+    }
+  ],
+  "needs_check": [
+    {
+      "project": "Vacanza @ East",
+      "district": "D14",
+      "tenure": "Freehold",
+      "units": 473,
+      "year_built": 2014,
+      "bedroom3_size_range_sqft": [1012, 1927],
+      "avg_psf_6mo": 1632,
+      "reason": "3BR stacks >1,110sqft likely under $2.3M at ~$1,632psf, but no specific >1,110 in-band listing price confirmed (confirmed listing 1,023sqft/$1.8M fails size). Verify specific large-3BR asking.",
+      "link": "https://www.propertyguru.com.sg/apartment-condo-for-sale/at-vacanza-east-2672/above-1300-sqft"
+    },
+    {
+      "project": "Siglap V",
+      "district": "D15",
+      "tenure": "Freehold",
+      "units": 114,
+      "year_built": 2014,
+      "bedroom3_size_range_sqft": [990, 1442],
+      "median_psf": 1430,
+      "reason": "1,152-1,442sqft ~$1.65M-$2.06M (within cap & budget) by median psf, but only small units ($899k-968k) currently visible in snippets. Verify a large-3BR listing.",
+      "link": "https://www.propertyguru.com.sg/condo-for-sale/at-siglap-v-2589/freehold"
+    },
+    {
+      "project": "Jade Residences",
+      "district": "D19",
+      "tenure": "Freehold",
+      "year_built": 2017,
+      "standard_3br_size_sqft": [732, 829],
+      "dualkey_4br_size_sqft": [1119, 1270],
+      "price_range_sgd": [980000, 1900000],
+      "psf_range": [1360, 2099],
+      "reason": "Standard 3BR too small (fails size). Rooms>=3 + size>1,110 satisfied only via 4BR dual-key (1,119-1,270sqft), likely within budget & cap. Verify a specific dual-key listing.",
+      "link": "https://www.propertyguru.com.sg/property-for-sale/at-jade-residences-21583/above-1200-sqft"
+    },
+    {
+      "project": "Kovan Residences",
+      "district": "D19",
+      "tenure": "Leasehold 99yr",
+      "lease_start": "2007-12-31",
+      "remaining_lease_years": 80.3,
+      "age_check": "remaining 80.3 + buyer_age >= 95 => satisfied for buyer_age >= 14.7 (any adult buyer OK)",
+      "units": 521,
+      "year_built": 2011,
+      "bedroom3_size_range_sqft": [1259, 2013],
+      "reason": "Qualifies under 99yr rule (b) (large stacks >1,110sqft); named example in brief. Units 521 slightly exceeds '<=500' but explicitly cited. Current 3BR listings $2.65M+ (over budget). Watch for sub-$2.3M 3BR.",
+      "link": "https://www.propertyguru.com.sg/property-for-sale/at-kovan-residences-1338"
+    }
+  ],
+  "near_miss": [
+    {
+      "project": "Oasis Garden",
+      "district": "D19",
+      "tenure": "Freehold",
+      "units": 134,
+      "year_built": 2012,
+      "size_sqft": 1216,
+      "bedrooms": 3,
+      "price_sgd": 2320000,
+      "psf": 1908,
+      "fails": "price ($20k over $2.3M) + psf over cap",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-oasis-garden-500161724"
+    },
+    {
+      "project": "Tangerine Grove",
+      "district": "D19",
+      "tenure": "Freehold",
+      "units": 125,
+      "year_built": 2007,
+      "size_sqft": 1184,
+      "bedrooms": 3,
+      "price_sgd": 2300000,
+      "psf": 1943,
+      "fails": "price at ceiling ($2.3M, violates '<') + psf over cap",
+      "link": "https://www.propnex.com/listing-details/679769/tangerine-grove"
+    },
+    {
+      "project": "Elliot At The East Coast",
+      "district": "D15",
+      "tenure": "Freehold",
+      "year_built": 2012,
+      "size_sqft_range": [1206, 1313],
+      "bedrooms": 3,
+      "price_sgd_range": [2300000, 2350000],
+      "psf_range": [1790, 1907],
+      "fails": "entry 3BR at/over price ceiling + psf over cap",
+      "link": "https://www.propertyguru.com.sg/property-for-sale/at-elliot-at-the-east-coast-2601"
+    },
+    {
+      "project": "Paya Lebar Residences",
+      "district": "D14",
+      "tenure": "Freehold",
+      "units": 117,
+      "year_built": 2002,
+      "size_sqft_range": [1281, 1302],
+      "bedrooms": 3,
+      "price_sgd_range": [2438000, 2450000],
+      "psf_range": [1881, 1903],
+      "fails": "price ~$140k over budget",
+      "link": "https://www.propertyguru.com.sg/project/paya-lebar-residences-1195"
+    },
+    {
+      "project": "The Waterina",
+      "district": "D14",
+      "tenure": "Freehold",
+      "units": 398,
+      "size_sqft": 1238,
+      "bedrooms": 3,
+      "price_sgd": 2498000,
+      "psf": 2041,
+      "fails": "price over budget ($2.5-2.9M 3BR band) + psf over cap",
+      "name_note": "Brief said 'The Waterline'; interpreted as The Waterina (Guillemard Rd, D14, FH). Verify intended project.",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-the-waterina-60239383"
+    }
+  ],
+  "excluded": [
+    {
+      "project": "Vibes @ East Coast",
+      "district": "D15",
+      "tenure": "Freehold",
+      "units": 117,
+      "reason": "Only 1BR/2BR (max 807sqft); no 3BR. Fails bedrooms + size.",
+      "link": "https://www.propertyguru.com.sg/project/vibes-east-coast-20664"
+    }
+  ],
+  "data_quality_notes": [
+    "Direct portal access (PropertyGuru/99.co/EdgeProp/SRX/URA) blocked by env egress policy; figures triangulated via WebSearch snippets - re-verify all asking prices, sizes, floor levels and listing validity before acting.",
+    "Listing registration/update dates not obtainable; 'new vs price-change' status not determinable this run. Today's snapshot becomes baseline for future diffs.",
+    "Kovan Residences $1,950,000 listing (500251734) is an 883sqft 2BR - NOT a qualifying 3BR (excluded from consideration).",
+    "Palm Grove ~$1.96M/1,302sqft is a snippet-based approximation; project min listing shown ~$2,038,000 - reconfirm exact asking & floor.",
+    "No 1996-2000 small-freehold candidates surfaced in the priority list this run."
+  ]
+}
