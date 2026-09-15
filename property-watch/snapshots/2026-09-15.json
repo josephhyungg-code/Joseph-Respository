@@ -1,0 +1,254 @@
+{
+  "date": "2026-09-15",
+  "criteria": {
+    "districts_primary": ["D19 (Kovan, Serangoon, Hougang, Bartley, Woodleigh, MacPherson sub-zones)"],
+    "districts_backup": ["D15 (Marine Parade / Joo Chiat / Siglap)"],
+    "districts_included_d14": ["Eunos", "Paya Lebar"],
+    "districts_excluded_d14": ["Geylang"],
+    "hard_filters": {
+      "min_size_sqft": 1110,
+      "min_size_rule": "strictly greater than 1,110 sqft",
+      "max_price_sgd": 2300000,
+      "max_price_rule": "strictly less than SGD 2.3M",
+      "min_bedrooms": 3,
+      "built_after": 2000,
+      "built_1996_2000_small_freehold": "flag as VERIFY, do not auto-exclude"
+    },
+    "tenure_rule": {
+      "preferred": ["Freehold", "999-year"],
+      "leasehold_99_accept_if": [
+        "(a) TOP within 10 years AND fewer than 100 units",
+        "(b) larger project (up to ~500 units) where some 3BR units exceed 1,110 sqft (e.g. Kovan Residences big stacks)"
+      ],
+      "leasehold_99_show": ["remaining lease years", "buyer_age + remaining_lease >= 95 check"]
+    },
+    "psf_cap_sgd": 1700,
+    "psf_cap_rule": "baseline cap; over-cap listings shown with 'CAP EXCEEDED' flag, not excluded (new-ish stock is structurally pricier)"
+  },
+  "data_hygiene": {
+    "portal_direct_fetch": "PropertyGuru / 99.co / EdgeProp / SRX all egress-blocked for direct automated fetch this run (same as 2026-06-06). Figures triangulated from WebSearch-indexed snippets of PropertyGuru, 99.co, EdgeProp, PropNex, SRX and Homejourney project pages.",
+    "confidence": "PSF and some sizes are approximate/derived; verify current status, price and exact unit with the listing agent before acting. Listings can go under offer within a day.",
+    "baseline_note": "2026-06-06 baseline used DIFFERENT criteria (2BR allowed, >1,000 sqft, SGD 2.0-2.2M, D15/D19 only). Not a clean day-over-day diff; this is effectively a fresh scan under the wider-district, >=3BR, >1,110 sqft, <2.3M ruleset."
+  },
+  "pass": [
+    {
+      "project": "The Waterline",
+      "address": "Hougang Avenue 7 (Kovan/Hougang)",
+      "district": "D19",
+      "neighbourhood": "Hougang / Kovan",
+      "tenure": "Freehold",
+      "year_built": 2013,
+      "total_units": 103,
+      "bedrooms": 3,
+      "size_sqft": 1238,
+      "price_sgd": 2000000,
+      "psf": 1615,
+      "psf_cap_status": "under cap",
+      "floor_level": "not disclosed in snippet",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-the-waterline-500225422",
+      "notes": "Clears every hard filter. Walk to Kovan MRT (NEL); CRL Hougang interchange nearby (~2030). Project 6-mo avg lower (~$1,470 psf) so ask is above recent transacted median - room to negotiate."
+    },
+    {
+      "project": "The Waterline",
+      "address": "Hougang Avenue 7 (Kovan/Hougang)",
+      "district": "D19",
+      "neighbourhood": "Hougang / Kovan",
+      "tenure": "Freehold",
+      "year_built": 2013,
+      "total_units": 103,
+      "bedrooms": 3,
+      "size_sqft": 1173,
+      "price_sgd": 1880000,
+      "psf": 1603,
+      "psf_cap_status": "under cap",
+      "floor_level": "not disclosed in snippet",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-the-waterline-500254748",
+      "notes": "Second passing unit at same project - lowest absolute price of any full pass this run. Freehold, size clears 1,110 comfortably, PSF well under cap."
+    },
+    {
+      "project": "Palm Grove Condominium",
+      "address": "21 Palm Grove Avenue (Hougang)",
+      "district": "D19",
+      "neighbourhood": "Hougang / Serangoon North",
+      "tenure": "999-year (from 1878, ~851 yrs remaining - effectively freehold)",
+      "year_built": 2002,
+      "total_units": 111,
+      "bedrooms": 3,
+      "size_sqft": "confirm (3BR stock up to 1,927 sqft; entry 3BR exceeds 1,110)",
+      "price_sgd": 2038000,
+      "psf": "approx 1,596 or below (project high 3BR PSF ~$1,596)",
+      "psf_cap_status": "under cap",
+      "floor_level": "not disclosed in snippet",
+      "link": "https://www.propertyguru.com.sg/project/palm-grove-condo-480",
+      "notes": "999-yr tenure = preferred bucket, no lease-decay concern. TOP 2002 clears post-2000. ~5 units for sale from $2.038M. Confirm the specific 3BR unit size (>1,110) and floor. PSF under cap."
+    },
+    {
+      "project": "Tangerine Grove",
+      "address": "1-3 Paya Lebar Crescent",
+      "district": "D19",
+      "neighbourhood": "Paya Lebar / Serangoon",
+      "tenure": "Freehold",
+      "year_built": 2007,
+      "total_units": 125,
+      "bedrooms": 3,
+      "size_sqft": "1,173-1,615 (3BR range)",
+      "price_sgd": "approx 1,650,000 - 2,100,000 (derived)",
+      "psf": "median ~$1,374-1,404 (Homejourney) vs 12-mo txn ~$1,753 (PropertyGuru) - source spread",
+      "psf_cap_status": "mixed - median under cap, recent transacted around/over cap",
+      "floor_level": "5-storey blocks",
+      "link": "https://www.srx.com.sg/condo/tangerine-grove-1431/condo-for-sale-for-rent",
+      "notes": "Freehold, 3BR sizes clear 1,110 easily. ~3 units for sale (SRX). Confirm live asking price of a specific >1,110 3BR unit - PSF sources disagree, so verify whether current ask is under or over the $1,700 cap."
+    },
+    {
+      "project": "Oasis Garden",
+      "address": "51-55 Jalan Bunga Rampai",
+      "district": "D19",
+      "neighbourhood": "Bartley / Upper Paya Lebar",
+      "tenure": "Freehold",
+      "year_built": 2009,
+      "total_units": 134,
+      "bedrooms": 3,
+      "size_sqft": "1,216-1,475 (3BR range)",
+      "price_sgd": "sub-$2.3M 3BR available (also $2.32M and $2.68M listings above budget)",
+      "psf": "project range ~$1,646-1,795",
+      "psf_cap_status": "borderline - some 3BR at/over the $1,700 cap",
+      "floor_level": "not disclosed in snippet",
+      "link": "https://www.propertyguru.com.sg/project/oasis-garden-1240",
+      "notes": "Freehold, TOP 2009. 3BR sizes all clear 1,110. Some listings creep over the $1,700 PSF cap (flag CAP EXCEEDED where they do) and the $2.32M unit is just over the price cap - target the sub-$2.3M 3BR and confirm exact size/PSF."
+    },
+    {
+      "project": "Flamingo Valley",
+      "address": "460-480 Siglap Road",
+      "district": "D15",
+      "neighbourhood": "Siglap",
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "total_units": 393,
+      "bedrooms": 3,
+      "size_sqft": 1152,
+      "price_sgd": 2200000,
+      "psf": 1910,
+      "psf_cap_status": "CAP EXCEEDED (>$1,700)",
+      "floor_level": "not disclosed in snippet",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-500138510",
+      "notes": "Backup-district (D15) pass. Clears size/price/tenure/age; PSF $1,910 is over the cap (kept per new-stock rule). Note: the suspicious $1,176 psf / 1,701 sqft listing flagged on 2026-06-06 no longer appears - looks cleared/withdrawn. Project 3BR span 1,152-1,851 sqft."
+    },
+    {
+      "project": "Siglap V",
+      "address": "Jalan Sempadan / East Coast Road",
+      "district": "D15",
+      "neighbourhood": "Siglap / East Coast",
+      "tenure": "Freehold",
+      "year_built": 2014,
+      "total_units": 114,
+      "bedrooms": 3,
+      "size_sqft": "990-1,442 (3BR range; target the >1,110 stacks)",
+      "price_sgd": "3BR asking up to ~$1.5-1.67M",
+      "psf": "6-mo avg ~$1,409; 12-mo ~$1,480",
+      "psf_cap_status": "under cap",
+      "floor_level": "4-storey blocks",
+      "link": "https://www.propertyguru.com.sg/project/siglap-v-2589",
+      "notes": "Freehold, PSF comfortably under cap. Some 3BR are 990 sqft (fail size) - must confirm a specific >1,110 sqft 3BR is currently listed. If so, this is a low-PSF backup pass."
+    }
+  ],
+  "verify_needed": [
+    {
+      "project": "Kovan Residences",
+      "address": "5 Kovan Road",
+      "district": "D19",
+      "neighbourhood": "Kovan",
+      "tenure": "99-year (lease from ~2008, TOP 2011; ~81 yrs remaining as of 2026)",
+      "lease_check": "buyer_age + 81 >= 95 requires buyer age >= 14 -> passes for any adult buyer; no CPF/financing lease-decay flag",
+      "year_built": 2011,
+      "total_units": 521,
+      "bedrooms": 3,
+      "size_sqft": "3BR 1,259-1,701 (188 units); 3BR+study 1,442-2,013 (20 units)",
+      "price_sgd": "current 3BR listings 2,650,000 - 2,880,000 (ALL over the $2.3M cap)",
+      "psf": "~2,002 avg (listings ~$2,105)",
+      "psf_cap_status": "CAP EXCEEDED",
+      "floor_level": "up to 18 storeys, 32 stacks, 9 blocks",
+      "3br_size_distribution": "188 x 3BR (1,259-1,701 sqft) + 20 x 3BR-study (1,442-2,013 sqft) = ~208 units all >1,110 sqft. Matches the 99-yr rule (b) big-stack profile.",
+      "link": "https://www.propertyguru.com.sg/property-for-sale/at-kovan-residences-1338",
+      "notes": "Qualifies on 99-yr rule (b) size profile, BUT 521 units slightly exceeds the ~500-unit cap in the rule (borderline - flagged for your call), AND every current 3BR listing is over the $2.3M price cap. Nothing actionable at budget today; watch for a price drop toward $2.3M."
+    },
+    {
+      "project": "Jade Residences",
+      "address": "5-7 Lew Lian Vale",
+      "district": "D19",
+      "neighbourhood": "Serangoon / Upper Serangoon",
+      "tenure": "Freehold",
+      "year_built": 2017,
+      "total_units": 171,
+      "bedrooms": 3,
+      "size_sqft": "standard 3BR 732-829 sqft (FAIL >1,110); only 3BR penthouses 1,291-1,421 sqft clear size",
+      "price_sgd": "a $2.3M listing exists; PH ~$2.3M+ likely",
+      "psf": "median ~$1,850 (12-mo); range $1,360-2,099",
+      "psf_cap_status": "CAP EXCEEDED at penthouse PSF",
+      "floor_level": "5 low-rise blocks",
+      "link": "https://www.propertyguru.com.sg/project/jade-residences-21583",
+      "notes": "Newest freehold in the set (2017) BUT standard 3BR are only ~732-829 sqft - fail the 1,110 floor outright. Only 3BR penthouses (1,291-1,421 sqft) qualify on size, and those sit around/above $2.3M. Verify if any PH is currently under $2.3M; otherwise this project is effectively out on size."
+    }
+  ],
+  "near_misses_over_budget": [
+    {
+      "project": "Elliot at the East Coast",
+      "district": "D15",
+      "tenure": "Freehold",
+      "year_built": 2013,
+      "bedrooms": 3,
+      "size_sqft": 1313,
+      "price_sgd": 2350000,
+      "psf": 1790,
+      "fails": "price (+$50K over $2.3M cap); PSF also over cap",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-elliot-at-the-east-coast-24834841",
+      "notes": "Freehold, size clears easily; misses price by only ~$50K. Worth a lowball if you flex the ceiling slightly. Larger units ($4.1-4.8M) far out of range."
+    },
+    {
+      "project": "Paya Lebar Residences",
+      "district": "D14",
+      "tenure": "Freehold",
+      "year_built": 2003,
+      "bedrooms": 3,
+      "size_sqft": 1281,
+      "price_sgd": 2438000,
+      "psf": 1903,
+      "fails": "price (over $2.3M); PSF over cap; DISTRICT caveat - 27 Paya Lebar Rd sits in the Geylang planning area, which the brief excludes (include Paya Lebar/Eunos only)",
+      "link": "https://www.propertyguru.com.sg/property-for-sale/at-paya-lebar-residences-1195",
+      "notes": "Freehold, size clears. Two strikes: over budget and PSF over cap; plus the Geylang planning-area location is borderline against the D14 exclusion. Listed Jul 2026."
+    },
+    {
+      "project": "Parc Elegance",
+      "district": "D15",
+      "tenure": "Freehold",
+      "year_built": 2013,
+      "bedrooms": 3,
+      "size_sqft": 1765,
+      "price_sgd": 2550000,
+      "psf": 1445,
+      "fails": "price (over $2.3M)",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-parc-elegance-500180201",
+      "notes": "Large 1,765 sqft unit (likely penthouse) at a LOW PSF ($1,445, under cap) but total price over budget. Most other Parc Elegance stock is small 1-2BR ($685k-$1M) - no in-budget >1,110 sqft 3BR found."
+    }
+  ],
+  "excluded": [
+    {
+      "project": "Vibes @ East Coast",
+      "district": "D15",
+      "reason": "No 3-bedroom units exist in the project (1BR/2BR only). Fails min-bedroom filter."
+    },
+    {
+      "project": "Vacanza @ East",
+      "district": "D14 (Eunos)",
+      "tenure": "Freehold",
+      "year_built": 2014,
+      "reason": "3BR units are only ~1,023-1,035 sqft - fail the >1,110 sqft floor. Larger (>1,300 sqft) stock is 4BR/penthouse. 3BR asks $1.7-1.8M."
+    },
+    {
+      "project": "The Quinn",
+      "district": "D19 (Bartley)",
+      "tenure": "Freehold",
+      "year_built": 2016,
+      "reason": "3BR units are only ~1,044-1,066 sqft - fail the >1,110 sqft floor. Freehold and well-located but all 3BR stock is below the size floor."
+    }
+  ]
+}
