@@ -1,0 +1,230 @@
+{
+  "date": "2026-09-19",
+  "type": "weekly_summary",
+  "prior_snapshot": "2026-06-06",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "price_sgd": [2000000, 2200000],
+    "min_size_sqft": 1000,
+    "districts": {
+      "D19": ["Bartley", "Woodleigh", "MacPherson", "Kovan", "Serangoon", "Hougang"],
+      "D15": ["Joo Chiat", "Katong", "Siglap", "Tanjong Rhu", "East Coast", "Amber", "Meyer"],
+      "D14": ["Eunos", "Paya Lebar"]
+    },
+    "built_after": 2000,
+    "exclude_new_launch": true,
+    "bedroom_emphasis": "3BR"
+  },
+  "new_listing_volume": {
+    "D19_bartley_woodleigh_macpherson": {
+      "qualifying_estimate": "0-2",
+      "supply": "scarce",
+      "note": "Pocket is leasehold-dominated (Bartley Residences, Bartley Ridge, 8@Woodleigh, Sennett Residence, The Woodleigh Residences, Sant Ritz, Poiz all 99-yr). Post-2000 freehold there (Blossoms @ Woodleigh 2007, 18 Woodsville 2015, The Waterina 2005 border) prices 3BR above band. Effectively no in-band FH post-2000 3BR >=1,000 sqft currently."
+    },
+    "D15_east_coast_belt": {
+      "qualifying_estimate": "15-30",
+      "supply": "plentiful raw, thin in-band",
+      "note": "~1,387 freehold condo listings in East Coast/Marine Parade, ~470 of them FH 3BR (all prices). But prime Amber/Meyer/Tanjong Rhu FH 3BR >=1,000 sqft trade S$2.4-3.5M+. In-band S$2.0-2.2M is met mainly on the Katong/St Patrick's/Siglap fringe and in compact/low-floor stacks."
+    },
+    "D14_eunos_paya_lebar": {
+      "qualifying_estimate": "2-6",
+      "supply": "limited/scarce",
+      "note": "~633 freehold listings across Eunos/Geylang/Paya Lebar but inflated by out-of-scope Geylang. In-pocket post-2000 FH: Urban Treasures (2023, 3BR only 883 sqft -> fails size), The Waterina (2005, 3BR S$2.5M+ -> above band). Eunos Park is FH but 1995 (fails post-2000)."
+    }
+  },
+  "confirmed_matches": [
+    {
+      "project": "The Quinn",
+      "district": "D19",
+      "neighbourhood": "Bartley",
+      "price_sgd": 2068000,
+      "psf": 1940,
+      "size_sqft": 1066,
+      "bedrooms": "3BR",
+      "tenure": "Freehold",
+      "year_built": 2016,
+      "total_units": 139,
+      "notes": "Single confirmed current match in the whole D19 tracked set; passes every hard filter (FH, in-band, >=1,000 sqft, post-2000, seasoned, D19-Bartley, 3BR). Reconfirm listing is still live before acting."
+    },
+    {
+      "project": "Palm Grove Condo",
+      "district": "D19",
+      "neighbourhood": "Kovan / Hougang",
+      "price_sgd": 2038000,
+      "psf": 1540,
+      "size_sqft": 1300,
+      "bedrooms": "3BR",
+      "tenure": "999-year",
+      "year_built": 2002,
+      "total_units": 111,
+      "notes": "Cleanest full-filter pass in the tracked set. 999-yr (passes tenure), seasoned (TOP 2002), 3BR-dominant floor plate ~1,300 sqft, asking from ~S$2.038M. Lowest PSF of any match -> most headroom vs the PSF cap."
+    },
+    {
+      "project": "Carpmael Thirty-Eight",
+      "district": "D15",
+      "neighbourhood": "Joo Chiat",
+      "price_sgd": 2200000,
+      "psf": 2044,
+      "size_sqft": 1076,
+      "bedrooms": "3BR",
+      "tenure": "Freehold",
+      "year_built": 2020,
+      "total_units": 16,
+      "flagged": true,
+      "notes": "Sits right at the S$2.2M ceiling. CAVEAT: still partly marketed as developer/VVIP stock (16-unit boutique, TOP 2020) so some units are unsold new stock rather than true resale; verify the specific unit is resale/subsale before counting it as seasoned."
+    }
+  ],
+  "tracked_projects": [
+    {"project": "Fiorenza", "district": "D19", "neighbourhood": "Florence Rd", "tenure": "Freehold", "passes_tenure": true, "year_built": 2012, "total_units": 28, "new_launch": false, "psf_recent": "~1,504 (12mo avg)", "current_3br": "1,410 sqft @ S$1,680,000 (~$1,191 psf) - below band", "in_band_match": false, "price_trend": "FLAT", "notes": "Low-PSF boutique outlier; at ~$1,504 psf a ~1,330-1,460 sqft 3BR could land in-band but no current listing confirmed inside S$2.0-2.2M."},
+    {"project": "Oasis Garden", "district": "D19", "neighbourhood": "Jalan Bunga Rampai", "tenure": "Freehold", "passes_tenure": true, "year_built": 2012, "total_units": 134, "new_launch": false, "psf_recent": "~1,673 (12mo avg)", "current_3br": "1,216 sqft @ S$2.32-2.38M (~$1,957 psf) - just above ceiling", "in_band_match": false, "price_trend": "UP (~+5.4% since 2023)", "notes": "Near-miss; recent transacted PSF would put a base-size 1,216 sqft 3BR ~S$2.03M in-band, but current askings sit just over S$2.2M. Watch for a motivated seller."},
+    {"project": "Jansen House", "district": "D19", "neighbourhood": "Serangoon", "tenure": "999-year", "passes_tenure": true, "year_built": 2027, "total_units": 21, "new_launch": true, "psf_recent": "$1,936-2,033 (launch)", "current_3br": "1,012-1,033 sqft @ S$2.0-2.1M - fits price/size but NEW LAUNCH", "in_band_match": false, "price_trend": "n/a (new launch)", "notes": "DISQUALIFIED: TOP 2027 -> fails seasoned-resale / not-new-launch filter despite fitting price, size and tenure. Do not confuse with leasehold 'Residences @ Jansen'."},
+    {"project": "Bliss @ Kovan", "district": "D19", "neighbourhood": "Kovan (Simon Lane)", "tenure": "Freehold", "passes_tenure": true, "year_built": 2015, "total_units": 140, "new_launch": false, "psf_recent": "~1,648-1,720", "current_3br": "smallest 3BR 1,163 sqft @ ~S$2.80M ($2,410 psf) - above band; larger 3BR 2,217-2,358 sqft @ S$2.8-2.98M", "in_band_match": false, "price_trend": "UP slight / FLAT (+~3.4% since 2023)", "notes": "June baseline S$2.20M/1,765 sqft/$1,246 penthouse was a 2BR, not 3BR. No current 3BR in-band; 3BR floor plate starts at 1,163 sqft priced well above ceiling."},
+    {"project": "Midtown Residences", "district": "D19", "neighbourhood": "Tampines Rd / Hougang", "tenure": "99-year", "passes_tenure": false, "year_built": 2016, "total_units": 160, "new_launch": false, "psf_recent": "$1,673-2,009", "current_3br": "none in band; stock skews shoebox/small (asking ~S$760k-1.5M)", "in_band_match": false, "price_trend": "UP (small units)", "notes": "Fails on tenure (99-yr) and on price/size (predominantly small units below the S$2M band)."},
+    {"project": "Kovan Regency", "district": "D19", "neighbourhood": "Kovan Rise / Hougang", "tenure": "99-year", "passes_tenure": false, "year_built": 2016, "total_units": 393, "new_launch": false, "psf_recent": "$1,885-1,908 (3BR avg)", "current_3br": "1,055 & 1,130 sqft 3BR; late-2025 trades S$2.23M / S$2.27M / S$2.43M ($2,008-2,150 psf)", "in_band_match": false, "hidden_3br_stack": "1,055 / 1,130 sqft 3BR sits at the band ceiling", "price_trend": "UP", "notes": "Large development with a genuinely in-band-sized 3BR stack (1,055 sqft) - but 99-yr leasehold, so fails tenure. Illustrates the tenure trade-off directly."},
+    {"project": "Kovan Residences", "district": "D19", "neighbourhood": "Kovan Rd", "tenure": "99-year", "passes_tenure": false, "year_built": 2013, "total_units": 512, "new_launch": false, "psf_recent": "~2,021-2,043 (3BR)", "current_3br": "resale S$1.75M-3.05M; 3BR avg ~$2,043 psf", "in_band_match": false, "price_trend": "UP", "notes": "Fails on tenure (99-yr)."},
+    {"project": "Carpmael Thirty-Eight", "district": "D15", "neighbourhood": "Joo Chiat", "tenure": "Freehold", "passes_tenure": true, "year_built": 2020, "total_units": 16, "new_launch": false, "psf_recent": "~2,000-2,050", "current_3br": "1,076 sqft @ S$2,200,000 (~$2,044 psf) - AT ceiling", "in_band_match": true, "price_trend": "FLAT-to-UP", "notes": "In-band 3BR match at the ceiling; verify resale vs developer stock (see confirmed_matches)."},
+    {"project": "Straits at Joo Chiat", "district": "D15", "neighbourhood": "Joo Chiat Place", "tenure": "Freehold", "passes_tenure": true, "year_built": 2027, "total_units": 16, "new_launch": true, "psf_recent": "$2,080-2,123 (launch)", "current_3br": "asking S$2.5-3.188M - above band", "in_band_match": false, "price_trend": "UP (new sale)", "notes": "DISQUALIFIED: NEW LAUNCH (Roxy-Pacific, TOP ~Nov 2027). Fails seasoned-resale filter and priced above band."},
+    {"project": "Vacanza @ East", "district": "D14", "neighbourhood": "Lengkong Tujoh (Frankel/Kembangan - borderline vs Eunos/Paya Lebar)", "tenure": "Freehold", "passes_tenure": true, "year_built": 2014, "total_units": 473, "new_launch": false, "psf_recent": "~1,583 (12mo avg)", "current_3br": "3BR 1,012-1,141 sqft; largest confirmed ask S$1.8M; no in-band 3BR confirmed live", "in_band_match": false, "hidden_3br_stack": "3BR 1,141 sqft at ~$1,750-1,900 psf ~= S$2.0-2.17M could sit in-band", "price_trend": "FLAT/slightly UP", "notes": "Large dev with a plausible hidden in-band 3BR stack, but current live stock is mostly 1-2BR. Neighbourhood (Lengkong Tujoh) is Frankel/Kembangan, not strictly Eunos/Paya Lebar -> borderline on the D14 sub-filter."},
+    {"project": "Flamingo Valley", "district": "D15", "neighbourhood": "Siglap Rd", "tenure": "Freehold", "passes_tenure": true, "year_built": 2015, "total_units": 393, "new_launch": false, "psf_recent": "~1,925 (up from ~1,772 in 2023, +8.6%)", "current_3br": "3BR 1,206 sqft @ S$2,280,000 ($1,890 psf) - just over ceiling; entry 1,173 sqft stack ~S$2.17M would be in-band", "in_band_match": false, "hidden_3br_stack": "entry 3BR 1,173-1,206 sqft straddles the S$2.2M ceiling", "price_trend": "UP", "notes": "June baseline S$2.0M/1,701 sqft/$1,176 '2BR' CONFIRMED STALE/MISPRICED - treat that entry as gone. Strongest large-project in-band candidate: the entry 3BR stack straddles the ceiling."},
+    {"project": "Vibes @ East Coast", "district": "D15", "neighbourhood": "East Coast", "tenure": "Freehold", "passes_tenure": true, "year_built": 2015, "total_units": 117, "new_launch": false, "psf_recent": "~1,701-1,723", "current_3br": "none >=1,000 sqft in band; stock is 1-2BR (asking ~S$759k-1.25M)", "in_band_match": false, "price_trend": "UP", "notes": "Predominantly small units; no in-band 3BR."},
+    {"project": "Jade Residences", "district": "D19", "neighbourhood": "Lew Lian Vale / Serangoon", "tenure": "Freehold", "passes_tenure": true, "year_built": 2016, "total_units": 171, "new_launch": false, "psf_recent": "~1,850 (median, 12mo to Jul 2026)", "current_3br": "listings top out ~S$1.9M (below the S$2.0M floor)", "in_band_match": false, "price_trend": "UP", "notes": "D19 (allowed). Ceiling of current listings sits below the price floor; 3BR likely just under band."},
+    {"project": "Parc Elegance", "district": "D14", "neighbourhood": "Telok Kurau / Eunos (borderline)", "tenure": "Freehold", "passes_tenure": true, "year_built": 2013, "total_units": null, "new_launch": false, "psf_recent": "~1,673 (12mo avg)", "current_3br": "no standard 3BR in band; stock is shoebox/small (asking ~S$685k-1.0M, one ~S$2.7M penthouse outlier)", "in_band_match": false, "price_trend": "FLAT/UP", "notes": "Mostly small units; neighbourhood Telok Kurau/Kembangan is borderline vs Eunos."},
+    {"project": "The Quinn", "district": "D19", "neighbourhood": "Bartley (Lorong Chuan)", "tenure": "Freehold", "passes_tenure": true, "year_built": 2016, "total_units": 139, "new_launch": false, "psf_recent": "$1,667-2,061", "current_3br": "1,066 sqft @ S$2,068,000 (~$1,940 psf) - IN BAND", "in_band_match": true, "price_trend": "UP (~+18.5% vs 2019)", "notes": "Confirmed full-filter match (see confirmed_matches). Only 3BR sizes are 1,055-1,066 sqft, so they sit right above the 1,000 sqft floor - ideal."},
+    {"project": "Tangerine Grove", "district": "D19", "neighbourhood": "Paya Lebar Cres / Hougang", "tenure": "Freehold", "passes_tenure": true, "year_built": 2007, "total_units": 125, "new_launch": false, "psf_recent": "~1,753 (12mo avg)", "current_3br": "1,184 sqft @ S$2.30M ($1,943 psf) - just above ceiling", "in_band_match": false, "price_trend": "UP", "notes": "Near-miss; at transacted avg $1,753 psf a 1,184 sqft 3BR ~= S$2.08M would be in-band, but current asking is above the ceiling."},
+    {"project": "Elliot At The East Coast", "district": "D15", "neighbourhood": "Siglap / East Coast", "tenure": "Freehold", "passes_tenure": true, "year_built": 2012, "total_units": null, "new_launch": false, "psf_recent": "~1,758 (12mo avg)", "current_3br": "entry listings from ~S$2.35M - above ceiling", "in_band_match": false, "price_trend": "UP", "notes": "Cheapest current listing (~S$2.35M) already above the S$2.2M ceiling; a ~990 sqft unit traded but is below the 1,000 sqft floor."},
+    {"project": "Paya Lebar Residences", "district": "D14", "neighbourhood": "Paya Lebar Rd", "tenure": "Freehold", "passes_tenure": true, "year_built": 2002, "total_units": 117, "new_launch": false, "psf_recent": "~1,831 (12mo avg)", "current_3br": "3BR 1,259-1,302 sqft ~= S$2.27-2.55M - just above ceiling", "in_band_match": false, "price_trend": "UP", "notes": "In-pocket (Paya Lebar) and passes tenure/age, but 3BR floor plate (1,259+ sqft) x current psf pushes price just over the S$2.2M ceiling. Watch for a motivated seller."},
+    {"project": "Siglap V", "district": "D15", "neighbourhood": "Siglap / East Coast Rd", "tenure": "Freehold", "passes_tenure": true, "year_built": 2014, "total_units": 114, "new_launch": false, "psf_recent": "~1,480 (12mo transacted)", "current_3br": "3BR 990-1,442 sqft; a 1,442 sqft 3BR at ~$1,480 psf ~= S$2.13M possible, but live stock is 1-2BR only", "in_band_match": false, "hidden_3br_stack": "large 1,442 sqft 3BR stack could theoretically hit band at current psf", "price_trend": "FLAT (+0.42% 2023-2026)", "notes": "No in-band 3BR currently listed; the large 3BR stack is the theoretical path in."},
+    {"project": "Palm Grove Condo", "district": "D19", "neighbourhood": "Palm Grove Ave / Kovan-Hougang", "tenure": "999-year", "passes_tenure": true, "year_built": 2002, "total_units": 111, "new_launch": false, "psf_recent": "~1,479-1,526 (12mo/6mo transacted)", "current_3br": "3BR from ~S$2,038,000 (~1,300 sqft, ~$1,540 psf) - IN BAND", "in_band_match": true, "price_trend": "UP (6mo psf > 12mo psf)", "notes": "Confirmed full-filter match (see confirmed_matches). Cleanest pass, lowest PSF, most headroom vs cap."},
+    {"project": "The Waterline", "district": "D19", "neighbourhood": "Poh Huat Rd West / Hougang", "tenure": "Freehold", "passes_tenure": true, "year_built": null, "new_launch": false, "psf_recent": "~1,470 (median)", "current_3br": "median ~S$1.554M - below the S$2.0M floor", "in_band_match": false, "price_trend": "n/a", "notes": "NAMING AMBIGUITY: the actual 'The Waterline' is a D19 Hougang project (below band). If the intended project was 'The Line @ Tanjong Rhu' (D15, FH, TOP 2016), its 3BR resale is S$2.7-3.09M ($2,300-2,570 psf) - well ABOVE band. Confirm which project is meant."}
+  ],
+  "newly_discovered": [
+    {
+      "project": "Grand Duchess at St Patrick's",
+      "district": "D15",
+      "neighbourhood": "St Patrick's Rd / Katong",
+      "tenure": "Freehold",
+      "year_built": 2010,
+      "total_units": 121,
+      "qualifying_3br": "compact 3BR ~1,000-1,100 sqft at ~$2,113-2,207 psf ~= S$2.1-2.2M (larger 1,238-1,300 sqft 3BR ask ~S$2.5M, above band)",
+      "notes": "Genuine in-band fit on the compact 3BR stack. Add to tracked list.",
+      "source": "https://www.edgeprop.sg/property-news/three-bedder-grand-duchess-st-patricks-market-25-mil ; https://www.propertyguru.com.sg/project/grand-duchess-at-st-patrick-s-139"
+    },
+    {
+      "project": "8M Residences",
+      "district": "D15",
+      "neighbourhood": "Margate Rd / Mountbatten-East Coast fringe",
+      "tenure": "Freehold",
+      "year_built": 2017,
+      "total_units": 68,
+      "qualifying_3br": "3BR listed at S$2,200,000 (top of band); confirm exact sqft >=1,000 on the specific unit (3BR sizes vary, some large 1,841 sqft)",
+      "notes": "In-band on price; verify the S$2.2M unit clears the 1,000 sqft floor. Add to tracked list.",
+      "source": "https://www.propertyguru.com.sg/listing/for-sale-8m-residences-21772456 ; https://www.propertyguru.com.sg/project/8m-residences-21248"
+    }
+  ],
+  "hidden_3br_stacks_large_developments": [
+    {
+      "project": "One Amber",
+      "district": "D15",
+      "tenure": "Freehold",
+      "year_built": 2010,
+      "total_units": 562,
+      "stack": "low-floor 3BR ~1,238-1,281 sqft",
+      "in_band_path": "12-mo psf range $1,677-2,537; at the $1,677-1,720 floor a 1,238-1,281 sqft 3BR ~= S$2.08-2.20M sits squarely in band while the ~$2,322 psf headline suggests it is out of reach",
+      "strength": "strongest hidden stack",
+      "source": "https://www.99.co/singapore/condos-apartments/one-amber ; https://www.propertyguru.com.sg/project/one-amber-60"
+    },
+    {
+      "project": "Flamingo Valley",
+      "district": "D15",
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "total_units": 393,
+      "stack": "entry 3BR 1,173-1,206 sqft",
+      "in_band_path": "1,206 sqft live @ S$2.28M ($1,890 psf) just over ceiling; a 1,173 sqft 3BR at ~$1,850 psf ~= S$2.17M lands in-band",
+      "strength": "straddles ceiling - watch",
+      "source": "https://www.propertyguru.com.sg/project/flamingo-valley-1931"
+    },
+    {
+      "project": "Kovan Regency",
+      "district": "D19",
+      "tenure": "99-year",
+      "year_built": 2016,
+      "total_units": 393,
+      "stack": "3BR 1,055 / 1,130 sqft",
+      "in_band_path": "late-2025 trades S$2.23-2.43M; a 1,055 sqft 3BR sits at the band ceiling on size and price",
+      "strength": "fails tenure (leasehold) - illustrates the tenure trade-off",
+      "source": "https://www.propertyguru.com.sg/project/kovan-regency-21353"
+    },
+    {
+      "project": "Vacanza @ East",
+      "district": "D14",
+      "tenure": "Freehold",
+      "year_built": 2014,
+      "total_units": 473,
+      "stack": "3BR 1,012-1,141 sqft",
+      "in_band_path": "at ~$1,750-1,900 psf a 1,141 sqft 3BR ~= S$2.0-2.17M; no in-band 3BR confirmed live currently",
+      "strength": "plausible - agent check; Lengkong Tujoh borderline vs Eunos/Paya Lebar",
+      "source": "https://www.propertyguru.com.sg/project/vacanza-east-2672"
+    },
+    {
+      "project": "The Waterina",
+      "district": "D14",
+      "tenure": "Freehold",
+      "year_built": 2005,
+      "total_units": 398,
+      "stack": "compact/low-floor 3BR ~1,238 sqft",
+      "in_band_path": "psf $1,790-2,139; a 1,238 sqft 3BR at ~$1,790 psf ~= S$2.22M just at/above ceiling; ~400m to Paya Lebar MRT",
+      "strength": "marginal - standing alert for a low-floor 3BR dipping under S$2.2M",
+      "source": "https://www.propertyguru.com.sg/project/the-waterina-221"
+    },
+    {
+      "project": "Blossoms @ Woodleigh",
+      "district": "D13/D19 pocket",
+      "tenure": "Freehold",
+      "year_built": 2007,
+      "total_units": 240,
+      "stack": "smallest 3BR 1,194-1,205 sqft",
+      "in_band_path": "priced S$2.5-2.8M ($1,854-2,317 psf) - no in-band stack today; only large freehold play in the Bartley/Woodleigh pocket",
+      "strength": "above band - set alert for a distressed/low-floor compact 3BR toward S$2.3-2.4M",
+      "source": "https://www.propertyguru.com.sg/project/blossoms-woodleigh-102"
+    }
+  ],
+  "leasehold_traps": [
+    "Bartley Residences (99-yr)", "Bartley Ridge (99-yr)", "8@Woodleigh (99-yr)", "Sennett Residence (99-yr)", "The Woodleigh Residences (99-yr)", "Sant Ritz (99-yr)", "Water Place (99-yr)", "Seaside Residences (99-yr)", "Sims Urban Oasis (99-yr)", "Cote D'Azur (99-yr)", "Kovan Regency (99-yr)", "Kovan Residences (99-yr)", "Midtown Residences (99-yr)"
+  ],
+  "psf_cap_analysis": {
+    "implied_psf_cap": "For an in-band 3BR at the 1,000 sqft floor: S$2.0M = $2,000 psf, S$2.2M = $2,200 psf. For a typical ~1,100 sqft 3BR the ceiling is ~$2,000 psf; for a ~1,300 sqft 3BR (e.g. Palm Grove) the ceiling is ~$1,690 psf.",
+    "market_gaps": [
+      {"submarket": "D19 Kovan/Hougang freehold", "market_psf": "$1,479-1,940", "vs_cap": "UNDER cap - room to spare (Palm Grove $1,540, The Quinn $1,940)"},
+      {"submarket": "D15 prime (Amber/Meyer/Tanjong Rhu) freehold 3BR", "market_psf": "$2,300-2,570", "vs_cap": "OVER cap - priced out unless via a low-floor hidden stack (One Amber floor ~$1,677)"},
+      {"submarket": "D15 fringe (Katong/St Patrick's/Siglap) freehold", "market_psf": "$1,890-2,207", "vs_cap": "AT cap - the band clears here (Carpmael, Grand Duchess, 8M)"},
+      {"submarket": "D14 Eunos/Paya Lebar freehold", "market_psf": "$1,673-1,960", "vs_cap": "under/at psf cap, but 3BR floor plates (1,259+ sqft) push total price just over the S$2.2M ceiling"}
+    ]
+  },
+  "filter_tradeoffs": [
+    "TENURE is the single most binding filter in the Bartley/Woodleigh/MacPherson pocket, which is leasehold-dominated. Insisting on freehold there means near-zero supply; every qualifying D19 freehold/999 unit sits in Kovan/Hougang (The Quinn, Palm Grove, Tangerine Grove, Oasis Garden, Fiorenza), NOT Bartley/Woodleigh. If the buyer wants Bartley/Woodleigh specifically, they must relax tenure to 99-yr (which opens Kovan Regency's in-band 1,055 sqft 3BR immediately).",
+    "The >=1,000 sqft rule is what kills D14 Eunos: Urban Treasures (FH, 2023, Eunos) has in-band 3BR at ~S$1.95-2.0M but they are 883 sqft. Relaxing the size floor to ~880 sqft opens D14 immediately.",
+    "PSF-cap vs region trilemma: to hold an in-band >=1,000 sqft 3BR you are pushed OUT of prime D15 (Amber/Meyer) and INTO either (a) D19 Kovan/Hougang freehold (lower psf, further from town) or (b) the D15 East-Coast fringe (Katong/St Patrick's/Siglap). Freehold + large + central: pick two.",
+    "The 'hidden low-floor stack' in large freehold developments (One Amber 562u, Flamingo Valley 393u, Vacanza 473u) is the ONLY mechanism that gets a central/large freehold 3BR under the PSF cap - the band does not clear at project-average psf, only at the low-floor/unrenovated end of the range.",
+    "3BR emphasis (new this cycle) tightened the funnel vs the June 2BR/penthouse baseline: June's three matches were all 2BR/penthouse. Under the 3BR rule the clean pool shrinks to ~2-3 confirmed units."
+  ],
+  "hard_filter_pass_rate": {
+    "tracked_projects_total": 21,
+    "current_in_band_3br_match": 3,
+    "of_which_clean": 2,
+    "of_which_conditional": 1,
+    "rate": "~10-14% of tracked projects have a current unit passing all hard filters (The Quinn, Palm Grove clean; Carpmael conditional on resale-vs-developer-stock)",
+    "disqualified_new_launch": ["Jansen House", "Straits at Joo Chiat"],
+    "fails_tenure_leasehold": ["Kovan Regency", "Kovan Residences", "Midtown Residences"],
+    "note": "Plus 2 newly-discovered in-band projects outside the tracked list (Grand Duchess at St Patrick's, 8M Residences)."
+  },
+  "data_quality_notes": [
+    "Portals (PropertyGuru/99.co/EdgeProp/SRX) return HTTP 403 on direct automated fetch; all figures triangulated from indexed search snippets plus aggregators (stackproperty, propertyforsale.com.sg, homejourney, nestia, singaporeexpats). Treat prices/psf as approximate and re-verify each live listing before acting.",
+    "New-listing volume counts (section new_listing_volume) are estimates/ranges bounded from project-level economics, not exact filtered live counts - portals do not expose a count for the full 5-way filter.",
+    "The Quinn S$2,068,000 3BR and Palm Grove ~S$2,038,000 3BR should be reconfirmed live before action.",
+    "Flamingo Valley's June-2026 S$2.0M/1,701 sqft entry is confirmed stale/mispriced and has been dropped.",
+    "'The Waterline' name is ambiguous (D19 Hougang project vs possibly-intended 'The Line @ Tanjong Rhu', D15) - flagged for the buyer to confirm.",
+    "8M Residences: exact sqft of the S$2.2M 3BR listing not confirmed - verify it clears 1,000 sqft.",
+    "Carpmael Thirty-Eight: confirm the in-band unit is genuine resale/subsale, not unsold developer stock."
+  ]
+}
