@@ -1,0 +1,349 @@
+{
+  "date": "2026-09-26",
+  "run_type": "weekly",
+  "note": "Second run overall; the only prior snapshot is the 2026-06-06 baseline, so all diffs are vs June, not vs a prior week. Portals (PropertyGuru/99.co/EdgeProp/SRX) egress-blocked on direct fetch; figures triangulated from WebSearch snippets + PropNex/aggregator caches. Re-verify live before acting.",
+  "criteria": {
+    "tenure": ["freehold", "999-year"],
+    "price_sgd": [2000000, 2200000],
+    "min_size_sqft": 1000,
+    "districts": ["D14 (Eunos/Paya Lebar only)", "D15", "D19 (incl Bartley/Woodleigh/MacPherson)"],
+    "built_after": 2000,
+    "exclude_new_launch": true,
+    "bedroom_pref": "3BR ideal; penthouse a plus"
+  },
+  "tracked_projects": [
+    {
+      "project": "Carpmael Thirty-Eight",
+      "district": "D15",
+      "neighbourhood": "Joo Chiat",
+      "tenure": "Freehold",
+      "year_built": 2020,
+      "total_units": 16,
+      "clears_filter": true,
+      "in_band_unit": {"bedrooms": "3BR", "size_sqft": 1076, "price_sgd": 2200000, "psf": 2045},
+      "avg_psf_3br": 1858,
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Only in-band unit here; asking ~10% above recent transacted PSF (~$1,811-1,858). At top of band. Room to negotiate toward $2.0-2.1M. Other units $2.38-2.5M over band."
+    },
+    {
+      "project": "Flamingo Valley",
+      "district": "D15",
+      "neighbourhood": "Siglap / Opera Estate",
+      "tenure": "Freehold",
+      "year_built": 2014,
+      "total_units": 393,
+      "clears_filter": true,
+      "in_band_unit": {"bedrooms": "3BR/3BA", "size_sqft": 1152, "price_sgd": 2200000, "psf": 1910, "listing": "PG 500138510"},
+      "avg_psf_3br": 1752,
+      "price_change_vs_june": "June flagged $2.0M/1,701sqft outlier still listed UNCHANGED ($1,176 psf, PropNex 360192) but is a 2BR penthouse, not 3BR; stale/mispriced flag persists",
+      "hidden_3br_stack": true,
+      "notes": "Large development (393u) with a genuine hidden compact-3BR stack in band: 1,152 sqft @ $2.2M. Other 3BR (1,485-1,937 sqft) all over band on price. 12mo project avg ~$1,752 psf."
+    },
+    {
+      "project": "The Quinn",
+      "district": "D19",
+      "neighbourhood": "Bartley",
+      "tenure": "Freehold",
+      "year_built": 2016,
+      "total_units": 139,
+      "clears_filter": true,
+      "in_band_unit": {"bedrooms": "3BR", "size_sqft": 1066, "price_sgd": 2068000, "psf": 1940},
+      "avg_psf_3br": null,
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Cleanest D19 freehold match, priced mid-band (not top edge). 16-unit 3BR stack (1,055-1,141 sqft). Second listing at $2,197,000 (3BR PES) also in band. Verify vs actual 3BR comps (only small-unit txns visible in snippets)."
+    },
+    {
+      "project": "Paya Lebar Residences",
+      "district": "D14",
+      "neighbourhood": "Paya Lebar Road",
+      "tenure": "Freehold",
+      "year_built": 2002,
+      "total_units": 117,
+      "clears_filter": "modeled",
+      "in_band_unit": {"bedrooms": "3BR", "size_sqft": "1092-1200", "price_sgd": "2000000-2200000", "psf": 1831},
+      "avg_psf_3br": 1831,
+      "price_change_vs_june": "n/a (D14 added to scope this run)",
+      "notes": "First D14 tracked project. Clears on all axes (FH + 2002 + Paya Lebar geography + 3BR + >=1,000 sqft). At ~$1,831 psf, a 1,092-1,200 sqft 3BR lands in band; ~1,076 sqft ≈ $1.97M (just under); 1,292 sqft ≈ $2.37M (over). Best value-vs-cap fit. Live listing count not surfaced — pull directly."
+    },
+    {
+      "project": "Oasis Garden",
+      "district": "D19",
+      "neighbourhood": "Jalan Bunga Rampai",
+      "tenure": "Freehold",
+      "year_built": 2010,
+      "total_units": 134,
+      "clears_filter": false,
+      "near_miss": {"bedrooms": "3BR/3BA", "size_sqft": 1216, "price_sgd": 2320000, "psf": 1908, "gap": "+$120K over ceiling"},
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Smallest 3BR (1,216 sqft) at $2.32M sits $120K over ceiling. WATCH for a ~5% cut into band. 12mo txns $1,246-1,769 psf."
+    },
+    {
+      "project": "Tangerine Grove",
+      "district": "D19",
+      "neighbourhood": "Paya Lebar Crescent",
+      "tenure": "Freehold",
+      "year_built": 2007,
+      "total_units": 125,
+      "clears_filter": false,
+      "near_miss": {"bedrooms": "3BR", "size_sqft": 1184, "price_sgd": 2300000, "psf": 1943, "gap": "+$100K over ceiling, ~11% over market"},
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "In-band 3BR trades DO occur (1,238 sqft sold $2,200,000 May-2025; avg $1,753 psf → 1,227-1,250 sqft ≈ $2.15-2.19M). Current asks just above cap. WATCH for a correctly-priced ~1,227-1,250 sqft 3BR."
+    },
+    {
+      "project": "Jade Residences",
+      "district": "D19",
+      "neighbourhood": "Lew Lian Vale",
+      "tenure": "Freehold",
+      "year_built": 2017,
+      "total_units": 171,
+      "clears_filter": false,
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Top current ask $1.9M — below the $2.0M floor. 3BR avg $1,854 psf. WATCH for a large ~1,900 sqft unit or fully-priced 4BR (1,119-1,270 sqft) crossing $2.0M."
+    },
+    {
+      "project": "The Line @ Tanjong Rhu",
+      "district": "D15",
+      "neighbourhood": "Tanjong Rhu",
+      "tenure": "Freehold",
+      "year_built": 2017,
+      "total_units": 130,
+      "on_tracked_list": false,
+      "clears_filter": true,
+      "in_band_unit": {"bedrooms": "3BR/2BA", "size_sqft": 1055, "price_sgd": 2167000, "psf": 2054, "listing": "PropNex 629540"},
+      "avg_psf_3br": 2413,
+      "price_change_vs_june": "UNCHANGED ($2,167,000 / 1,055 sqft / $2,054 psf) since 6 Jun baseline",
+      "notes": "June top pick, still live at the same price. Priced ~12-20% BELOW recent 3BR comps ($2,299-2,569 psf; 6mo avg $2,413). Attractive but verify it's live and not stale/cross-posted. Not on the current tracked list."
+    },
+    {
+      "project": "Bliss @ Kovan",
+      "district": "D19",
+      "neighbourhood": "Kovan",
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "total_units": 140,
+      "clears_filter": false,
+      "price_change_vs_june": "1,765 sqft penthouse rose to $2,300,000 from $2,200,000 in June (+$100K / +4.5%), now OVER ceiling",
+      "notes": "The June standout (2BR penthouse, 1,765 sqft) is now asking $2.3M (~$1,303 psf) — over the $2.2M ceiling. Smallest 3BR (1,163 sqft) priced above band. June cross-post artifact (1,163 sqft @ $2.8M) confirmed spurious."
+    },
+    {
+      "project": "Fiorenza",
+      "district": "D19",
+      "neighbourhood": "Hougang / Florence Rd",
+      "tenure": "Freehold",
+      "year_built": 2012,
+      "total_units": 28,
+      "clears_filter": false,
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Boutique; large units (1,184-1,851 sqft) price UNDER the $2.0M floor (~$1,100-1,510 psf); 3BR penthouse $1.68M. Fails on price floor. Thin listings."
+    },
+    {
+      "project": "Jansen House",
+      "district": "D19",
+      "neighbourhood": "Jansen Road",
+      "tenure": "999-year",
+      "year_built": 2026,
+      "total_units": 21,
+      "clears_filter": false,
+      "excluded_reason": "new_launch",
+      "near_miss": {"bedrooms": "3BR/2BA", "size_sqft": "1012-1033", "price_sgd": "1999999-2041000", "psf": "1936-1999"},
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Passes tenure (999) + price + size, but just-TOP'd new launch (2026) so excluded by resale-only rule. Single closest match on price+size+tenure. Revisit if resale-only rule flexes or genuine sub-sales appear."
+    },
+    {
+      "project": "Vacanza @ East",
+      "district": "D14",
+      "neighbourhood": "Lengkong Tujoh (Eunos/Kembangan)",
+      "tenure": "Freehold",
+      "year_built": 2014,
+      "total_units": 473,
+      "clears_filter": false,
+      "hidden_3br_stack": true,
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Large dev (473u) with hidden 3BR stack 1,012-1,141 sqft. But geography is Eunos/Kembangan (Lengkong Tujoh), borderline vs the 'Eunos/Paya Lebar only' D14 scope. No confirmed in-band live listing (nearest 1,023 sqft @ $1.8M, below floor)."
+    },
+    {
+      "project": "Kovan Regency",
+      "district": "D19",
+      "neighbourhood": "Kovan Rise",
+      "tenure": "99-year",
+      "year_built": 2016,
+      "total_units": 393,
+      "clears_filter": false,
+      "excluded_reason": "tenure",
+      "hidden_3br_stack": true,
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Large dev with in-band 3BR stack (1,130 sqft sold $2.27-2.43M, $2,008-2,150 psf) BUT 99-year leasehold fails the FH/999 tenure filter. Benchmark only."
+    },
+    {
+      "project": "Kovan Residences",
+      "district": "D19",
+      "neighbourhood": "Kovan Road",
+      "tenure": "99-year",
+      "year_built": 2011,
+      "total_units": 521,
+      "clears_filter": false,
+      "excluded_reason": "tenure",
+      "hidden_3br_stack": true,
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Largest tracked dev (521u); 3BR stacks in $2M range (~$2,043 psf) but 99-year fails tenure. Benchmark only."
+    },
+    {
+      "project": "Midtown Residences",
+      "district": "D19",
+      "neighbourhood": "Upper Serangoon / Hougang",
+      "tenure": "99-year",
+      "year_built": 2016,
+      "total_units": 160,
+      "clears_filter": false,
+      "excluded_reason": "tenure + size",
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "99-year (fails tenure); 3BR only 710-743 sqft (fails size). Deprioritize."
+    },
+    {
+      "project": "Vibes @ East Coast",
+      "district": "D15",
+      "neighbourhood": "Telok Kurau",
+      "tenure": "Freehold",
+      "year_built": 2015,
+      "total_units": 117,
+      "clears_filter": false,
+      "excluded_reason": "size",
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Max unit ~807 sqft, no 3BR, nothing >=1,000 sqft. Fails size. Structurally out of scope for this band."
+    },
+    {
+      "project": "Siglap V",
+      "district": "D15",
+      "neighbourhood": "East Coast Rd / Siglap",
+      "tenure": "Freehold",
+      "year_built": 2014,
+      "total_units": 114,
+      "clears_filter": false,
+      "excluded_reason": "price (below floor)",
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Whole project trades well below $2.0M ($660k-1.5M). Even max 1,442 sqft 3BR only touches ceiling in theory; no listing near band."
+    },
+    {
+      "project": "Elliot At The East Coast",
+      "district": "D15",
+      "neighbourhood": "Upper East Coast Rd",
+      "tenure": "Freehold",
+      "year_built": 2012,
+      "total_units": 119,
+      "clears_filter": false,
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Project floor ~$2,050,000 but no confirmed >=1,000 sqft unit at <=$2.2M; cheapest concrete listing $2.35M/1,615 sqft (2BR, over band). WATCH the low $2.05M listing (details unconfirmed)."
+    },
+    {
+      "project": "Straits at Joo Chiat",
+      "district": "D15",
+      "neighbourhood": "Joo Chiat Place",
+      "tenure": "Freehold",
+      "year_built": 2027,
+      "total_units": 16,
+      "clears_filter": false,
+      "excluded_reason": "new_launch (TOP Nov 2027)",
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Under-construction new launch (Roxy-Pacific), TOP Nov 2027. Portal 'for-sale' entries are developer inventory. Excluded by resale-only rule until genuine sub-sales appear post-completion."
+    },
+    {
+      "project": "Parc Elegance",
+      "district": "D15",
+      "neighbourhood": "Telok Kurau",
+      "tenure": "Freehold",
+      "year_built": 2013,
+      "total_units": 160,
+      "clears_filter": false,
+      "excluded_reason": "mislocated on tracked list (is D15 Telok Kurau, not D19); all units below band",
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Tracked-list location (D19/MacPherson) appears WRONG. The real Parc Elegance is Telok Kurau, D15 (Katong), FH TOP 2013, small units all <$2.0M. Recommend confirming the intended project or dropping from the list."
+    },
+    {
+      "project": "Palm Grove Condo",
+      "district": "D19",
+      "neighbourhood": "Chai Chee / verify",
+      "tenure": "999-year",
+      "year_built": 2002,
+      "total_units": null,
+      "clears_filter": false,
+      "excluded_reason": "no in-band listing",
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Verified D19, 999-year, TOP 2002 (Pidemco). Tenure qualifies but no in-band listing surfaced. Deprioritize."
+    },
+    {
+      "project": "The Waterline",
+      "district": "D19",
+      "neighbourhood": "Poh Huat Road West, Hougang",
+      "tenure": "Freehold",
+      "year_built": 2013,
+      "total_units": 103,
+      "clears_filter": false,
+      "excluded_reason": "misidentified in tracked list (is D19 Hougang, not D15 Tanjong Rhu); no in-band listing surfaced",
+      "price_change_vs_june": "n/a (not tracked in June)",
+      "notes": "Tracked-list entry implied D15/Tanjong Rhu; the actual The Waterline is a FREEHOLD Hougang (D19) condo, TOP 2013, 103 units. Likely a mix-up for The Line @ Tanjong Rhu. Re-evaluate under D19; no in-band listing found this run."
+    }
+  ],
+  "hard_filter_passes": [
+    {"project": "Carpmael Thirty-Eight", "district": "D15", "size_sqft": 1076, "price_sgd": 2200000, "psf": 2045, "bedrooms": "3BR", "confidence": "confirmed"},
+    {"project": "Flamingo Valley", "district": "D15", "size_sqft": 1152, "price_sgd": 2200000, "psf": 1910, "bedrooms": "3BR", "confidence": "confirmed", "hidden_stack": true},
+    {"project": "The Quinn", "district": "D19", "size_sqft": 1066, "price_sgd": 2068000, "psf": 1940, "bedrooms": "3BR", "confidence": "confirmed"},
+    {"project": "The Line @ Tanjong Rhu", "district": "D15", "size_sqft": 1055, "price_sgd": 2167000, "psf": 2054, "bedrooms": "3BR", "confidence": "confirmed", "on_tracked_list": false},
+    {"project": "Paya Lebar Residences", "district": "D14", "size_sqft": "1092-1200", "price_sgd": "2000000-2200000", "psf": 1831, "bedrooms": "3BR", "confidence": "modeled"}
+  ],
+  "flagged": [
+    {"project": "Flamingo Valley", "detail": "2BR penthouse 1,701 sqft @ $2,000,000 (~$1,176 psf) clears objective filter but is 2BR (not 3BR) and carries the same stale/mispriced flag from June — unchanged listing (PropNex 360192)."}
+  ],
+  "watchlist": [
+    {"project": "Oasis Garden", "trigger": "~5% cut on the $2,320,000 / 1,216 sqft 3BR brings it into band"},
+    {"project": "Tangerine Grove", "trigger": "a correctly-priced ~1,227-1,250 sqft 3BR (~$2.15-2.19M at market $1,753 psf)"},
+    {"project": "Jade Residences", "trigger": "a large ~1,900 sqft unit or fully-priced 4BR crossing the $2.0M floor"},
+    {"project": "Elliot At The East Coast", "trigger": "confirm details on the ~$2,050,000 low listing (size unknown)"},
+    {"project": "Axis @ Siglap", "trigger": "a >=1,000 sqft 3BR at/just under $2.2M (entry asks ~$2.2M; verify boutique unit size)"},
+    {"project": "Kovan Jewel", "trigger": "a genuine resale (sub-sale) ~1,000 sqft 3BR in band; verify vs developer stock"}
+  ],
+  "newly_discovered": [
+    {"project": "Kovan Jewel", "district": "D19", "tenure": "Freehold", "year_built": 2024, "total_units": 34, "note": "Highest-interest discovery. ~$2,057-2,283 psf; in-band 3BR (~1,000 sqft ≈ $2.06-2.28M) plausible. Borderline on 'not new launch' (just TOP'd 2024)."},
+    {"project": "Axis @ Siglap", "district": "D15", "tenure": "Freehold", "year_built": 2009, "total_units": 40, "note": "Boutique; entry asking ~$2.2M for 2-3BR. Watch; verify unit size (boutique units may be <1,000 sqft)."},
+    {"project": "38 Lorong Ong Lye", "district": "D19", "tenure": "Freehold", "note": "FH 3BR 1,475 sqft listed $1,999,999 — band edge (just under floor). Identify exact project name; strongest off-list D19 lead."},
+    {"project": "The Eastside", "district": "D15", "tenure": "Freehold", "note": "Newer FH project; band fit unverified."},
+    {"project": "East Coast Residences", "district": "D15", "tenure": "Freehold", "note": "~1,000 sqft txns ~$1.7-1.8M (~$1,700 psf), below band."},
+    {"project": "Atlassia", "district": "D15", "tenure": "Freehold", "note": "Joo Chiat mixed-use new launch — excluded as new launch."},
+    {"project": "Eunos Park", "district": "D14", "tenure": "Freehold", "note": "3BR listing $1,900,000 (under band); likely built 1990s (would fail built-after-2000)."},
+    {"project": "Fulcrum", "district": "D15", "tenure": "Freehold", "note": "Dual-key duplex 829 sqft @ $1.9M — fails size."},
+    {"project": "Suites @ Katong", "district": "D15", "tenure": "Freehold", "note": "TOP 2013, 58 units, mostly small format; low priority."}
+  ],
+  "psf_cap_vs_market": {
+    "effective_cap_note": "At the $2.2M ceiling & >=1,000 sqft floor, the practical PSF cap runs ~$2,200/sqft at 1,000 sqft down to ~$1,833/sqft at 1,200 sqft; for a typical ~1,050-1,150 sqft 3BR the working ceiling is ~$2,050-2,100 psf.",
+    "gaps": [
+      {"segment": "D15 prime (Tanjong Rhu / Katong core)", "market_psf": "2300-2570", "read": "ABOVE cap by ~10-20%; only below-market/aggressive listings qualify (e.g. The Line @ $2,054 psf)"},
+      {"segment": "D15 Siglap (Flamingo Valley)", "market_psf": "1900-2100", "read": "fits under cap"},
+      {"segment": "D19 Bartley (The Quinn)", "market_psf": "1940-2061", "read": "fits under cap"},
+      {"segment": "D19 Kovan best-priced 3BR", "market_psf": "1885-2043", "read": "fits on price but 99-year → fails tenure, not the cap"},
+      {"segment": "D14 Paya Lebar (Paya Lebar Residences)", "market_psf": "1831", "read": "most headroom under cap"}
+    ]
+  },
+  "filter_tradeoffs": {
+    "units_vs_psf_vs_region": [
+      "Clean in-band matches are almost all BOUTIQUE (Carpmael 38 = 16u, The Quinn = 139u, The Line = 130u). Large-development + freehold + in-band 3BR is rare.",
+      "The hidden-3BR-stack hunt in large developments paid off cleanly exactly once: Flamingo Valley (393u) with a 1,152 sqft 3BR at $2.2M. Vacanza @ East (473u) has the stack too but is D14 Eunos/Kembangan with no in-band live listing.",
+      "TENURE is the binding constraint in D19 Kovan: the best-priced in-band 3BR stacks (Kovan Regency, Kovan Residences at $1,885-2,043 psf) are 99-year. Relaxing FH/999 would sharply expand D19 Kovan supply — the FH/999 rule is what makes D19 thin.",
+      "The NEW-LAUNCH exclusion blocks two otherwise-fitting D19 options: Jansen House (999-yr, 1,012-1,033 sqft @ $2.0-2.04M) and Kovan Jewel (FH, TOP 2024). Relaxing 'no just-TOP'd' opens both.",
+      "The PSF cap pushes the buyer toward Siglap / Bartley / Paya Lebar (all fit under cap) and away from prime Katong / Tanjong Rhu (priced out) unless a mispriced prime unit appears."
+    ]
+  },
+  "hard_filter_pass_rate": {
+    "tracked_projects_evaluated": 22,
+    "note": "21 on the updated tracked list + The Line @ Tanjong Rhu carried over from June (not on the list). Projects with >=1 current in-band clearing listing.",
+    "confirmed_pass": ["Carpmael Thirty-Eight", "Flamingo Valley", "The Quinn"],
+    "modeled_pass": ["Paya Lebar Residences"],
+    "off_list_pass": ["The Line @ Tanjong Rhu"],
+    "rate_among_21_tracked": "3 confirmed / 21 = ~14% (4 / 21 = ~19% incl. modeled Paya Lebar Residences)"
+  },
+  "data_quality_notes": [
+    "PropertyGuru / 99.co / EdgeProp / SRX returned 403 / egress-block on direct fetch; all figures triangulated from WebSearch snippets + PropNex/aggregator caches. Re-verify live prices, sizes and listing status before acting.",
+    "Paya Lebar Residences in-band 3BR is MODELED from ~$1,831 psf x size; no individual live listing enumerated — pull live 3BR listings to confirm.",
+    "Tracked list has two metadata errors to fix: (1) The Waterline is D19 Hougang FH (not D15 Tanjong Rhu) — likely a mix-up for The Line @ Tanjong Rhu; (2) Parc Elegance is D15 Telok Kurau FH (not D19/MacPherson).",
+    "Flamingo Valley $2.0M / 1,701 sqft listing is unchanged since June and still reads as a below-market outlier; now labelled 2BR penthouse. Verify before relying on it.",
+    "US-only search bias may under-count live SG listings; listing counts are indicative."
+  ]
+}
