@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-04",
+  "criteria": {
+    "tenure_preferred": ["freehold", "999-year"],
+    "tenure_99yr_conditional": "include if (a) TOP within 10yr AND <100 units, OR (b) up to 500 units AND some 3BR units exceed 1110 sqft (e.g. Kovan Residences large stacks)",
+    "price_sgd_max": 2300000,
+    "min_size_sqft_exclusive": 1110,
+    "min_bedrooms": 3,
+    "built_after": 2000,
+    "built_1996_2000_small_freehold": "flag as needs-check, do not auto-exclude",
+    "psf_cap_sgd": 1700,
+    "psf_over_cap": "flag, do not auto-exclude",
+    "districts": {
+      "primary": "D19 all subzones (Kovan, Serangoon, Hougang, Bartley, Woodleigh, MacPherson)",
+      "backup": "D15 (Marine Parade/Joo Chiat/Siglap)",
+      "d14": "Eunos/Paya Lebar only, EXCLUDE Geylang"
+    },
+    "lease_rule_99yr": "show residual lease and (buyer_age + residual_lease >= 95) check; buyer age not provided this run"
+  },
+  "data_source_note": "Portal direct access (PropertyGuru/99.co/EdgeProp/SRX) BLOCKED by network egress proxy this run. Figures extracted from search index snippets. Floor levels mostly unavailable. Some figures may be recent transactions, not current live asking. Re-verify live before acting.",
+  "pass": [
+    {
+      "project": "The Waterline",
+      "address": "167 Poh Huat Road West",
+      "district": "D19",
+      "neighbourhood": "Kovan/Serangoon",
+      "tenure": "Freehold",
+      "units": 103,
+      "year_built": 2013,
+      "bedrooms": "3BR",
+      "size_sqft": 1173,
+      "price_sgd": 1880000,
+      "psf": 1603,
+      "psf_over_cap": false,
+      "floor_level": "unavailable (portal blocked)",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-the-waterline-500254748"
+    },
+    {
+      "project": "The Waterline",
+      "address": "167 Poh Huat Road West",
+      "district": "D19",
+      "neighbourhood": "Kovan/Serangoon",
+      "tenure": "Freehold",
+      "units": 103,
+      "year_built": 2013,
+      "bedrooms": "3BR / 3BA",
+      "size_sqft": 1238,
+      "price_sgd": 2000000,
+      "psf": 1616,
+      "psf_over_cap": false,
+      "floor_level": "unavailable (portal blocked)",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-the-waterline-500225422"
+    },
+    {
+      "project": "Vacanza @ East",
+      "address": "Lengkong Tujoh",
+      "district": "D14",
+      "neighbourhood": "Eunos/Kembangan (not Geylang)",
+      "tenure": "Freehold",
+      "units": 473,
+      "year_built": 2014,
+      "bedrooms": "3BR",
+      "size_sqft": 1410,
+      "price_sgd": 2100000,
+      "psf": 1489,
+      "psf_over_cap": false,
+      "floor_level": "unavailable (portal blocked)",
+      "link": "https://www.propertyguru.com.sg/property-for-sale/at-vacanza-east-2672/with-3-bedrooms",
+      "notes": "Large project; 3BR ranges small ~1022-1023 sqft up to 1410 sqft large stack. Only the 1410 stack clears 1110."
+    }
+  ],
+  "pass_psf_over_cap": [
+    {
+      "project": "Tangerine Grove",
+      "address": "3 Paya Lebar Crescent",
+      "district": "D19",
+      "neighbourhood": "Paya Lebar/Hougang",
+      "tenure": "Freehold",
+      "units": 125,
+      "year_built": 2007,
+      "bedrooms": "3BR",
+      "size_sqft": 1184,
+      "price_sgd": 2130000,
+      "psf": 1799,
+      "psf_over_cap": true,
+      "status": "needs-check-live-asking",
+      "notes": "1184 sqft $2.13M was Mar-2026 transaction; current asking range reported $2.13M-$2.37M. 3BR 1173-1615 sqft.",
+      "link": "https://www.propertyguru.com.sg/project/tangerine-grove-375/last-transacted-prices-and-insights"
+    }
+  ],
+  "needs_check": [
+    {
+      "project": "Palm Grove Condominium",
+      "address": "19-23 Palm Grove Avenue",
+      "district": "D19",
+      "neighbourhood": "Hougang",
+      "tenure": "999-year (from 1878, ~851 yrs left, freehold-equivalent)",
+      "units": 111,
+      "year_built": 2002,
+      "bedrooms": "3BR",
+      "size_sqft": 1302,
+      "price_sgd": 1990000,
+      "psf": 1528,
+      "psf_over_cap": false,
+      "status": "price is a Jun-2026 transaction; CONFIRM current live asking",
+      "link": "https://www.propertyguru.com.sg/property-for-sale/at-palm-grove-condo-480"
+    },
+    {
+      "project": "Oasis Garden",
+      "address": "51-55 Jalan Bunga Rampai",
+      "district": "D19",
+      "neighbourhood": "Bartley",
+      "tenure": "Freehold",
+      "units": 134,
+      "year_built": 2012,
+      "bedrooms": "3BR",
+      "size_sqft": 1227,
+      "price_sgd": 2320000,
+      "psf": 1891,
+      "psf_over_cap": true,
+      "status": "cheapest qualifying asking $2.32M slightly over $2.3M budget; 2025 transactions 1216 sqft $2.11-2.14M (in budget) - negotiable. Separate $1.73M listing size unconfirmed.",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-oasis-garden-500161724"
+    },
+    {
+      "project": "Parc Elegance",
+      "address": "Telok Kurau Road",
+      "district": "D15",
+      "neighbourhood": "Telok Kurau",
+      "tenure": "Freehold",
+      "units": 161,
+      "year_built": 2013,
+      "bedrooms": "3BR",
+      "status": "no clean pass: 1044 sqft @ $2.1M fails size; 1539 sqft @ $2.6M fails price",
+      "link": "https://www.propertyguru.com.sg/listing/for-sale-parc-elegance-500180201"
+    }
+  ],
+  "excluded": [
+    {"project": "Kovan Residences", "district": "D19", "tenure": "99yr (TOP 2011, ~81yr residual)", "reason": "user-designated include (large stacks, 3BR 1259-1701 sqft all >1110), BUT all current 3BR asking $2.65M-$2.70M exceed budget. Lease check: age+81>=95 ok for buyer >=14."},
+    {"project": "Flamingo Valley", "district": "D15", "reason": "qualifying sizes (1485/1938 sqft) all asking $2.7M-$2.9M, over budget; 990 sqft under size"},
+    {"project": "Paya Lebar Residences", "district": "D14", "reason": "1291 sqft $2.5M over budget and PSF cap"},
+    {"project": "Jade Residences", "district": "D19", "reason": "3BR max 915 sqft, under 1110"},
+    {"project": "The Quinn", "district": "D19", "reason": "3BR 1066 sqft, just under 1110"},
+    {"project": "Vibes @ East Coast", "district": "D15", "reason": "only 1-2BR, no 3BR"},
+    {"project": "Siglap V", "district": "D15", "reason": "largest 3BR (1442 sqft) not currently listed; current listings under 1110"},
+    {"project": "Elliot at the East Coast", "district": "D15", "reason": "3BR 2131-2314 sqft but asking $2.38M-$4.18M, over budget"}
+  ]
+}
