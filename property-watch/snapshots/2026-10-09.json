@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-09",
+  "run_note": "Criteria evolved vs 2026-06-06 baseline (prior run used >=1000 sqft, $2.0-2.2M, 2BR+ OK, D15/D19 only). Tonight uses the refined brief below.",
+  "criteria": {
+    "tenure_preferred": ["freehold", "999-year"],
+    "tenure_99yr_conditional": "99yr OK only if (a) TOP within 10yrs AND <100 units, OR (b) larger project (<=~500 units) where some 3BR stacks exceed 1,110 sqft (e.g. Kovan Residences)",
+    "price_sgd_max_exclusive": 2300000,
+    "min_size_sqft_exclusive": 1110,
+    "min_bedrooms": 3,
+    "built_after": 2000,
+    "built_1996_2000_small_freehold": "mark NEEDS-CHECK, do not auto-exclude",
+    "psf_reference_cap": 1700,
+    "psf_over_cap_handling": "do not exclude; mark OVER-CAP",
+    "districts_primary": ["D19 (Kovan, Serangoon, Hougang, Bartley, Woodleigh, MacPherson)"],
+    "districts_backup": ["D15 (Marine Parade, Joo Chiat, Siglap)"],
+    "districts_d14": ["D14 Eunos / Paya Lebar ONLY — Geylang excluded"]
+  },
+  "data_access": "ALL major portals (PropertyGuru, 99.co, SRX, EdgeProp, Stacked) returned EGRESS_BLOCKED on direct fetch this run. No live listing page was readable. 100% of figures are triangulated from WebSearch snippets quoting those portals. Treat every price/size/PSF/floor as UNVERIFIED. Floor/level data was absent from nearly all snippets.",
+  "pass_full": [
+    {"project": "Le Crescendo", "address": "233 Paya Lebar Rd", "district": "D14 (Paya Lebar)", "tenure": "Freehold", "units": 228, "size_sqft": 1313, "price_sgd": 1850000, "psf": 1409, "floor": "unknown", "built": "~2000 (verify — borderline vs 2000 floor)", "link": "99.co le-crescendo-condo (updated ~15 days ago)", "note": "Only fully-compliant D14 Eunos/PL unit. 3BR stacks 1,173/1,313/1,453 all >1,110. Comps: 1,173@$2.02M Apr-26, 1,453@$2.50M Mar-26 — this 1,313@$1.85M is the sweet spot."},
+    {"project": "Palm Grove Condominium", "address": "Palm Grove Ave, Hougang", "district": "D19 (Hougang/Kovan)", "tenure": "999-yr (from 1878, ~851 yrs left — freehold-equivalent)", "units": 111, "size_sqft": 1281, "price_sgd": 2038000, "psf": 1591, "floor": "unknown", "built": 2002, "link": "EdgeProp/SRX palm-grove", "note": "3BR 1,281-1,701 sqft, all >1,110. Age+lease>=95 check: N/A (999-yr)."},
+    {"project": "Palm Grove Condominium", "address": "Palm Grove Ave, Hougang", "district": "D19 (Hougang/Kovan)", "tenure": "999-yr (~851 yrs left)", "units": 111, "size_sqft": 1389, "price_sgd": 2299999, "psf": 1656, "floor": "unknown", "built": 2002, "link": "PropertyGuru palm-grove-condo-480", "note": "Just under $2.3M ceiling; under PSF cap."},
+    {"project": "Palm Grove Condominium", "address": "Palm Grove Ave, Hougang", "district": "D19 (Hougang/Kovan)", "tenure": "999-yr (~851 yrs left)", "units": 111, "size_sqft": 1292, "price_sgd": 2038000, "psf": 1577, "floor": "unknown", "built": 2002, "link": "EdgeProp/PropertyGuru palm-grove"},
+    {"project": "The Waterline", "address": "167 Poh Huat Rd West, Hougang", "district": "D19 (Hougang)", "tenure": "Freehold", "units": 103, "size_sqft": 1173, "price_sgd": 1880000, "psf": 1603, "floor": "unknown", "built": 2013, "link": "PropertyGuru listing 500254748 (~34 days old)", "note": "3BR 1,173/1,335 sqft all >1,110. NOT in Kallang (brief said Kallang — it is D19 Hougang)."},
+    {"project": "Vacanza @ East", "address": "36-50 Lengkong Tujoh", "district": "D14 (Bedok/Eunos fringe)", "tenure": "Freehold", "units": 161, "size_sqft": 1410, "price_sgd": 2100000, "psf": 1489, "floor": "unknown", "built": 2014, "link": "propertyguru at-vacanza-east-2672", "note": "Most 3BR stacks ~1,012-1,035 (BELOW 1,110); only larger combined layouts (1,152/1,324/1,410) exceed 1,110. This 1,410 unit qualifies."},
+    {"project": "Residences @ Jansen", "address": "29 Jansen Rd, Hougang", "district": "D19 (Hougang/Kovan)", "tenure": "999-yr (from 1876, built 2008)", "units": 18, "size_sqft": 1216, "price_sgd": 1799000, "psf": 1479, "floor": "unknown", "built": 2008, "link": "PropertyGuru for-sale-residences-jansen-500226321", "flagged": true, "note": "18-unit boutique, no facilities. Ask looks aggressive: same-size units sold ~$1.50-1.58M (Jan-23/Apr-25). Verify live status/price — possibly stale or ambitious."}
+  ],
+  "pass_hardfilter_over_psf_cap": [
+    {"project": "Flamingo Valley", "address": "460-480 Siglap Rd", "district": "D15 (Siglap)", "tenure": "Freehold", "units": 393, "size_sqft": 1152, "price_sgd": 2200000, "psf": 1910, "floor": "ground", "built": 2015, "verdict": "PASS hard filter, OVER-CAP $1,700", "link": "propertyguru 500223961", "note": "3BR mix 990 (fails) / 1,152 / 1,206 / 1,216-1,518 dual-key; this 1,152 stack is the only under-budget 3BR >1,110."},
+    {"project": "Esta Ruby", "address": "500 Guillemard Rd", "district": "D14 (Paya Lebar/Geylang border)", "tenure": "Freehold", "units": 72, "size_sqft": 1130, "price_sgd": 1999999, "psf": 1770, "floor": "unknown", "built": 2010, "verdict": "PASS hard filter, OVER-CAP $1,700", "link": "propertyguru aggregate", "note": "Guillemard Rd is Geylang-adjacent (530m to Paya Lebar MRT) — technically D14, flag for Geylang-proximity. 3BR uniformly ~1,130 (just over 1,110)."},
+    {"project": "Esta Ruby", "address": "500 Guillemard Rd", "district": "D14 (Paya Lebar/Geylang border)", "tenure": "Freehold", "units": 72, "size_sqft": 1130, "price_sgd": 2050000, "psf": 1814, "floor": "unknown", "built": 2010, "verdict": "PASS hard filter, OVER-CAP $1,700", "link": "propertyguru 500154991 / propnex 871568", "note": "Listed 16 Aug 2026, private lift."},
+    {"project": "Esta Ruby", "address": "500 Guillemard Rd", "district": "D14 (Paya Lebar/Geylang border)", "tenure": "Freehold", "units": 72, "size_sqft": 1130, "price_sgd": 2299999, "psf": 2035, "floor": "unknown", "built": 2010, "verdict": "PASS hard filter (just under price ceiling), OVER-CAP $1,700", "link": "propertyguru 500169440"}
+  ],
+  "needs_check": [
+    {"project": "Eunos Park", "address": "5 Kampong Eunos", "district": "D14 (Eunos)", "tenure": "Freehold", "units": 55, "size_sqft": 1399, "price_sgd": 1900000, "psf": 1358, "floor": "low-rise (4 storeys)", "built": 1995, "reason": "Built 1995 — below 2000 floor AND below the 1996-2000 soft window (pre-1996). Excellent size/price/PSF otherwise. Tenanted to Apr 2027.", "link": "propertyguru 500124937"},
+    {"project": "Rosalia Park", "address": "How Sun Dr", "district": "D19 (Bartley/Serangoon)", "tenure": "Freehold", "units": 288, "size_sqft": 1475, "price_sgd": 1950000, "psf": 1322, "floor": "unknown", "built": 1995, "reason": "Built 1995 (pre-1996, outside the exception). Large FH, under budget & PSF cap. Currently tenanted.", "link": "srx 109591491"},
+    {"project": "The Sunshine", "address": "1 Sunshine Terrace", "district": "D19 (Serangoon)", "tenure": "Freehold", "units": 45, "size_sqft": "1227-1249", "price_sgd": 2280000, "psf": 1589, "floor": "unknown", "built": 2003, "reason": "No confirmed live listing — figure is a portal estimate. 1,227 sqft sold Feb-2025 @ $1.95M. Watch for a real listing.", "link": "edgeprop the-sunshine"},
+    {"project": "Rio Vista", "address": "12 Upper Serangoon View", "district": "D19 (Hougang)", "tenure": "99-yr from ~2001 (~74 yrs left)", "units": 696, "size_sqft": 1636, "price_sgd": 1800000, "psf": 1100, "floor": "ground", "built": 2004, "reason": "Size/price/PSF excellent, but FAILS the 99-yr sub-rule (project >500 units AND TOP >10 yrs ago). Age+lease>=95: buyer must be >=21 (74yr lease) — trivially met. Resale status not explicitly confirmed.", "link": "propertyguru 500206146"},
+    {"project": "The Minton", "address": "Hougang St 11", "district": "D19 (Hougang)", "tenure": "99-yr from 2007 (~80 yrs left)", "units": 1145, "size_sqft": "1216 / 1453", "price_sgd": 2250000, "psf": "1492-1850", "floor": "mid", "built": 2013, "reason": "Large 3BR trade UNDER budget (1,216@$2.14M, 1,453@$2.168M=$1,492psf sold Jul-Aug 2026) but project >>500 units -> strictly fails 99-yr sub-rule. Current live asks >=$2.25M. Age+lease>=95: buyer >=15.", "link": "propertyguru at-the-minton-2652"},
+    {"project": "The Waterline", "address": "167 Poh Huat Rd West, Hougang", "district": "D19 (Hougang)", "tenure": "Freehold", "units": 103, "size_sqft": 1173, "price_sgd": 2000000, "psf": 1705, "floor": "unknown", "built": 2013, "reason": "~165 days old — likely stale duplicate of the fresher $1.88M listing, and est PSF marginally OVER-CAP.", "link": "99.co the-waterline"},
+    {"project": "Palm Oasis", "address": "Lor H/J Telok Kurau", "district": "D15 (Telok Kurau)", "tenure": "Freehold", "units": null, "size_sqft": 1615, "price_sgd": 2180000, "psf": 1350, "floor": "unknown", "built": 2009, "reason": "Possible intended target behind the watchlist's 'Oasis Garden' (which is actually D19 Hougang). Would PASS if this is the intended project — confirm project identity.", "link": "propertyguru snippet"}
+  ],
+  "large_99yr_distribution_notes": {
+    "Kovan Residences": "521 units, 99-yr from 2007 (TOP 2011, ~80 yrs left). ALL 3BR >1,110: plain 3BR 1,259-1,701 sqft (~188 units); 3BR+Study 1,442-2,013 sqft (~20 units). Effectively 100% of 3BR stock exceeds 1,110 — the rare large-99yr case the brief named. BUT all current 3BR asks $2.65-2.70M (~$2,105-2,145 psf): FAIL price + OVER-CAP. Recent sold 1,259@~$2.52-2.55M (Apr/Jun-26). None currently fits budget.",
+    "Forest Woods": "519 units, 99-yr from 2016 (~89 yrs). 3BR ~743-1,184 sqft; only premium 3BR (~969-1,184) exceeds 1,110 — a minority. No current unit both >1,110 AND <$2.3M (1,173 sqft resale $2.38M Oct-25).",
+    "Riverfront Residences": "1,472 units — disqualified on project size for 99-yr rule. Largest current 3BR 1,109 sqft @ $2,099,999 ($1,894 psf) = FAIL by 1 sqft + OVER-CAP.",
+    "Bartley Residences": "~702 units, 99-yr from 2011. 3BR to ~1,184; 1,184 sold $2.27M Aug-26 but >500 units -> fails sub-rule.",
+    "Botanique at Bartley": "~797 units, 99-yr ~2014. 3BR 926-1,356; 1,130 sold $2.30M Jun-26 but only sub-1,000 listed now; >500 units.",
+    "The Scala @ Lorong Chuan": "468 units, 99-yr TOP 2013. 3BR 1,206/1,518 but current asks $2.7-2.99M; TOP >10 yrs."
+  },
+  "clear_fails": [
+    {"project": "The Quinn", "district": "D19 (Bartley Rd, NOT Lorong Chuan)", "tenure": "Freehold", "reason": "3BR stock ~1,055-1,066 sqft (<1,110). No qualifying listing."},
+    {"project": "Tangerine Grove", "district": "D19 (Paya Lebar Cres, Hougang)", "tenure": "Freehold", "reason": "3BR 1,173-1,615 all >1,110 but current asks $2.3M-$2.98M -> FAIL price + OVER-CAP."},
+    {"project": "Elliot At The East Coast", "district": "portal D15 (brief said D16)", "tenure": "Freehold", "reason": "3BR 1,475-2,314 sqft all large, but asks ~$4.0M -> FAIL price."},
+    {"project": "Paya Lebar Residences", "district": "D14 (27 Paya Lebar Rd — confirmed NOT Geylang)", "tenure": "Freehold", "reason": "3BR ~1,281-1,302 all >1,110 but asks $2.438M-$2.5M -> FAIL price + OVER-CAP."},
+    {"project": "Siglap V", "district": "D15", "tenure": "Freehold", "reason": "Listed 3BR 1,044 sqft (<1,110); larger 1,442 stack not currently listed with confirmed price."},
+    {"project": "Vibes @ East Coast", "district": "D15 (Telok Kurau, NOT D14/Changi)", "tenure": "Freehold", "reason": "1BR/2BR only — NO 3BR stock. Drop from watchlist."},
+    {"project": "Jade Residences", "district": "D19 (Lew Lian Vale, Serangoon — NOT D14 Eunos)", "tenure": "Freehold", "reason": "3BR ~730-830 sqft (<1,110). Watchlist location wrong. Drop."},
+    {"project": "Parc Elegance", "district": "D15 (13 Telok Kurau Rd — NOT D14 Eunos)", "tenure": "Freehold", "reason": "3BR 1,173-1,593 would qualify on size but NO current 3BR listing; only 4BR 1,765@~$2.55M (FAIL price) and studios."},
+    {"project": "Oasis Garden", "district": "D19 (51 Jalan Bunga Rampai, Hougang — NOT East Coast)", "tenure": "Freehold", "reason": "3BR 1,227 sqft @ $2.35M -> FAIL price + OVER-CAP. See Palm Oasis (D15) as possible intended target."},
+    {"project": "Kovan Residences", "district": "D19 (Kovan)", "tenure": "99-yr", "reason": "Qualifies on tenure sub-rule (b) but all current 3BR asks $2.65-2.70M -> FAIL price + OVER-CAP."},
+    {"project": "Jewel @ Buangkok", "district": "D19 edge (Buangkok)", "tenure": "99-yr (~87 yrs)", "reason": "1,152@$2.292M (~$1,990 OVER-CAP); >500 units fails sub-rule."},
+    {"project": "Affinity at Serangoon", "district": "D19 (Serangoon)", "tenure": "99-yr (~91 yrs)", "reason": "1,152@$2.30M (AT ceiling, OVER-CAP $1,996); >500 units fails sub-rule; one source shows unit sold."},
+    {"project": "Chiltern Park", "district": "D19 (Serangoon)", "tenure": "99-yr from 1991 (~64 yrs)", "reason": "Built 1995 (<2000) + short lease. Age+lease>=95 needs buyer >=31. Some 'listings' are 2+study."},
+    {"project": "Bliss @ Kovan / Kovan Jewel / The Tembusu / The Gazania / The Garden Residences / The Lilium", "district": "D19", "reason": "FH but over budget ($2.7-3.2M) or 3BR under-size (850-1,055 sqft)."}
+  ],
+  "watchlist_corrections": [
+    "Jade Residences -> D19 Lew Lian Vale Serangoon (3BR 730-830 sqft, too small). Brief's 'D14 Lengkong Lima/Eunos' is wrong. DROP.",
+    "Parc Elegance -> D15 13 Telok Kurau Rd (not D14 Eunos). No current 3BR listing.",
+    "Oasis Garden -> D19 51 Jalan Bunga Rampai Hougang (not East Coast/Marine Parade). Possible intended target: Palm Oasis (D15 Telok Kurau, FH 2009).",
+    "Vibes @ East Coast -> D15 Telok Kurau, 1BR/2BR only (no 3BR). DROP.",
+    "The Quinn -> 11 Bartley Rd (not Lorong Chuan; Lorong Chuan project is 'The Chuan').",
+    "Tangerine Grove -> 3 Paya Lebar Cres, Hougang (not Lorong Chuan).",
+    "The Waterline -> D19 Poh Huat Rd West, Hougang (brief said Kallang — wrong).",
+    "Elliot At The East Coast -> portals classify as D15, brief said D16.",
+    "Paya Lebar Residences -> 27 Paya Lebar Rd, D14 — confirmed NOT Geylang proper."
+  ],
+  "diff_vs_2026-06-06": {
+    "note": "Criteria changed substantially between runs, so this is not a pure like-for-like diff. Under TONIGHT's stricter brief (>1,110 sqft, 3BR+, <$2.3M), NONE of the 2026-06-06 baseline matches carry over: The Line @ Tanjong Rhu (1,055 sqft <1,110), Bliss @ Kovan (2BR penthouse), Flamingo Valley 1,701 sqft (2BR). All three were 2BR and/or under the new size floor.",
+    "flamingo_valley": "Re-appears but as a DIFFERENT unit: June was 1,701 sqft 2BR @ $2.0M (flagged possibly-stale); tonight is 1,152 sqft 3BR @ $2.2M (OVER-CAP). June's $2.0M/1,701 listing did NOT re-surface.",
+    "new_this_run": ["Le Crescendo 1,313@$1.85M (D14)", "Palm Grove Condo x3 (D19 999-yr)", "The Waterline 1,173@$1.88M (D19)", "Vacanza @ East 1,410@$2.10M (D14)", "Residences @ Jansen 1,216@$1.799M (D19, flagged)"]
+  }
+}
